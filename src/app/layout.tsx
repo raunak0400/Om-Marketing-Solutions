@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { WhatsAppFAB } from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
   title: 'Apex Digital | Modern Tech Services',
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <WhatsAppFAB />
         <Toaster />
       </body>
     </html>
