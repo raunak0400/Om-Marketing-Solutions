@@ -39,7 +39,9 @@ export const NAV_LINKS = [
       },
     ],
   },
-  { label: 'Our Work', href: '/services/web-development' },
+  { label: 'About', href: '/#about' },
+  { label: 'Process', href: '/#process' },
+  { label: 'Portfolio', href: '/portfolio' },
   { label: 'Estimate Cost', href: '/estimate' },
   { label: 'Contact', href: '/#contact' },
 ];
@@ -81,7 +83,7 @@ export const SERVICES = [
   },
 ];
 
-export const WEB_PROJECTS = [
+export const PORTFOLIO_PROJECTS = [
   {
     title: 'Innovate Corp.',
     description:
@@ -155,6 +157,33 @@ export const TESTIMONIALS = [
     avatar: PlaceHolderImages.find(
       (img) => img.id === 'avatar-maria-rodriguez'
     ),
+  },
+];
+
+export const OUR_PROCESS = [
+  {
+    step: '01',
+    title: 'Discovery & Assessment',
+    description:
+      "We begin by conducting a thorough analysis of your current business processes, technology stack, and market position. This phase is about understanding your unique challenges and identifying the most significant opportunities for digital intervention. We'll map out your existing workflows and pinpoint key areas for improvement.",
+  },
+  {
+    step: '02',
+    title: 'Strategy & Planning',
+    description:
+      'Based on our findings, we develop a comprehensive digital transformation strategy. This includes defining clear objectives, selecting the right technologies, and creating a detailed project plan with timelines and milestones. Our goal is to create a roadmap that aligns with your business goals and ensures a high return on investment.',
+  },
+  {
+    step: '03',
+    title: 'Implementation & Integration',
+    description:
+      'This is where the plan comes to life. Our team of experts develops, implements, and integrates the new digital solutions into your existing ecosystem. We focus on a seamless transition, minimizing disruption to your operations and ensuring your team is equipped to use the new tools effectively through training and support.',
+  },
+  {
+    step: '04',
+    title: 'Optimization & Growth',
+    description:
+      "Digital transformation is an ongoing journey, not a one-time project. After launch, we continuously monitor performance, gather data, and identify further opportunities for optimization. We work with you as a long-term partner to adapt to market changes and drive continuous growth.",
   },
 ];
 

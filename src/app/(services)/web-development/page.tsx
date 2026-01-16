@@ -1,72 +1,55 @@
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { WEB_PROJECTS } from '@/lib/constants';
-import { ArrowRight } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { CheckCircle } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+
+const features = [
+  'Custom UI/UX Design that is both beautiful and functional.',
+  'Responsive, mobile-first development for a seamless experience on all devices.',
+  'Robust e-commerce solutions to sell your products online.',
+  'Powerful Content Management Systems (CMS) for easy content updates.',
+  'SEO optimization to improve your search engine rankings.',
+  'High-performance websites with fast loading speeds.',
+];
+
+const webDevImage = PlaceHolderImages.find(
+  (img) => img.id === 'service-web-dev'
+);
 
 export default function WebDevelopmentPage() {
   return (
     <section>
-      <div className="mb-12">
-        <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-          Our Work
-        </h1>
-        <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-          We specialize in creating bespoke digital experiences that drive
-          growth and engagement. Explore a selection of our projects that
-          demonstrate our commitment to quality and innovation.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {WEB_PROJECTS.map((project) => (
-          <Card
-            key={project.title}
-            className="flex transform flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            <CardHeader>
-              {project.image && (
-                <Image
-                  src={project.image.imageUrl}
-                  alt={project.title}
-                  width={600}
-                  height={400}
-                  className="rounded-t-lg object-cover"
-                  data-ai-hint={project.image.imageHint}
-                />
-              )}
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <CardTitle className="text-2xl">{project.title}</CardTitle>
-              <CardDescription className="mt-2">
-                {project.description}
-              </CardDescription>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Button asChild variant="link" className="px-0">
-                <Link href={project.href}>
-                  View Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div>
+          <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
+            Custom Web Development
+          </h1>
+          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+            We build high-performance websites that are not just visually
+            stunning but also optimized for conversion and growth. From
+            corporate sites to complex e-commerce platforms, we deliver digital
+            excellence.
+          </p>
+          <ul className="mt-8 space-y-3">
+            {features.map((feature, index) => (
+              <li key={index} className="flex items-start">
+                <CheckCircle className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {webDevImage && (
+          <div className="flex items-center justify-center">
+            <Image
+              src={webDevImage.imageUrl}
+              alt="Web Development"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+              data-ai-hint={webDevImage.imageHint}
+            />
+          </div>
+        )}
       </div>
     </section>
   );

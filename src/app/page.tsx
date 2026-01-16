@@ -1,3 +1,4 @@
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -8,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { SERVICES, TESTIMONIALS, WEB_PROJECTS } from '@/lib/constants';
+import { OUR_PROCESS, PORTFOLIO_PROJECTS, SERVICES, TESTIMONIALS } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight, Check, MoveRight } from 'lucide-react';
 import Image from 'next/image';
@@ -17,6 +18,7 @@ import Link from 'next/link';
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 
 export default function Home() {
+  const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3);
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -95,12 +97,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Value Prop Section */}
-      <section className="bg-card py-16 md:py-24">
+      
+      {/* About Section */}
+      <section id="about" className="bg-card py-16 md:py-24">
         <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <Badge variant="default">Why Choose Apex</Badge>
+            <Badge variant="default">About Apex Digital</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
               A Partner in Your Growth, Not Just a Vendor
             </h2>
@@ -142,6 +144,96 @@ export default function Home() {
               data-ai-hint="team collaboration"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section id="process" className="py-16 md:py-24">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <Badge variant="outline">Our Process</Badge>
+            <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
+              A Clear Path to Success
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              We follow a structured, collaborative process to ensure your project is a success from start to finish.
+            </p>
+          </div>
+          <div className="mx-auto max-w-4xl">
+            <Accordion type="single" collapsible defaultValue="item-0">
+              {OUR_PROCESS.map((item, index) => (
+                <AccordionItem key={item.step} value={`item-${index}`}>
+                  <AccordionTrigger className="text-2xl font-semibold">
+                    <div className="flex items-center gap-4">
+                      <span className="text-primary">{item.step}</span>
+                      <span>{item.title}</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="space-y-4 pl-12 text-base text-muted-foreground">
+                    <p>{item.description}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Work Section */}
+      <section id="portfolio" className="bg-card py-16 md:py-24">
+        <div className="container">
+           <div className="mb-12 text-center">
+             <Badge variant="default">Our Work</Badge>
+             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
+               Featured Case Studies
+             </h2>
+             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              Explore a selection of our projects that demonstrate our commitment to quality and innovation.
+             </p>
+           </div>
+           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+             {featuredProjects.map((project) => (
+               <Card
+                 key={project.title}
+                 className="flex transform flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+               >
+                 <CardHeader>
+                   {project.image && (
+                     <Image
+                       src={project.image.imageUrl}
+                       alt={project.title}
+                       width={600}
+                       height={400}
+                       className="h-48 w-full rounded-t-lg object-cover"
+                       data-ai-hint={project.image.imageHint}
+                     />
+                   )}
+                 </CardHeader>
+                 <CardContent className="flex-grow">
+                   <CardTitle>{project.title}</CardTitle>
+                   <div className="mt-2 flex flex-wrap gap-2">
+                     {project.tags.map((tag) => (
+                       <Badge key={tag} variant="secondary">
+                         {tag}
+                       </Badge>
+                     ))}
+                   </div>
+                 </CardContent>
+                 <CardFooter>
+                   <Button asChild variant="link" className="px-0">
+                     <Link href={project.href}>
+                       View Case Study <ArrowRight className="ml-2 h-4 w-4" />
+                     </Link>
+                   </Button>
+                 </CardFooter>
+               </Card>
+             ))}
+           </div>
+           <div className="mt-12 text-center">
+              <Button asChild size="lg" variant="outline">
+                <Link href="/portfolio">View All Projects</Link>
+              </Button>
+           </div>
         </div>
       </section>
 
