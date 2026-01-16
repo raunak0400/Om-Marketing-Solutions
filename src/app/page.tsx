@@ -177,9 +177,8 @@ export default function Home() {
       <section id="portfolio" className="bg-card py-16 md:py-24">
         <div className="container">
            <div className="mb-12 text-center">
-             <Badge variant="default">Our Work</Badge>
-             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-               Featured Case Studies
+             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+               Our Work
              </h2>
              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               Explore a selection of our successful projects and the business impact they delivered.
