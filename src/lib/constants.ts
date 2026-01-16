@@ -1,6 +1,9 @@
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
+  BrainCircuit,
+  Bot,
+  Cpu,
   Briefcase,
   Code,
   Combine,
@@ -10,45 +13,46 @@ import {
   Zap,
 } from 'lucide-react';
 
-export const APP_NAME = 'Apex Digital';
+export const APP_NAME = 'Neno Technology';
 
 export const NAV_LINKS = [
   {
-    label: 'Services',
+    label: 'Solutions',
     href: '/#services',
     children: [
       {
-        label: 'Web Development',
+        label: 'Custom AI Development',
         href: '/services/web-development',
-        description: 'Bespoke websites that drive results.',
+        description: 'Bespoke AI solutions for your needs.',
       },
       {
-        label: 'Automation Solutions',
+        label: 'Business Process Automation',
         href: '/services/automation',
         description: 'Streamline your business processes.',
       },
       {
-        label: 'Software Integrations',
+        label: 'AI-Powered Chatbots',
         href: '/services/integrations',
-        description: 'Connect your tools for seamless workflows.',
+        description: 'Engage customers with intelligent chatbots.',
       },
       {
-        label: 'Digital Transformation',
+        label: 'Machine Learning Models',
         href: '/services/digital-transformation',
-        description: 'Future-proof your business with technology.',
+        description: 'Leverage data with custom ML models.',
       },
     ],
   },
+  { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },
-  { label: 'Process', href: '/#process' },
-  { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Estimate Cost', href: '/estimate' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'Case Studies', href: '/portfolio' },
+  { label: 'Consultation', href: '/estimate' },
   { label: 'Contact', href: '/#contact' },
 ];
 
 export const SERVICES = [
   {
-    title: 'Custom Web Development',
+    title: 'Custom AI Development',
     description:
       'We build high-performance, secure, and scalable web applications tailored to your specific business requirements, from corporate sites to complex platforms.',
     icon: Code,
@@ -56,7 +60,7 @@ export const SERVICES = [
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
   },
   {
-    title: 'Intelligent Automation',
+    title: 'Business Process Automation',
     description:
       'We identify and automate repetitive, manual tasks within your workflows to increase operational efficiency, reduce errors, and enable your team to focus on high-value work.',
     icon: Zap,
@@ -64,20 +68,20 @@ export const SERVICES = [
     image: PlaceHolderImages.find((img) => img.id === 'service-automation'),
   },
   {
-    title: 'Software Integrations',
+    title: 'AI-Powered Chatbots',
     description:
       'We connect your disparate software systems into a unified ecosystem. Streamline workflows, eliminate data silos, and unlock cross-platform productivity.',
-    icon: Combine,
+    icon: Bot,
     href: '/services/integrations',
     image: PlaceHolderImages.find(
       (img) => img.id === 'service-integrations'
     ),
   },
   {
-    title: 'Digital Transformation',
+    title: 'Machine Learning Models',
     description:
       'We provide strategic guidance and technical implementation to modernize your business, from legacy system migration to the adoption of cloud-native infrastructure.',
-    icon: Rocket,
+    icon: BrainCircuit,
     href: '/services/digital-transformation',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
@@ -137,21 +141,21 @@ export const PORTFOLIO_PROJECTS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Apex Digital was instrumental in our digital transformation. The new website exceeded our expectations and has directly resulted in a significant increase in lead generation.",
+      "Neno Technology was instrumental in our digital transformation. The new website exceeded our expectations and has directly resulted in a significant increase in lead generation.",
     author: 'Sarah Johnson',
     title: 'CEO, Innovate Corp.',
     avatar: PlaceHolderImages.find((img) => img.id === 'avatar-sarah-johnson'),
   },
   {
     quote:
-      "The automation solution implemented by Apex Digital has been a game-changer for our operational efficiency. Their team is a reliable and technically proficient partner.",
+      "The automation solution implemented by Neno Technology has been a game-changer for our operational efficiency. Their team is a reliable and technically proficient partner.",
     author: 'David Chen',
     title: 'Founder, QuantumLeap SaaS',
     avatar: PlaceHolderImages.find((img) => img.id === 'avatar-david-chen'),
   },
   {
     quote:
-      "Apex Digital's strategic approach and flawless execution provided us with a clear path to modernization. We are now better positioned for future growth in the digital landscape.",
+      "Neno Technology's strategic approach and flawless execution provided us with a clear path to modernization. We are now better positioned for future growth in the digital landscape.",
     author: 'Maria Rodriguez',
     title: 'COO, MarketSphere',
     avatar: PlaceHolderImages.find(

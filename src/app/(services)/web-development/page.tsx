@@ -21,7 +21,7 @@ export default function WebDevelopmentPage() {
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-            Custom Web Development
+            Custom AI Development
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
             We build high-performance websites that are not just visually

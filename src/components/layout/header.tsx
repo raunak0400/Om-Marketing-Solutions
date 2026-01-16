@@ -24,8 +24,8 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-20 items-center">
         <Logo />
         <nav className="ml-10 hidden items-center space-x-6 text-sm font-medium md:flex">
           {NAV_LINKS.map((link) =>
@@ -34,7 +34,7 @@ export function Header() {
                 <DropdownMenuTrigger asChild>
                   <Link
                     href={link.href}
-                    className="flex items-center text-foreground/60 transition-colors hover:text-foreground/80"
+                    className="flex items-center text-foreground/80 transition-colors hover:text-foreground"
                   >
                     {link.label}
                     <ChevronDown className="ml-1 h-4 w-4" />
@@ -52,7 +52,7 @@ export function Header() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-foreground/60 transition-colors hover:text-foreground/80"
+                className="text-foreground/80 transition-colors hover:text-foreground"
               >
                 {link.label}
               </Link>
@@ -61,10 +61,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild className="hidden sm:inline-flex" variant="outline">
-            <Link href="/estimate">Get an Estimate</Link>
-          </Button>
-          <Button asChild>
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Find Talent</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">

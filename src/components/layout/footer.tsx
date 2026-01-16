@@ -43,12 +43,12 @@ export function Footer() {
     form.reset();
   }
   return (
-    <footer className="border-t bg-card" id="contact">
+    <footer className="border-t border-border/60 bg-card" id="contact">
       <div className="container grid grid-cols-1 gap-12 py-12 md:grid-cols-3 lg:grid-cols-5">
         <div className="md:col-span-3 lg:col-span-2">
           <Logo />
           <p className="mt-4 text-muted-foreground">
-            Your trusted partner in digital excellence.
+            Your trusted partner in AI automation.
           </p>
           <div className="mt-6 flex space-x-4">
             <Link href="#" aria-label="Twitter">
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
 
         <div className="space-y-2">
-          <h4 className="font-semibold">Services</h4>
+          <h4 className="font-semibold">Solutions</h4>
           <ul className="space-y-2">
             {SERVICES.map((service) => (
               <li key={service.title}>
@@ -81,7 +81,9 @@ export function Footer() {
         <div className="space-y-2">
           <h4 className="font-semibold">Company</h4>
           <ul className="space-y-2">
-            {NAV_LINKS.filter((l) => !l.children).map((link) => (
+            {NAV_LINKS.filter(
+              (l) => !l.children && !['Solutions', 'Services'].includes(l.label)
+            ).map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
@@ -142,7 +144,7 @@ export function Footer() {
            </Form>
         </div>
       </div>
-      <div className="border-t">
+      <div className="border-t border-border/60">
         <div className="container py-4 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} {APP_NAME}. All rights reserved.
         </div>

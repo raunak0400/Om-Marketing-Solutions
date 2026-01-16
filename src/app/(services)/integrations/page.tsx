@@ -6,7 +6,7 @@ export default function IntegrationsPage() {
   return (
     <section className="text-center">
       <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-        Seamless Software Integrations
+        AI-Powered Chatbots
       </h1>
       <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
         We connect your essential business tools to create a unified, efficient

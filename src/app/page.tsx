@@ -11,47 +11,47 @@ import {
 } from '@/components/ui/card';
 import { OUR_PROCESS, PORTFOLIO_PROJECTS, SERVICES, TESTIMONIALS } from '@/lib/constants';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { ArrowRight, Check, MoveRight } from 'lucide-react';
+import { ArrowRight, Check, MoveRight, PlayCircle, Zap } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 
 export default function Home() {
   const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3);
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh]">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt="Abstract background"
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
+      <section className="relative h-[80vh] md:h-[90vh]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
         <div className="container relative flex h-full items-center">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Driving Business Growth Through Technology
+          <div className="mx-auto max-w-3xl text-center">
+            <Badge variant="outline" className="px-4 py-1.5">
+              <Zap className="mr-2 h-4 w-4 text-primary" />
+              Specialized AI Automation Innovation Company
+            </Badge>
+            <h1 className="mt-6 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
+              Transform Your Business with <span className="text-primary">AI Automations</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Apex Digital delivers premium web development, automation, and
-              digital transformation services designed for SMEs, founders, and
-              enterprises.
+            <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
+              We're a specialized AI agency that builds custom automation solutions for businesses. From intelligent chatbots to automated workflows, we create AI systems that solve your specific challenges and drive operational efficiency.
             </p>
-            <div className="mt-8 flex gap-4">
+            <div className="mt-8 flex justify-center gap-4">
               <Button size="lg" asChild>
-                <Link href="/estimate">Get a Project Estimate</Link>
+                <Link href="/estimate">Get AI Consultation <ArrowRight/></Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="/#services">Our Services</Link>
+                <Link href="/#services"><PlayCircle/> View AI Solutions</Link>
               </Button>
+            </div>
+
+            <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {SERVICES.map((service) => (
+                 <Link href={service.href} key={service.title}>
+                  <Button variant="secondary" className="w-full">
+                    <service.icon className="mr-2"/>
+                    {service.title}
+                  </Button>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((service) => (
               <Link href={service.href} key={service.title}>
-                <Card className="group flex h-full transform flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <Card className="group flex h-full transform flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl bg-card">
                   <CardHeader>
                     <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                       <service.icon className="h-6 w-6" />
@@ -245,7 +245,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {TESTIMONIALS.map((testimonial) => (
-              <Card key={testimonial.author} className="flex flex-col">
+              <Card key={testimonial.author} className="flex flex-col bg-card">
                 <CardContent className="pt-6 flex-grow">
                   <p className="italic text-muted-foreground">
                     &quot;{testimonial.quote}&quot;

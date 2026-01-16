@@ -13,7 +13,7 @@ export default function DigitalTransformationPage() {
     <section>
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-          Your Digital Transformation Roadmap
+          Machine Learning Models
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
           We provide a clear, structured path to modernize your business. Our

@@ -7,9 +7,9 @@ import { Footer } from '@/components/layout/footer';
 import { WhatsAppFAB } from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
-  title: 'Apex Digital | Modern Tech Services',
+  title: 'Neno Technology | AI Automation',
   description:
-    'Apex Digital offers premium web development, automation, and digital transformation services for SMEs, founders, and enterprises.',
+    'Neno Technology is a specialized AI agency that builds custom automation solutions for businesses.',
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
