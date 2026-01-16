@@ -5,11 +5,11 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const benefits = [
-  'Reduce manual errors and improve data accuracy.',
-  'Increase operational efficiency and productivity.',
-  'Free up your team for high-value strategic work.',
-  'Scale your business without proportionally increasing headcount.',
-  'Enhance customer satisfaction with faster response times.',
+  'Reduce manual data entry and human errors.',
+  'Improve the efficiency of your sales and inventory processes.',
+  'Free up your team to focus on customer service and strategy.',
+  'Manage your business more effectively with automated reports.',
+  'Lower your operational costs.',
 ];
 
 const automationImage = PlaceHolderImages.find(
@@ -22,12 +22,10 @@ export default function AutomationPage() {
       <section className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-            Streamline Your Business with Automation
+            Business Automation Solutions
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Unlock your business's full potential by automating repetitive
-            tasks and complex workflows. Our intelligent automation solutions
-            are designed to save you time, reduce costs, and minimize errors.
+            Stop wasting time on repetitive manual tasks. We build simple automation systems that handle your daily operations, so you can focus on growing your business.
           </p>
           <ul className="mt-8 space-y-3">
             {benefits.map((benefit, index) => (

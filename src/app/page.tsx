@@ -26,20 +26,20 @@ export default function Home() {
           <div className="mx-auto max-w-3xl text-center">
             <Badge variant="outline" className="px-4 py-1.5">
               <Zap className="mr-2 h-4 w-4 text-primary" />
-              Specialized AI Marketing Solutions
+              Digital Solutions for Growing Businesses
             </Badge>
             <h1 className="mt-6 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
-              Transform Your Marketing with<br /> <span className="text-primary">AI Automations</span>
+              Grow Your Vyavsay with <br /> <span className="text-primary">Digital Solutions</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
-              We're a specialized agency that builds custom AI automation solutions for marketing teams. From intelligent campaigns to automated workflows, we create AI systems that solve your specific challenges and drive business growth.
+              Is your business ready for the digital age? We help traditional Indian businesses like yours—retailers, manufacturers, and service providers—modernize with practical technology. Get a professional website, automate your operations, and reach more customers with our simple, result-oriented solutions.
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button size="lg" asChild>
                 <Link href="/estimate">Get Free Consultation <ArrowRight/></Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="/#services"><PlayCircle/> View AI Solutions</Link>
+                <Link href="/#services"><PlayCircle/> View Our Solutions</Link>
               </Button>
             </div>
 
@@ -61,9 +61,9 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
-            <Badge variant="outline">Core Capabilities</Badge>
+            <Badge variant="outline">Core Services</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              End-to-End Technology Solutions
+              Simple, Powerful Solutions to Modernize Your Business
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               From initial concept to enterprise-scale deployment, we provide the strategic technical expertise required for your success.
@@ -103,28 +103,28 @@ export default function Home() {
           <div>
             <Badge variant="default">Why Choose Us</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              Your Strategic Technology Partner
+              Your Partner in Digital Growth
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We operate as an extension of your team, dedicated to building long-term relationships and delivering solutions that produce a measurable impact on your business objectives.
+             We are not another faceless tech company. We are your dedicated partner, focused on making technology accessible and profitable for your business. We succeed when you succeed.
             </p>
             <ul className="mt-6 space-y-4">
               <li className="flex items-start">
                 <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span>
-                  <strong className="block">Strategic Partnership:</strong> We focus on delivering measurable business value, not just technical features.
+                  <strong className="block">Focus on ROI:</strong> Every solution we build is designed to provide a measurable return on your investment.
                 </span>
               </li>
               <li className="flex items-start">
                 <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span>
-                  <strong className="block">Technology Excellence:</strong> We build robust, scalable, and secure solutions that provide a long-term competitive advantage.
+                  <strong className="block">Simple & Affordable:</strong> We deliver powerful technology without the high costs and complexity of typical enterprise software.
                 </span>
               </li>
               <li className="flex items-start">
                 <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span>
-                  <strong className="block">Transparent Value:</strong> We provide premium services with clear pricing, focused on delivering a quantifiable return on investment.
+                  <strong className="block">We Understand Your Business:</strong> Our team has deep experience working with traditional Indian businesses. We speak your language.
                 </span>
               </li>
             </ul>
@@ -237,10 +237,10 @@ export default function Home() {
         <div className="container">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Trusted by Industry Leaders
+              Trusted by Indian Businesses
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Client success is our primary metric. We are proud to be a trusted partner for market leaders.
+              Client success is our primary metric. We are proud to be a trusted partner for local market leaders.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -279,15 +279,15 @@ export default function Home() {
       <section className="bg-card py-16 md:py-24">
         <div className="container text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Ready to Build Your Competitive Advantage?
+            Ready to Modernize Your Business?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Contact us for a strategic consultation. Discover how our technology solutions can drive tangible business results and get a preliminary estimate to inform your budget planning.
+            Let's discuss how our digital solutions can reduce your costs, increase your sales, and prepare your business for the future. Get a free, no-obligation consultation today.
           </p>
           <div className="mt-8">
             <Button size="lg" asChild className="bg-accent hover:bg-accent/90">
               <Link href="/estimate">
-                Get a Project Estimate <ArrowRight className="ml-2 h-4 w-4" />
+                Get a Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

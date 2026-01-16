@@ -3,12 +3,12 @@ import { CheckCircle } from 'lucide-react';
 import Image from 'next/image';
 
 const features = [
-  'Custom UI/UX Design that is both beautiful and functional.',
-  'Responsive, mobile-first development for a seamless experience on all devices.',
-  'Robust e-commerce solutions to sell your products online.',
-  'Powerful Content Management Systems (CMS) for easy content updates.',
-  'SEO optimization to improve your search engine rankings.',
-  'High-performance websites with fast loading speeds.',
+  'Custom website design that reflects your brand.',
+  'Mobile-friendly design for all screen sizes.',
+  'E-commerce stores with secure payment integration.',
+  'Simple content management so you can make updates easily.',
+  'Basic SEO to help customers find you on Google.',
+  'Fast-loading and reliable performance.',
 ];
 
 const webDevImage = PlaceHolderImages.find(
@@ -21,13 +21,10 @@ export default function WebDevelopmentPage() {
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-            Custom AI Development
+            Website & E-commerce Development
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            We build high-performance websites that are not just visually
-            stunning but also optimized for conversion and growth. From
-            corporate sites to complex e-commerce platforms, we deliver digital
-            excellence.
+            Get a professional, modern website that works on all devices. We build affordable websites and online stores that help you attract customers and sell your products online.
           </p>
           <ul className="mt-8 space-y-3">
             {features.map((feature, index) => (

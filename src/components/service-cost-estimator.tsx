@@ -43,12 +43,18 @@ const formSchema = z.object({
 });
 
 const serviceTypes = [
-  'Web Development',
-  'Automation System',
-  'Business Software',
-  'Digital Transformation',
+  'Website & E-commerce Development',
+  'Business Automation',
+  'Smart Customer Tools',
+  'Digital Modernization',
 ];
-const businessTypes = ['SME', 'Enterprise', 'Startup', 'Non-Profit'];
+const businessTypes = [
+  'Retail Business',
+  'Manufacturing Unit',
+  'Wholesale/Trading',
+  'Service Provider',
+  'Startup',
+];
 
 export function ServiceCostEstimator() {
   const [result, setResult] = useState<ServiceCostOutput | null>(null);
@@ -147,7 +153,7 @@ export function ServiceCostEstimator() {
                 <FormLabel>Project Requirements</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Briefly describe your project needs. For example: 'I need a 5-page e-commerce website with payment integration for my startup.'"
+                    placeholder="e.g., 'I need a website for my textile shop in Surat to sell sarees online.'"
                     className="min-h-[120px]"
                     {...field}
                   />

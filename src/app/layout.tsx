@@ -7,9 +7,9 @@ import { Footer } from '@/components/layout/footer';
 import { WhatsAppFAB } from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
-  title: 'Om Marketing Solutions | AI Automation',
+  title: 'OM Marketing Solutions | Digital Solutions for Modern Vyavsay',
   description:
-    'Om Marketing Solutions is a specialized AI agency that builds custom automation solutions for businesses.',
+    'We help Indian SMEs modernize their traditional businesses (Vyavsay) with affordable websites, automation, and result-oriented digital solutions.',
 };
 
 export default function RootLayout({

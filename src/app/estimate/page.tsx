@@ -8,12 +8,10 @@ export default function EstimatePage() {
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-            Service Cost Estimator
+            Get a Project Estimate
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Get a preliminary, AI-powered cost estimate for your project. This
-            tool provides a general budget forecast to help you plan. For a
-            detailed quote, please contact us directly.
+            Get a preliminary cost estimate for your project. This tool provides a general budget forecast to help you plan. For a detailed quote based on your specific business needs, please contact us.
           </p>
 
           <div className="mt-12 space-y-6">

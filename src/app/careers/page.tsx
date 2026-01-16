@@ -35,10 +35,10 @@ export default function CareersPage() {
     <div className="container py-12 md:py-16">
       <section className="text-center">
         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-          Join Our Team
+          Work With Us
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-          We are building the future of AI automation. We’re looking for talented individuals who are passionate about technology and innovation.
+          Join a team dedicated to helping Indian businesses thrive in the digital age. We're looking for passionate individuals who want to make a real impact.
         </p>
       </section>
 

@@ -13,12 +13,10 @@ export default function DigitalTransformationPage() {
     <section>
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-          Machine Learning Models
+          Digital Modernization Strategy
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-          We provide a clear, structured path to modernize your business. Our
-          four-phase process ensures a successful transformation that aligns
-          with your strategic goals and delivers measurable results.
+          Get a clear, practical roadmap to take your traditional business digital. We'll help you choose the right technology and plan your journey for long-term success.
         </p>
       </div>
 
