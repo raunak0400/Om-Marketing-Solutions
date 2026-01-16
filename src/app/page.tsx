@@ -28,8 +28,8 @@ export default function Home() {
               <Zap className="mr-2 h-4 w-4 text-primary" />
               Specialized AI Marketing Solutions
             </Badge>
-            <h1 className="mt-6 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
-              Transform Your Marketing with <span className="text-primary">AI Automations</span>
+            <h1 className="mt-6 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+              Transform Your Marketing with<br /> <span className="text-primary">AI Automations</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
               We're a specialized agency that builds custom AI automation solutions for marketing teams. From intelligent campaigns to automated workflows, we create AI systems that solve your specific challenges and drive business growth.
