@@ -63,7 +63,7 @@ export function Header() {
           )}
         </nav>
 
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex items-center justify-end space-x-4">
           <Button asChild className="hidden sm:inline-flex" variant="outline">
             <Link href="/estimate">Get a Free Consultation</Link>
           </Button>
