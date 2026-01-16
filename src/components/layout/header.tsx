@@ -61,7 +61,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild className="hidden sm:inline-flex" variant="outline">
-            <Link href="/contact">Find Talent</Link>
+            <Link href="/estimate">Get Estimate</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">

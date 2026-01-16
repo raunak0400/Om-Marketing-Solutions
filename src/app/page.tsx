@@ -26,17 +26,17 @@ export default function Home() {
           <div className="mx-auto max-w-3xl text-center">
             <Badge variant="outline" className="px-4 py-1.5">
               <Zap className="mr-2 h-4 w-4 text-primary" />
-              Specialized AI Automation Innovation Company
+              Specialized AI Marketing Solutions
             </Badge>
             <h1 className="mt-6 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
-              Transform Your Business with <span className="text-primary">AI Automations</span>
+              Transform Your Marketing with <span className="text-primary">AI Automations</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
-              We're a specialized AI agency that builds custom automation solutions for businesses. From intelligent chatbots to automated workflows, we create AI systems that solve your specific challenges and drive operational efficiency.
+              We're a specialized agency that builds custom AI automation solutions for marketing teams. From intelligent campaigns to automated workflows, we create AI systems that solve your specific challenges and drive business growth.
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button size="lg" asChild>
-                <Link href="/estimate">Get AI Consultation <ArrowRight/></Link>
+                <Link href="/estimate">Get Free Consultation <ArrowRight/></Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/#services"><PlayCircle/> View AI Solutions</Link>

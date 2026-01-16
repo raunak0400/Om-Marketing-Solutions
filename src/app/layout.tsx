@@ -7,9 +7,9 @@ import { Footer } from '@/components/layout/footer';
 import { WhatsAppFAB } from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
-  title: 'Neno Technology | AI Automation',
+  title: 'Om Marketing Solutions | AI Automation',
   description:
-    'Neno Technology is a specialized AI agency that builds custom automation solutions for businesses.',
+    'Om Marketing Solutions is a specialized AI agency that builds custom automation solutions for businesses.',
 };
 
 export default function RootLayout({

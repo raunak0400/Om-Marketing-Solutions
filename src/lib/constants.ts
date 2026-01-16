@@ -13,7 +13,7 @@ import {
   Zap,
 } from 'lucide-react';
 
-export const APP_NAME = 'Neno Technology';
+export const APP_NAME = 'Om Marketing Solutions';
 
 export const NAV_LINKS = [
   {
@@ -141,21 +141,21 @@ export const PORTFOLIO_PROJECTS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Neno Technology was instrumental in our digital transformation. The new website exceeded our expectations and has directly resulted in a significant increase in lead generation.",
+      "Om Marketing Solutions was instrumental in our digital transformation. The new website exceeded our expectations and has directly resulted in a significant increase in lead generation.",
     author: 'Sarah Johnson',
     title: 'CEO, Innovate Corp.',
     avatar: PlaceHolderImages.find((img) => img.id === 'avatar-sarah-johnson'),
   },
   {
     quote:
-      "The automation solution implemented by Neno Technology has been a game-changer for our operational efficiency. Their team is a reliable and technically proficient partner.",
+      "The automation solution implemented by Om Marketing Solutions has been a game-changer for our operational efficiency. Their team is a reliable and technically proficient partner.",
     author: 'David Chen',
     title: 'Founder, QuantumLeap SaaS',
     avatar: PlaceHolderImages.find((img) => img.id === 'avatar-david-chen'),
   },
   {
     quote:
-      "Neno Technology's strategic approach and flawless execution provided us with a clear path to modernization. We are now better positioned for future growth in the digital landscape.",
+      "Om Marketing Solutions's strategic approach and flawless execution provided us with a clear path to modernization. We are now better positioned for future growth in the digital landscape.",
     author: 'Maria Rodriguez',
     title: 'COO, MarketSphere',
     avatar: PlaceHolderImages.find(
