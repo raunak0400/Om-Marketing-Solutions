@@ -25,11 +25,12 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center">
-        <div className="flex flex-1 justify-start">
+      <div className="container relative flex h-20 items-center justify-between">
+        <div className="flex items-center justify-start">
           <Logo />
         </div>
-        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+
+        <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center space-x-6 text-sm font-medium md:flex">
           {NAV_LINKS.map((link) =>
             link.children ? (
               <DropdownMenu key={link.label}>
@@ -61,6 +62,7 @@ export function Header() {
             )
           )}
         </nav>
+
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild className="hidden sm:inline-flex" variant="outline">
             <Link href="/estimate">Get a Free Consultation</Link>
