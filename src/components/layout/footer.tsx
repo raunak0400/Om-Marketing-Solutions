@@ -37,8 +37,8 @@ export function Footer() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
     toast({
-      title: 'Message Sent!',
-      description: "Thanks for reaching out. We'll be in touch shortly.",
+      title: 'Inquiry Received',
+      description: 'Thank you for your interest. A member of our team will contact you within one business day.',
     });
     form.reset();
   }
@@ -95,7 +95,7 @@ export function Footer() {
         </div>
         <div className="md:col-span-3 lg:col-span-5 xl:col-span-1">
            <h4 className="font-semibold">Get in Touch</h4>
-           <p className="text-sm text-muted-foreground mt-2 mb-4">Send us a message and we'll get back to you.</p>
+           <p className="text-sm text-muted-foreground mt-2 mb-4">Send us a message to start the conversation.</p>
            <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                <FormField
@@ -137,7 +137,7 @@ export function Footer() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">Send Message</Button>
+              <Button type="submit" className="w-full">Submit Inquiry</Button>
             </form>
            </Form>
         </div>

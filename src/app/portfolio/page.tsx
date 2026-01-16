@@ -23,7 +23,7 @@ export default function PortfolioPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
             We specialize in creating bespoke digital experiences that drive
-            growth and engagement. Explore a selection of our projects that
+            growth and engagement. Explore our portfolio of projects that
             demonstrate our commitment to quality and innovation.
           </p>
         </div>

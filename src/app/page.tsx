@@ -38,7 +38,7 @@ export default function Home() {
         <div className="container relative flex h-full items-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Building the Future of Your Business, Today.
+              Driving Business Growth Through Technology
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
               Apex Digital delivers premium web development, automation, and
@@ -47,7 +47,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex gap-4">
               <Button size="lg" asChild>
-                <Link href="/estimate">Get a Free Estimate</Link>
+                <Link href="/estimate">Get a Project Estimate</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/#services">Our Services</Link>
@@ -61,13 +61,12 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
-            <Badge variant="outline">Our Services</Badge>
+            <Badge variant="outline">Core Capabilities</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              A-to-Z Tech Solutions
+              End-to-End Technology Solutions
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              From concept to launch and beyond, we provide the technical
-              expertise you need to succeed.
+              From initial concept to enterprise-scale deployment, we provide the strategic technical expertise required for your success.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -82,7 +81,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <p className="text-muted-foreground">
-                      {service.description.substring(0, 100)}...
+                      {service.description}
                     </p>
                   </CardContent>
                   <CardFooter>
@@ -102,35 +101,30 @@ export default function Home() {
       <section id="about" className="bg-card py-16 md:py-24">
         <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <Badge variant="default">About Apex Digital</Badge>
+            <Badge variant="default">Why Choose Us</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              A Partner in Your Growth, Not Just a Vendor
+              Your Strategic Technology Partner
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We believe in building long-term relationships. Our team integrates
-              with yours to understand your vision and deliver solutions that
-              truly make an impact.
+              We operate as an extension of your team, dedicated to building long-term relationships and delivering solutions that produce a measurable impact on your business objectives.
             </p>
             <ul className="mt-6 space-y-4">
               <li className="flex items-start">
                 <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span>
-                  <strong className="block">Corporate & Trustworthy:</strong>{' '}
-                  Professionalism and transparency at every step.
+                  <strong className="block">Strategic Partnership:</strong> We focus on delivering measurable business value, not just technical features.
                 </span>
               </li>
               <li className="flex items-start">
                 <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span>
-                  <strong className="block">Tech-Forward Solutions:</strong>{' '}
-                  Leveraging the latest technology for optimal results.
+                  <strong className="block">Technology Excellence:</strong> We build robust, scalable, and secure solutions that provide a long-term competitive advantage.
                 </span>
               </li>
               <li className="flex items-start">
                 <Check className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span>
-                  <strong className="block">Premium but Affordable:</strong>{' '}
-                  High-quality service that respects your budget.
+                  <strong className="block">Transparent Value:</strong> We provide premium services with clear pricing, focused on delivering a quantifiable return on investment.
                 </span>
               </li>
             </ul>
@@ -151,12 +145,12 @@ export default function Home() {
       <section id="process" className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
-            <Badge variant="outline">Our Process</Badge>
+            <Badge variant="outline">Our Workflow</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              A Clear Path to Success
+              A Structured Path to Success
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              We follow a structured, collaborative process to ensure your project is a success from start to finish.
+              Our disciplined, collaborative process ensures your project is delivered on time, on budget, and to the highest standards.
             </p>
           </div>
           <div className="mx-auto max-w-4xl">
@@ -188,7 +182,7 @@ export default function Home() {
                Featured Case Studies
              </h2>
              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Explore a selection of our projects that demonstrate our commitment to quality and innovation.
+              Explore a selection of our successful projects and the business impact they delivered.
              </p>
            </div>
            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -211,6 +205,7 @@ export default function Home() {
                  </CardHeader>
                  <CardContent className="flex-grow">
                    <CardTitle>{project.title}</CardTitle>
+                    <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
                    <div className="mt-2 flex flex-wrap gap-2">
                      {project.tags.map((tag) => (
                        <Badge key={tag} variant="secondary">
@@ -245,8 +240,7 @@ export default function Home() {
               Trusted by Industry Leaders
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Hear what our clients have to say about their experience with Apex
-              Digital.
+              Client success is our primary metric. We are proud to be a trusted partner for market leaders.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -285,17 +279,15 @@ export default function Home() {
       <section className="bg-card py-16 md:py-24">
         <div className="container text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Ready to Start Your Project?
+            Ready to Build Your Competitive Advantage?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Let's turn your idea into a reality. Get a free, no-obligation
-            estimate for your project today and discover how we can help you
-            grow.
+            Contact us for a strategic consultation. Discover how our technology solutions can drive tangible business results and get a preliminary estimate to inform your budget planning.
           </p>
           <div className="mt-8">
             <Button size="lg" asChild className="bg-accent hover:bg-accent/90">
               <Link href="/estimate">
-                Get an AI-Powered Estimate <ArrowRight className="ml-2 h-4 w-4" />
+                Get a Project Estimate <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
