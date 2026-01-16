@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract background for the hero section.",
+      "imageUrl": "https://images.unsplash.com/photo-1669295384050-a1d4357bd1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY4NTQ4ODk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "service-web-dev",
+      "description": "Image for web development service.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzY4NDU2NjMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web design"
+    },
+    {
+      "id": "service-automation",
+      "description": "Image for automation solutions service.",
+      "imageUrl": "https://images.unsplash.com/photo-1735494033576-9c882e80504c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0aW9uJTIwd29ya2Zsb3d8ZW58MHx8fHwxNzY4NDY0NzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automation workflow"
+    },
+    {
+      "id": "service-integrations",
+      "description": "Image for business software integrations service.",
+      "imageUrl": "https://images.unsplash.com/photo-1758626104169-6835c0bd03e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2Z0d2FyZSUyMGludGVncmF0aW9ufGVufDB8fHx8MTc2ODU0OTkxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software integration"
+    },
+    {
+      "id": "service-digital",
+      "description": "Image for digital transformation service.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkaWdpdGFsJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzY4NTQ5OTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital strategy"
+    },
+    {
+      "id": "project-innovate-corp",
+      "description": "Project image for Innovate Corp.",
+      "imageUrl": "https://images.unsplash.com/photo-1553484771-047a44eee27a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjB3ZWJzaXRlfGVufDB8fHx8MTc2ODQ4NTY5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate website"
+    },
+    {
+      "id": "project-marketsphere",
+      "description": "Project image for MarketSphere.",
+      "imageUrl": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBzdG9yZXxlbnwwfHx8fDE3Njg0Nzg0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce store"
+    },
+    {
+      "id": "project-quantumleap",
+      "description": "Project image for QuantumLeap SaaS.",
+      "imageUrl": "https://images.unsplash.com/photo-1651760464181-49092525ca3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYWFzJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2ODQzODU0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "saas dashboard"
+    },
+    {
+      "id": "project-connectwell",
+      "description": "Project image for ConnectWell.",
+      "imageUrl": "https://images.unsplash.com/photo-1510004303181-6f0c8cbb88ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tbXVuaXR5JTIwcG9ydGFsfGVufDB8fHx8MTc2ODU0OTkxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community portal"
+    },
+    {
+      "id": "project-artisan",
+      "description": "Project image for Artisan Goods.",
+      "imageUrl": "https://images.unsplash.com/photo-1760095926254-a15a590f2703?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnRpc2FuJTIwcG9ydGZvbGlvfGVufDB8fHx8MTc2ODU0OTkwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artisan portfolio"
+    },
+    {
+      "id": "project-nextgen",
+      "description": "Project image for NextGen Finance.",
+      "imageUrl": "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwYXBwfGVufDB8fHx8MTc2ODQ4OTQxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance app"
+    },
+    {
+      "id": "avatar-sarah-johnson",
+      "description": "Avatar for Sarah Johnson.",
+      "imageUrl": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3Njg1MDcyNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "avatar-david-chen",
+      "description": "Avatar for David Chen.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY4NTMzMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "avatar-maria-rodriguez",
+      "description": "Avatar for Maria Rodriguez.",
+      "imageUrl": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3Njg1MDcyNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    }
+  ]
 }
