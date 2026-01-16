@@ -26,8 +26,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center">
-        <Logo />
-        <nav className="ml-10 hidden items-center space-x-6 text-sm font-medium md:flex">
+        <div className="flex flex-1 justify-start">
+          <Logo />
+        </div>
+        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
           {NAV_LINKS.map((link) =>
             link.children ? (
               <DropdownMenu key={link.label}>
