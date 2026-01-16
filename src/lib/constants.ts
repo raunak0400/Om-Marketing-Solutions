@@ -1,62 +1,56 @@
-import type { ImagePlaceholder } from '@/lib/placeholder-images';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
-  BrainCircuit,
-  Bot,
-  Cpu,
-  Briefcase,
   Code,
-  Combine,
-  HeartHandshake,
-  Rocket,
-  TrendingUp,
-  Zap,
-  Users,
-  Calendar,
-  Mail,
+  Warehouse,
   MessageSquare,
+  TrendingUp,
+  Bot,
+  BrainCircuit,
+  Zap,
 } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const APP_NAME = 'Om Marketing Solutions';
 
 export const NAV_LINKS = [
   {
-    label: 'Solutions',
+    label: 'Home',
+    href: '/',
+  },
+  {
+    label: 'Services',
     href: '/#services',
     children: [
       {
-        label: 'Website & E-commerce Development',
+        label: 'Web Development',
         href: '/services/web-development',
-        description: 'Get your business online.',
+        description: 'Professional websites and e-commerce stores.',
       },
       {
-        label: 'Business Automation',
-        href: '/services/automation',
-        description: 'Streamline your operations.',
+        label: 'Inventory Management',
+        href: '/services/inventory-management',
+        description: 'Automate and track your stock.',
       },
       {
-        label: 'Smart Customer Tools',
-        href: '/services/integrations',
-        description: 'Engage your customers effectively.',
+        label: 'WhatsApp Automation',
+        href: '/services/whatsapp-automation',
+        description: 'Engage customers on WhatsApp.',
       },
       {
-        label: 'Digital Modernization Strategy',
-        href: '/services/digital-transformation',
-        description: 'Plan for future growth.',
+        label: 'Digital Marketing',
+        href: '/services/digital-marketing',
+        description: 'Grow your online presence.',
       },
     ],
   },
-  { label: 'Services', href: '/#services' },
-  { label: 'About', href: '/#about' },
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Contact Us', href: '/#contact' },
   { label: 'Careers', href: '/careers' },
-  { label: 'Case Studies', href: '/portfolio' },
-  { label: 'Consultation', href: '/estimate' },
-  { label: 'Contact', href: '/#contact' },
 ];
 
 export const SERVICES = [
   {
-    title: 'Website & E-commerce Development',
+    title: 'Web Development',
     description:
       'We build professional, affordable websites and online stores to bring your traditional business into the digital world.',
     icon: Code,
@@ -64,29 +58,27 @@ export const SERVICES = [
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
   },
   {
-    title: 'Business Automation',
+    title: 'Inventory Management',
     description:
-      'Save time and reduce costs by automating repetitive tasks in your sales, inventory, and daily operations.',
-    icon: Zap,
-    href: '/services/automation',
+      'Automate your stock control with a custom Inventory Management System (IMS) to reduce costs and prevent stockouts.',
+    icon: Warehouse,
+    href: '/services/inventory-management',
     image: PlaceHolderImages.find((img) => img.id === 'service-automation'),
   },
   {
-    title: 'Smart Customer Tools',
+    title: 'WhatsApp Automation',
     description:
-      'Engage your customers 24/7 with tools like AI-powered chatbots and simple CRM systems to improve service and build loyalty.',
-    icon: Bot,
-    href: '/services/integrations',
-    image: PlaceHolderImages.find(
-      (img) => img.id === 'service-integrations'
-    ),
+      'Engage your customers 24/7 with automated WhatsApp chatbots for support, sales, and marketing.',
+    icon: MessageSquare,
+    href: '/services/whatsapp-automation',
+    image: PlaceHolderImages.find((img) => img.id === 'service-integrations'),
   },
   {
-    title: 'Digital Modernization Strategy',
+    title: 'Digital Marketing',
     description:
-      'Get a clear roadmap to digitize your business processes, improve efficiency, and prepare for future growth.',
-    icon: BrainCircuit,
-    href: '/services/digital-transformation',
+      'Reach more customers online with result-oriented digital marketing strategies including SEO, SEM, and social media management.',
+    icon: TrendingUp,
+    href: '/services/digital-marketing',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
 ];
@@ -103,24 +95,24 @@ export const PORTFOLIO_PROJECTS = [
   {
     title: 'Patel Manufacturing',
     description:
-      'Implemented an automated inventory management system, reducing manual work by 10 hours per week and minimizing stock errors.',
-    tags: ['Automation', 'Inventory', 'Operational Efficiency'],
+      'Implemented an automated inventory management system, reducing manual work by 20 hours per week and minimizing stock errors by 95%.',
+    tags: ['Automation', 'Inventory Management', 'IMS'],
     image: PlaceHolderImages.find((img) => img.id === 'project-marketsphere'),
     href: '#',
   },
   {
     title: 'Sharma Handicrafts',
     description:
-      'Developed a custom CRM to manage customer orders and communication, resulting in a 40% improvement in customer retention.',
-    tags: ['CRM', 'Custom Software', 'Customer Relations'],
+      'Deployed a WhatsApp chatbot to handle customer inquiries, leading to a 50% reduction in response time and a 25% increase in sales.',
+    tags: ['WhatsApp', 'Chatbot', 'Customer Engagement'],
     image: PlaceHolderImages.find((img) => img.id === 'project-quantumleap'),
     href: '#',
   },
   {
     title: 'Gupta Real Estate',
     description:
-      'Built a property listing portal with advanced search, leading to a 50% increase in qualified leads for their agents.',
-    tags: ['Real Estate', 'Web App', 'Lead Generation'],
+      'Executed a targeted digital marketing campaign, resulting in a 200% increase in qualified leads and a 50% reduction in cost-per-lead.',
+    tags: ['Digital Marketing', 'Lead Generation', 'SEO'],
     image: PlaceHolderImages.find((img) => img.id === 'project-connectwell'),
     href: '#',
   },
@@ -152,14 +144,14 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      'Automating our inventory management has saved us 10 hours every week. It\'s simple, effective, and the team provided excellent support.',
+      "Automating our inventory has saved us countless hours and reduced errors significantly. It's a must-have for any manufacturing business.",
     author: 'Amit Patel',
     title: 'Director, Patel Manufacturing',
     avatar: PlaceHolderImages.find((img) => img.id === 'avatar-sarah-johnson'),
   },
   {
     quote:
-      'OM Marketing Solutions understood our traditional business and gave us a practical digital plan. Our efficiency has improved significantly.',
+      'The WhatsApp automation is brilliant. Our customers get instant answers and we can focus on more important tasks. Highly recommended.',
     author: 'Priya Sharma',
     title: 'Founder, Sharma Handicrafts',
     avatar: PlaceHolderImages.find(
@@ -193,40 +185,4 @@ export const OUR_PROCESS = [
     description:
       'We ensure the solution delivers a real return on your investment. We provide ongoing support to help your business grow.',
   },
-];
-
-export const DIGITAL_TRANSFORMATION_ROADMAP = [
-  {
-    step: '01',
-    title: 'Understand Your Business (Vyavsay)',
-    description:
-      'We start by listening. We learn about your specific business challenges and goals to ensure our solution is a perfect fit.',
-  },
-  {
-    step: '02',
-    title: 'Create a Simple Plan',
-    description:
-      'We develop a clear, step-by-step plan with a fixed budget. No complex jargon, just a practical roadmap to get you results.',
-  },
-  {
-    step: '03',
-    title: 'Build & Deliver',
-    description:
-      'Our expert team builds your digital solution efficiently. We handle all the technical work so you can focus on your business.',
-  },
-  {
-    step: '04',
-    title: 'Measure Results & Support',
-    description:
-      'We ensure the solution delivers a real return on your investment. We provide ongoing support to help your business grow.',
-  },
-];
-
-export const CUSTOMER_TOOLS = [
-  { name: '24/7 AI Chatbots', icon: Bot },
-  { name: 'Contact Management (CRM)', icon: Users },
-  { name: 'Email Marketing', icon: Mail },
-  { name: 'Appointment Booking', icon: Calendar },
-  { name: 'WhatsApp Integration', icon: MessageSquare },
-  { name: 'Sales Tracking', icon: TrendingUp },
 ];

@@ -28,7 +28,7 @@ export default function Home() {
               <Zap className="mr-2 h-4 w-4 text-primary" />
               Digital Solutions for Growing Businesses
             </Badge>
-            <h1 className="mt-6 text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+            <h1 className="mt-6 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
               Grow Your Vyavsay with <br /> <span className="text-primary">Digital Solutions</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -36,7 +36,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button size="lg" asChild>
-                <Link href="/estimate">Get Free Consultation <ArrowRight/></Link>
+                <Link href="/estimate">Get a Free Consultation <ArrowRight/></Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/#services"><PlayCircle/> View Our Solutions</Link>
@@ -97,13 +97,13 @@ export default function Home() {
         </div>
       </section>
       
-      {/* About Section */}
+      {/* Why Choose Us Section */}
       <section id="about" className="bg-card py-16 md:py-24">
         <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
             <Badge variant="default">Why Choose Us</Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              Your Partner in Digital Growth
+               Why Choose OM Marketing Solutions?
             </h2>
             <p className="mt-4 text-muted-foreground">
              We are not another faceless tech company. We are your dedicated partner, focused on making technology accessible and profitable for your business. We succeed when you succeed.

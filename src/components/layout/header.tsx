@@ -61,7 +61,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild className="hidden sm:inline-flex" variant="outline">
-            <Link href="/estimate">Get Estimate</Link>
+            <Link href="/estimate">Get a Free Consultation</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
@@ -76,14 +76,34 @@ export function Header() {
               </SheetHeader>
               <div className="grid gap-4 py-4">
                 {NAV_LINKS.map((link) => (
-                  <Link
-                    key={link.label}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
+                  <div key={link.label}>
+                    <Link
+                      href={link.href}
+                      onClick={() => {
+                        if (!link.children) setIsMobileMenuOpen(false);
+                      }}
+                      className={cn(
+                        'text-lg font-medium text-foreground/80 transition-colors hover:text-foreground',
+                        link.children && 'pointer-events-none'
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                    {link.children && (
+                      <div className="grid gap-2 mt-2 pl-4">
+                        {link.children.map((child) => (
+                          <Link
+                            key={child.label}
+                            href={child.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </SheetContent>
