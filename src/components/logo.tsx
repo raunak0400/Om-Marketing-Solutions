@@ -27,7 +27,7 @@ export function Logo({ className }: { className?: string }) {
       </svg>
 
       <span className="text-xl font-semibold tracking-tighter">
-        Om Marketing Solutions
+        OM Marketing Solutions
       </span>
     </Link>
   );

@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-export const APP_NAME = 'Om Marketing Solutions';
+export const APP_NAME = 'OM Marketing Solutions';
 
 export const NAV_LINKS = [
   {
@@ -185,4 +185,46 @@ export const OUR_PROCESS = [
     description:
       'We ensure the solution delivers a real return on your investment. We provide ongoing support to help your business grow.',
   },
+];
+
+export const DIGITAL_TRANSFORMATION_ROADMAP = [
+    {
+      step: '01',
+      title: 'Digital Readiness Assessment',
+      description: 'We evaluate your current processes, systems, and digital capabilities to identify key areas for improvement and opportunity. This foundational step ensures our strategy is tailored to your unique business context.',
+      templateUrl: '#',
+    },
+    {
+      step: '02',
+      title: 'Technology & Platform Selection',
+      description: 'Based on the assessment, we recommend the right technology stack—from ERP and CRM systems to e-commerce platforms and cloud infrastructure. Our goal is to select scalable, cost-effective solutions that align with your long-term vision.',
+      templateUrl: '#',
+    },
+    {
+      step: '03',
+      title: 'Implementation Roadmap',
+      description: 'We create a phased implementation plan with clear timelines, milestones, and budget allocations. This roadmap minimizes disruption and ensures a smooth transition, allowing for incremental adoption and quick wins.',
+      templateUrl: '#',
+    },
+    {
+      step: '04',
+      title: 'Data Migration & Integration',
+      description: 'Our team securely migrates your existing data to the new systems and ensures seamless integration between all platforms. This creates a single source of truth and enables unified data analytics across your organization.',
+      templateUrl: '#',
+    },
+    {
+      step: '05',
+      title: 'Training & Change Management',
+      description: 'We provide comprehensive training for your team to ensure they are proficient with the new tools and workflows. Our change management support helps foster a culture of digital adoption and continuous improvement.',
+      templateUrl: '#',
+    },
+];
+
+export const CUSTOMER_TOOLS = [
+    { name: 'AI Chatbots', icon: Bot, description: '24/7 automated customer support' },
+    { name: 'CRM Systems', icon: BrainCircuit, description: 'Manage customer relationships' },
+    { name: 'Email Marketing', icon: TrendingUp, description: 'Nurture leads and drive sales' },
+    { name: 'Analytics Dashboards', icon: Zap, description: 'Track performance and KPIs' },
+    { name: 'Booking Systems', icon: Code, description: 'Automate appointments and scheduling' },
+    { name: 'Feedback Forms', icon: MessageSquare, description: 'Gather customer insights' },
 ];
