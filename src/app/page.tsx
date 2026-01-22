@@ -47,9 +47,9 @@ export default function Home() {
             <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
               {SERVICES.map((service) => (
                 <Link href={service.href} key={service.title}>
-                  <Button variant="secondary" className="w-full h-auto py-3 px-4 text-sm whitespace-normal">
-                    <service.icon className="mr-2 flex-shrink-0" />
-                    <span className="text-left leading-tight">{service.title}</span>
+                  <Button variant="secondary" className="w-full h-auto min-h-[60px] py-3 px-4 text-sm whitespace-normal flex items-center justify-center">
+                    <service.icon className="mr-2 flex-shrink-0 h-5 w-5" />
+                    <span className="text-center leading-tight">{service.title}</span>
                   </Button>
                 </Link>
               ))}
@@ -296,10 +296,10 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919825247312"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +91 98765 43210
+                    +91 9825247312
                   </a>
                 </CardContent>
               </Card>
@@ -330,7 +330,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Mumbai, Maharashtra
+                    Ahmedabad, Gujarat
                     <br />
                     India
                   </p>
