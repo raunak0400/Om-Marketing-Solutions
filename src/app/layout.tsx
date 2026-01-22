@@ -31,7 +31,14 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={cn('font-body antialiased min-h-screen flex flex-col')}>
+      <body className={cn('font-body antialiased min-h-screen flex flex-col relative')}>
+        {/* Background Glow Effects */}
+        <div className="glow-bg-center" aria-hidden="true" />
+        <div className="glow-bg-corner glow-top-left" aria-hidden="true" />
+        <div className="glow-bg-corner glow-top-right" aria-hidden="true" />
+        <div className="glow-bg-corner glow-bottom-left" aria-hidden="true" />
+        <div className="glow-bg-corner glow-bottom-right" aria-hidden="true" />
+
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

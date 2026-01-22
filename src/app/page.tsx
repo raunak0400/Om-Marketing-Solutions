@@ -10,10 +10,10 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { OUR_PROCESS, PORTFOLIO_PROJECTS, SERVICES, TESTIMONIALS } from '@/lib/constants';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { ArrowRight, Check, MoveRight, PlayCircle, Zap } from 'lucide-react';
+import { ArrowRight, Check, MoveRight, PlayCircle, Zap, Mail, MapPin, Phone as PhoneIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ConstellationBackground } from '@/components/constellation-background';
 
 export default function Home() {
   const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3);
@@ -21,6 +21,7 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative h-[80vh] md:h-[90vh]">
+        <ConstellationBackground />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
         <div className="container relative flex h-full items-center">
           <div className="mx-auto max-w-3xl text-center">
@@ -35,20 +36,20 @@ export default function Home() {
               Is your business ready for the digital age? We help traditional Indian businesses like yours—retailers, manufacturers, and service providers—modernize with practical technology. Get a professional website, automate your operations, and reach more customers with our simple, result-oriented solutions.
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <Button size="lg" asChild>
-                <Link href="/estimate">Get a Free Consultation <ArrowRight/></Link>
+              <Button size="lg" asChild className="btn-glow-hover">
+                <Link href="/contact-us">Get Started <ArrowRight /></Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/#services"><PlayCircle/> View Our Solutions</Link>
+              <Button size="lg" variant="outline" asChild className="btn-glow-hover">
+                <Link href="/#services"><PlayCircle /> View Our Solutions</Link>
               </Button>
             </div>
 
             <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
               {SERVICES.map((service) => (
-                 <Link href={service.href} key={service.title}>
-                  <Button variant="secondary" className="w-full">
-                    <service.icon className="mr-2"/>
-                    {service.title}
+                <Link href={service.href} key={service.title}>
+                  <Button variant="secondary" className="w-full h-auto py-3 px-4 text-sm whitespace-normal">
+                    <service.icon className="mr-2 flex-shrink-0" />
+                    <span className="text-left leading-tight">{service.title}</span>
                   </Button>
                 </Link>
               ))}
@@ -61,10 +62,12 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
-            <Badge variant="outline">Core Services</Badge>
-            <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              Simple, Powerful Solutions to Modernize Your Business
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
+              Core Services
             </h2>
+            <p className="mt-4 text-xl text-muted-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">
+              Simple, Powerful Solutions to Modernize Your Business
+            </p>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               From initial concept to enterprise-scale deployment, we provide the strategic technical expertise required for your success.
             </p>
@@ -72,7 +75,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((service) => (
               <Link href={service.href} key={service.title}>
-                <Card className="group flex h-full transform flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl bg-card">
+                <Card className="group flex h-full transform flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl bg-card btn-glow-hover">
                   <CardHeader>
                     <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                       <service.icon className="h-6 w-6" />
@@ -96,17 +99,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Why Choose Us Section */}
       <section id="about" className="bg-card py-16 md:py-24">
         <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <Badge variant="default">Why Choose Us</Badge>
-            <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-               Why Choose OM Marketing Solutions?
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Why Choose OM Marketing Solutions?
             </h2>
             <p className="mt-4 text-muted-foreground">
-             We are not another faceless tech company. We are your dedicated partner, focused on making technology accessible and profitable for your business. We succeed when you succeed.
+              We are not another faceless tech company. We are your dedicated partner, focused on making technology accessible and profitable for your business. We succeed when you succeed.
             </p>
             <ul className="mt-6 space-y-4">
               <li className="flex items-start">
@@ -129,13 +131,12 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="relative h-80 w-full overflow-hidden rounded-lg">
+          <div className="relative h-[400px] md:h-[500px]">
             <Image
-              src="https://picsum.photos/seed/301/800/600"
-              alt="Team working together"
+              src="/randi.jpeg"
+              alt="Why Choose OM Marketing Solutions"
               fill
-              className="object-cover"
-              data-ai-hint="team collaboration"
+              className="rounded-lg object-cover"
             />
           </div>
         </div>
@@ -145,9 +146,8 @@ export default function Home() {
       <section id="process" className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
-            <Badge variant="outline">Our Workflow</Badge>
-            <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-              A Structured Path to Success
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Our Workflow
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               Our disciplined, collaborative process ensures your project is delivered on time, on budget, and to the highest standards.
@@ -176,58 +176,58 @@ export default function Home() {
       {/* Featured Work Section */}
       <section id="portfolio" className="bg-card py-16 md:py-24">
         <div className="container">
-           <div className="mb-12 text-center">
-             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-               Our Work
-             </h2>
-             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+              Our Work
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               Explore a selection of our successful projects and the business impact they delivered.
-             </p>
-           </div>
-           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-             {featuredProjects.map((project) => (
-               <Card
-                 key={project.title}
-                 className="flex transform flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-               >
-                 <CardHeader>
-                   {project.image && (
-                     <Image
-                       src={project.image.imageUrl}
-                       alt={project.title}
-                       width={600}
-                       height={400}
-                       className="h-48 w-full rounded-t-lg object-cover"
-                       data-ai-hint={project.image.imageHint}
-                     />
-                   )}
-                 </CardHeader>
-                 <CardContent className="flex-grow">
-                   <CardTitle>{project.title}</CardTitle>
-                    <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
-                   <div className="mt-2 flex flex-wrap gap-2">
-                     {project.tags.map((tag) => (
-                       <Badge key={tag} variant="secondary">
-                         {tag}
-                       </Badge>
-                     ))}
-                   </div>
-                 </CardContent>
-                 <CardFooter>
-                   <Button asChild variant="link" className="px-0">
-                     <Link href={project.href}>
-                       View Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                     </Link>
-                   </Button>
-                 </CardFooter>
-               </Card>
-             ))}
-           </div>
-           <div className="mt-12 text-center">
-              <Button asChild size="lg" variant="outline">
-                <Link href="/portfolio">View All Projects</Link>
-              </Button>
-           </div>
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {featuredProjects.map((project) => (
+              <Card
+                key={project.title}
+                className="flex transform flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+              >
+                <CardHeader>
+                  {project.image && (
+                    <Image
+                      src={project.image.imageUrl}
+                      alt={project.title}
+                      width={600}
+                      height={400}
+                      className="h-48 w-full rounded-t-lg object-cover"
+                      data-ai-hint={project.image.imageHint}
+                    />
+                  )}
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <CardTitle>{project.title}</CardTitle>
+                  <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <Badge key={tag} variant="secondary">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="link" className="px-0">
+                    <Link href={project.href}>
+                      View Case Study <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Button asChild size="lg" variant="outline" className="btn-glow-hover">
+              <Link href="/portfolio">View All Projects</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -274,21 +274,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-card py-16 md:py-24">
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Ready to Modernize Your Business?
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Let's discuss how our digital solutions can reduce your costs, increase your sales, and prepare your business for the future. Get a free, no-obligation consultation today.
-          </p>
-          <div className="mt-8">
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90">
-              <Link href="/estimate">
-                Get a Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+      {/* Contact Section */}
+      <section id="contact" className="py-16 md:py-24 bg-card">
+        <div className="container">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Ready to Transform Your Business?
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+              Let's discuss how our digital solutions can reduce your costs, increase your sales,
+              and prepare your business for the future. Get started today.
+            </p>
+
+            <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <PhoneIcon className="h-5 w-5 text-primary" />
+                    Phone
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <a
+                    href="tel:+919876543210"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    +91 98765 43210
+                  </a>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Mail className="h-5 w-5 text-primary" />
+                    Email
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <a
+                    href="mailto:contact@ommarketing.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    contact@ommarketing.com
+                  </a>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Location
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Mumbai, Maharashtra
+                    <br />
+                    India
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-8 flex justify-center gap-4">
+              <Button size="lg" asChild className="btn-glow-hover">
+                <Link href="/contact-us">
+                  Get Started Today <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="btn-glow-hover">
+                <Link href="/portfolio">View Our Work</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

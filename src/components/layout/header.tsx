@@ -46,7 +46,7 @@ export function Header() {
                 <DropdownMenuContent>
                   {link.children.map((child) => (
                     <DropdownMenuItem key={child.label} asChild>
-                      <Link href={child.href}>{child.label}</Link>
+                      <Link href="/contact-us">{child.label}</Link>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
@@ -65,7 +65,7 @@ export function Header() {
 
         <div className="ml-auto flex items-center justify-end space-x-4">
           <Button asChild className="hidden sm:inline-flex" variant="outline">
-            <Link href="/estimate">Get a Free Consultation</Link>
+            <Link href="/contact-us">Get Started</Link>
           </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
@@ -98,7 +98,7 @@ export function Header() {
                         {link.children.map((child) => (
                           <Link
                             key={child.label}
-                            href={child.href}
+                            href="/contact-us"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
                           >
