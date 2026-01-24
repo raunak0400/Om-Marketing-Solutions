@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { WhatsAppFAB } from '@/components/whatsapp-fab';
+import { ConstellationBackground } from '@/components/constellation-background';
 
 export const metadata: Metadata = {
   title: 'OM Marketing Solutions | Digital Solutions for Modern Vyavsay',
@@ -32,6 +33,9 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('font-body antialiased min-h-screen flex flex-col relative')}>
+        {/* Constellation Background */}
+        <ConstellationBackground />
+
         {/* Background Glow Effects */}
         <div className="glow-bg-center" aria-hidden="true" />
         <div className="glow-bg-corner glow-top-left" aria-hidden="true" />

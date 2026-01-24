@@ -26,10 +26,10 @@ export function ContactSection() {
                             </CardHeader>
                             <CardContent>
                                 <a
-                                    href="tel:+919825247312"
+                                    href="tel:+919876543210"
                                     className="text-muted-foreground hover:text-primary transition-colors"
                                 >
-                                    +91 9825247312
+                                    +91 98765 43210
                                 </a>
                             </CardContent>
                         </Card>
@@ -43,10 +43,10 @@ export function ContactSection() {
                             </CardHeader>
                             <CardContent>
                                 <a
-                                    href="mailto:ommarketing.weighingscale1@gmail.com"
+                                    href="mailto:contact@ommarketing.com"
                                     className="text-muted-foreground hover:text-primary transition-colors break-all"
                                 >
-                                    ommarketing.weighingscale1@gmail.com
+                                    contact@ommarketing.com
                                 </a>
                             </CardContent>
                         </Card>
@@ -60,7 +60,7 @@ export function ContactSection() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground">
-                                    Ahmedabad, Gujarat
+                                    Mumbai, Maharashtra
                                     <br />
                                     India
                                 </p>

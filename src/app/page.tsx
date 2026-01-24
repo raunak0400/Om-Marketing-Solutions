@@ -313,10 +313,10 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:ommarketing.weighingscale1@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors break-all"
+                    href="mailto:contact@ommarketing.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    ommarketing.weighingscale1@gmail.com
+                    contact@ommarketing.com
                   </a>
                 </CardContent>
               </Card>
