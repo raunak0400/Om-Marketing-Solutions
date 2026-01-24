@@ -6,6 +6,11 @@ import {
   Bot,
   BrainCircuit,
   Zap,
+  Smartphone,
+  Palette,
+  Target,
+  Search,
+  Share2,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -22,22 +27,42 @@ export const NAV_LINKS = [
     children: [
       {
         label: 'Web Development',
-        href: '/services/web-development',
+        href: '/web-development',
         description: 'Professional websites and e-commerce stores.',
       },
       {
+        label: 'App Development',
+        href: '/app-development',
+        description: 'Custom web applications for your business.',
+      },
+      {
+        label: 'Mobile Development',
+        href: '/mobile-development',
+        description: 'iOS and Android mobile apps.',
+      },
+      {
+        label: 'UI/UX Design',
+        href: '/ui-ux-design',
+        description: 'Beautiful and intuitive user interfaces.',
+      },
+      {
         label: 'Inventory Management',
-        href: '/services/inventory-management',
+        href: '/inventory-management',
         description: 'Automate and track your stock.',
       },
       {
-        label: 'WhatsApp Automation',
-        href: '/services/whatsapp-automation',
-        description: 'Engage customers on WhatsApp.',
+        label: 'AI Automations',
+        href: '/ai-automations',
+        description: 'Intelligent automation solutions.',
+      },
+      {
+        label: 'Performance Marketing',
+        href: '/performance-marketing',
+        description: 'Data-driven ROI-focused campaigns.',
       },
       {
         label: 'Digital Marketing',
-        href: '/services/digital-marketing',
+        href: '/digital-marketing',
         description: 'Grow your online presence.',
       },
     ],
@@ -54,31 +79,63 @@ export const SERVICES = [
     description:
       'We build professional, affordable websites and online stores to bring your traditional business into the digital world.',
     icon: Code,
-    href: '/services/web-development',
+    href: '/web-development',
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
+  },
+  {
+    title: 'App Development',
+    description:
+      'Custom web applications tailored to your business needs with powerful features and seamless user experience.',
+    icon: Code,
+    href: '/app-development',
+    image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
+  },
+  {
+    title: 'Mobile Development',
+    description:
+      'Native and cross-platform mobile apps for iOS and Android that engage your customers on the go.',
+    icon: Smartphone,
+    href: '/mobile-development',
+    image: PlaceHolderImages.find((img) => img.id === 'service-automation'),
+  },
+  {
+    title: 'UI/UX Design',
+    description:
+      'Beautiful, intuitive interfaces that provide exceptional user experiences and drive conversions.',
+    icon: Palette,
+    href: '/ui-ux-design',
+    image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
   {
     title: 'Inventory Management',
     description:
       'Automate your stock control with a custom Inventory Management System (IMS) to reduce costs and prevent stockouts.',
     icon: Warehouse,
-    href: '/services/inventory-management',
+    href: '/inventory-management',
     image: PlaceHolderImages.find((img) => img.id === 'service-automation'),
   },
   {
-    title: 'WhatsApp Automation',
+    title: 'AI Automations',
     description:
-      'Engage your customers 24/7 with automated WhatsApp chatbots for support, sales, and marketing.',
-    icon: Phone,
-    href: '/services/whatsapp-automation',
+      'Intelligent automation solutions powered by AI to streamline operations, enhance customer engagement, and boost productivity.',
+    icon: Bot,
+    href: '/ai-automations',
     image: PlaceHolderImages.find((img) => img.id === 'service-integrations'),
+  },
+  {
+    title: 'Performance Marketing',
+    description:
+      'Data-driven marketing campaigns optimized for maximum ROI with measurable results and continuous improvement.',
+    icon: Target,
+    href: '/performance-marketing',
+    image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
   {
     title: 'Digital Marketing',
     description:
       'Reach more customers online with result-oriented digital marketing strategies including SEO, SEM, and social media management.',
     icon: TrendingUp,
-    href: '/services/digital-marketing',
+    href: '/digital-marketing',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
 ];
@@ -130,6 +187,30 @@ export const PORTFOLIO_PROJECTS = [
       'Engineered a secure web application for a financial advisory firm, ensuring compliance and enhancing client data management.',
     tags: ['FinTech', 'Security', 'Web App'],
     image: PlaceHolderImages.find((img) => img.id === 'project-nextgen'),
+    href: '#',
+  },
+  {
+    title: 'Saffron Restaurant Chain',
+    description:
+      'Developed a mobile app for order management and loyalty rewards, resulting in 40% increase in repeat customers and streamlined operations across 5 locations.',
+    tags: ['Mobile App', 'React Native', 'Loyalty Program'],
+    image: PlaceHolderImages.find((img) => img.id === 'project-innovate-corp'),
+    href: '#',
+  },
+  {
+    title: 'Heritage Palace Hotel',
+    description:
+      'Implemented AI-powered chatbot for booking inquiries and customer service, handling 80% of queries automatically and improving guest satisfaction scores by 35%.',
+    tags: ['AI Chatbot', 'Hospitality', 'Automation'],
+    image: PlaceHolderImages.find((img) => img.id === 'project-marketsphere'),
+    href: '#',
+  },
+  {
+    title: 'Swift Logistics',
+    description:
+      'Built custom CRM and tracking system for logistics operations, reducing delivery errors by 60% and improving client communication efficiency.',
+    tags: ['CRM', 'Custom Software', 'Logistics'],
+    image: PlaceHolderImages.find((img) => img.id === 'project-quantumleap'),
     href: '#',
   },
 ];

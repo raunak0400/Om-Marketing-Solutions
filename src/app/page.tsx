@@ -44,7 +44,7 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
               {SERVICES.map((service) => (
                 <Link href={service.href} key={service.title}>
                   <Button variant="secondary" className="w-full h-auto min-h-[60px] py-3 px-4 text-sm whitespace-normal flex items-center justify-center">
@@ -313,10 +313,10 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:contact@ommarketing.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    href="mailto:ommarketing.weighingscale1@gmail.com"
+                    className="text-muted-foreground hover:text-primary transition-colors break-all"
                   >
-                    contact@ommarketing.com
+                    ommarketing.weighingscale1@gmail.com
                   </a>
                 </CardContent>
               </Card>

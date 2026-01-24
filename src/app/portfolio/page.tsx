@@ -32,26 +32,27 @@ export default function PortfolioPage() {
           {PORTFOLIO_PROJECTS.map((project) => (
             <Card
               key={project.title}
-              className="flex transform flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+              className="flex h-full transform flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
-              <CardHeader>
-                {project.image && (
+              {project.image && (
+                <div className="relative h-56 w-full overflow-hidden">
                   <Image
                     src={project.image.imageUrl}
                     alt={project.title}
-                    width={600}
-                    height={400}
-                    className="rounded-t-lg object-cover"
+                    fill
+                    className="object-cover"
                     data-ai-hint={project.image.imageHint}
                   />
-                )}
-              </CardHeader>
-              <CardContent className="flex-grow">
+                </div>
+              )}
+              <CardHeader>
                 <CardTitle className="text-2xl">{project.title}</CardTitle>
                 <CardDescription className="mt-2">
                   {project.description}
                 </CardDescription>
-                <div className="mt-4 flex flex-wrap gap-2">
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="secondary">
                       {tag}

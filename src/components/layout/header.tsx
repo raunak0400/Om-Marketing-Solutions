@@ -46,7 +46,7 @@ export function Header() {
                 <DropdownMenuContent>
                   {link.children.map((child) => (
                     <DropdownMenuItem key={child.label} asChild>
-                      <Link href="/contact-us">{child.label}</Link>
+                      <Link href={child.href}>{child.label}</Link>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
@@ -98,7 +98,7 @@ export function Header() {
                         {link.children.map((child) => (
                           <Link
                             key={child.label}
-                            href="/contact-us"
+                            href={child.href}
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
                           >

@@ -1,6 +1,6 @@
 'use client';
 import { APP_NAME, NAV_LINKS, SERVICES } from '@/lib/constants';
-import { Linkedin, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Linkedin, Facebook, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from '../logo';
 
@@ -14,20 +14,29 @@ export function Footer() {
             Empowering Indian businesses with practical digital solutions for growth and success.
           </p>
           <div className="mt-6 flex space-x-4">
-            <Link href="#" aria-label="Twitter">
-              <Twitter className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
-            </Link>
-            <Link href="#" aria-label="LinkedIn">
-              <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
-            </Link>
-            <Link href="#" aria-label="Facebook">
-              <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
-            </Link>
-            <Link href="#" aria-label="Instagram">
+            <Link
+              href="https://www.instagram.com/ommarketing_scales"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
-            <Link href="#" aria-label="YouTube">
-              <Youtube className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            <Link
+              href="https://www.linkedin.com/in/hetkumar-sanjaykumar-patel-54730933b"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            </Link>
+            <Link
+              href="https://www.facebook.com/people/Hetkumar-Sanjaykumar-Patel/pfbid02ovTPGF4fPBSGtwoivdEypqLP6jfMtU91PAo7G2EgkCnKNBw7BxbNmyHFKEgMqkTSl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
           </div>
         </div>
