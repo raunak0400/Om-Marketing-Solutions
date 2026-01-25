@@ -18,28 +18,9 @@ import {
     SelectValue,
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { useState } from 'react';
 
 export default function ContactPage() {
-    const { toast } = useToast();
-    const [isSubmitting, setIsSubmitting] = useState(false);
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-
-        // Simulate form submission
-        setTimeout(() => {
-            toast({
-                title: 'Message sent!',
-                description: 'Thank you for contacting us. We will get back to you soon.',
-            });
-            setIsSubmitting(false);
-            (e.target as HTMLFormElement).reset();
-        }, 1000);
-    };
 
     return (
         <div className="container py-12 md:py-16">
@@ -118,7 +99,7 @@ export default function ContactPage() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form action="https://formspree.io/f/xnjpelog" method="POST" className="space-y-6">
                                 <div className="grid gap-4 sm:grid-cols-2">
                                     <div className="space-y-2">
                                         <Label htmlFor="name">Name *</Label>
@@ -192,9 +173,8 @@ export default function ContactPage() {
                                 <Button
                                     type="submit"
                                     className="w-full btn-glow-hover"
-                                    disabled={isSubmitting}
                                 >
-                                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                                    Send Message
                                 </Button>
                             </form>
                         </CardContent>

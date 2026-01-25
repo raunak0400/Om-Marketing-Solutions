@@ -12,7 +12,7 @@ interface Particle {
 export function ConstellationBackground() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const particles = useRef<Particle[]>([]);
-    const animationFrameId = useRef<number>();
+    const animationFrameId = useRef<number>(0);
 
     useEffect(() => {
         const canvas = canvasRef.current;
