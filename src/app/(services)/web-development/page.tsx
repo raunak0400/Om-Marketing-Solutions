@@ -12,10 +12,6 @@ const features = [
   'Fast-loading and reliable performance.',
 ];
 
-const webDevImage = PlaceHolderImages.find(
-  (img) => img.id === 'service-web-dev'
-);
-
 export default function WebDevelopmentPage() {
   return (
     <>
@@ -37,23 +33,20 @@ export default function WebDevelopmentPage() {
               ))}
             </ul>
           </div>
-          {webDevImage && (
-            <div className="flex items-center justify-center relative">
-              {/* Glow effect - Blue/Cyan */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-20 blur-3xl animate-image-glow" />
+          <div className="flex items-center justify-center relative">
+            {/* Glow effect - Blue/Cyan */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-20 blur-3xl animate-image-glow" />
 
-              <div className="relative animate-fade-in-up">
-                <Image
-                  src={webDevImage.imageUrl}
-                  alt="Web Development"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                  data-ai-hint={webDevImage.imageHint}
-                />
-              </div>
+            <div className="relative animate-fade-in-up">
+              <Image
+                src="/Web-Development.jpg"
+                alt="Web Development"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+              />
             </div>
-          )}
+          </div>
         </div>
       </section>
       <ContactSection />
