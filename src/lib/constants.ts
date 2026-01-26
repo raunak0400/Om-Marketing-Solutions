@@ -142,76 +142,112 @@ export const SERVICES = [
 
 export const PORTFOLIO_PROJECTS = [
   {
-    title: 'Mehta Textiles',
+    title: 'Raunak Kumar Jha - Portfolio Website',
     description:
-      'Launched a new e-commerce website, expanding their customer base beyond their local city and increasing sales by 30%.',
-    tags: ['E-commerce', 'Web Development', 'Payment Gateway'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-innovate-corp'),
-    href: '#',
+      'A modern and responsive personal portfolio website showcasing projects, skills, and contact information with smooth animations, particle effects, GitHub integration, and interactive design elements.',
+    tags: ['Portfolio', 'HTML', 'CSS', 'JavaScript', 'GSAP', 'Particles.js'],
+    image: { imageUrl: '/portfolio-ss.png', imageHint: 'Raunak Kumar Jha portfolio website' },
+    href: 'https://www.imraunak.dev/',
+    github: 'https://github.com/raunak0400/NEW_PORTFOLIO_AB',
   },
   {
-    title: 'Patel Manufacturing',
+    title: 'Aurora-Air (NULL POINT)',
     description:
-      'Implemented an automated inventory management system, reducing manual work by 20 hours per week and minimizing stock errors by 95%.',
-    tags: ['Automation', 'Inventory Management', 'IMS'],
+      'A cutting-edge air quality intelligence system combining NASA\'s TEMPO satellite observations with ground sensor networks. Built for NASA Space Apps Challenge 2024, featuring multi-source data fusion and machine learning for unprecedented accuracy in air pollution monitoring.',
+    tags: ['NASA TEMPO', 'AI/ML', 'Data Fusion', 'Python', 'React', 'Docker'],
+    image: PlaceHolderImages.find((img) => img.id === 'project-quantumleap'),
+    href: 'https://nullpoint-x-itnu.vercel.app/',
+    github: 'https://github.com/raunak0400/Nullpoint-x-ITNU',
+  },
+  {
+    title: 'C2S - Commuter to School',
+    description:
+      'A comprehensive cab service management system designed for educational institutions. Features real-time tracking, journey logging (Door-to-Door), driver management, and WebSocket support for live updates.',
+    tags: ['Django', 'React', 'WebSocket', 'Real-time Tracking', 'CRM'],
     image: PlaceHolderImages.find((img) => img.id === 'project-marketsphere'),
     href: '#',
+    github: 'https://github.com/raunak0400/Commuter-To-Service',
   },
   {
-    title: 'Sharma Handicrafts',
+    title: 'Hospital Medical Information System',
     description:
-      'Deployed a WhatsApp chatbot to handle customer inquiries, leading to a 50% reduction in response time and a 25% increase in sales.',
-    tags: ['WhatsApp', 'Chatbot', 'Customer Engagement'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-quantumleap'),
-    href: '#',
-  },
-  {
-    title: 'Gupta Real Estate',
-    description:
-      'Executed a targeted digital marketing campaign, resulting in a 200% increase in qualified leads and a 50% reduction in cost-per-lead.',
-    tags: ['Digital Marketing', 'Lead Generation', 'SEO'],
+      'Healthcare patient management system with JWT authentication, role-based access control, advanced patient records management, search with pagination, and admin analytics dashboard. Built with React and Node.js.',
+    tags: ['Healthcare', 'React', 'Node.js', 'MongoDB', 'JWT', 'RBAC'],
     image: PlaceHolderImages.find((img) => img.id === 'project-connectwell'),
     href: '#',
+    github: 'https://github.com/raunak0400/Hospital-Medical-Information-System',
   },
   {
-    title: 'Jaipur Blue Pottery',
+    title: 'OM Marketing - Business Website',
     description:
-      'Designed a visually-rich portfolio and online store, resulting in a 30% increase in online sales for a collective of artisans.',
-    tags: ['Portfolio', 'Shopify', 'Branding'],
+      'Professional business website for Gujarat\'s leading weighing scale & note counting machine supplier. Full-stack solution with Next.js 15, FastAPI, PostgreSQL, featuring real-time inventory management, admin dashboard, and automated email notifications.',
+    tags: ['Next.js', 'FastAPI', 'PostgreSQL', 'E-commerce', 'Admin Dashboard'],
     image: PlaceHolderImages.find((img) => img.id === 'project-artisan'),
-    href: '#',
+    href: 'https://om-marketing.vercel.app/',
+    github: 'https://github.com/Het161/OM-Marketing',
   },
   {
-    title: 'FinanceWala',
+    title: 'GitHub Readme Generator',
     description:
-      'Engineered a secure web application for a financial advisory firm, ensuring compliance and enhancing client data management.',
-    tags: ['FinTech', 'Security', 'Web App'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-nextgen'),
-    href: '#',
+      'A simple and powerful tool to create professional GitHub profile README files. Features interactive form, live preview, badge support, markdown formatting, animated typing SVG, GitHub stats cards, social media integration, and 100+ technology icons.',
+    tags: ['React', 'Tailwind CSS', 'Markdown', 'GitHub API', 'UI/UX'],
+    image: { imageUrl: '/readme-generator-ss.png', imageHint: 'GitHub README Generator interface' },
+    href: 'https://readme-generator-github-abhijeetbhale.netlify.app/',
+    github: 'https://github.com/abhijeetBhale/Readme-Generator',
   },
   {
-    title: 'Saffron Restaurant Chain',
+    title: 'ATS Resume Checker',
     description:
-      'Developed a mobile app for order management and loyalty rewards, resulting in 40% increase in repeat customers and streamlined operations across 5 locations.',
-    tags: ['Mobile App', 'React Native', 'Loyalty Program'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-innovate-corp'),
-    href: '#',
+      'An intelligent resume analyzer that evaluates resumes against ATS systems. Features AI-powered analysis, keyword matching, compatibility scoring, and actionable feedback to help job seekers optimize their resumes for applicant tracking systems.',
+    tags: ['React', 'AI/ML', 'NLP', 'Node.js', 'Career Tools'],
+    image: { imageUrl: '/ATS-Resume-SS.png', imageHint: 'ATS Resume Checker dashboard' },
+    href: 'https://ats-resume-checker-frontend.onrender.com/',
+    github: 'https://github.com/abhijeetBhale/ATS-Resume-Checker',
   },
   {
-    title: 'Heritage Palace Hotel',
+    title: 'Boost AI',
     description:
-      'Implemented AI-powered chatbot for booking inquiries and customer service, handling 80% of queries automatically and improving guest satisfaction scores by 35%.',
-    tags: ['AI Chatbot', 'Hospitality', 'Automation'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-marketsphere'),
-    href: '#',
+      'A smart chat assistant with user authentication, image upload via ImageKit, markdown support, and per-user chat history. Built using React, Node.js, and MongoDB with secure Clerk authentication for seamless and responsive conversations.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Clerk', 'ImageKit', 'Markdown'],
+    image: { imageUrl: '/Boost_AI SS.png', imageHint: 'Boost AI chat interface' },
+    href: 'https://boost-ai-chat.vercel.app/',
+    github: 'https://github.com/abhijeetBhale/chatgpt-clone',
   },
   {
-    title: 'Swift Logistics',
+    title: 'Pinterest Clone',
     description:
-      'Built custom CRM and tracking system for logistics operations, reducing delivery errors by 60% and improving client communication efficiency.',
-    tags: ['CRM', 'Custom Software', 'Logistics'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-quantumleap'),
+      'A Pinterest-inspired image sharing platform with masonry-style responsive grid layout, infinite scrolling, user authentication, and full-stack MERN architecture. Features client-side routing and dynamic image loading for seamless browsing.',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Masonry Layout'],
+    image: { imageUrl: '/pinterest-clone .png', imageHint: 'Pinterest clone masonry layout' },
     href: '#',
+    github: 'https://github.com/abhijeetBhale/Pinterest-Clone',
+  },
+  {
+    title: 'Finger Fiasco',
+    description:
+      'A fast-paced typing game that tests speed and accuracy with randomly generated words. Features real-time typing challenges, countdown timer, scoring system, accuracy tracking, and fully responsive design for desktop and mobile.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Game', 'Typing Speed'],
+    image: { imageUrl: '/finger-fiasco.png', imageHint: 'Finger Fiasco typing game' },
+    href: 'https://abhijeetbhale.github.io/FingerFiasco/home.html',
+    github: 'https://github.com/abhijeetBhale/FingerFiasco',
+  },
+  {
+    title: 'Cheese Oven',
+    description:
+      'A modern, responsive landing page for a pizza restaurant showcasing menu, best sellers with ratings, customer testimonials, and location details. Features responsive navigation, hero section, add-to-cart functionality, and embedded Google Maps.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Landing Page', 'Responsive'],
+    image: { imageUrl: '/Pizza-Store-Landing-Page.png', imageHint: 'Cheese Oven pizza restaurant landing page' },
+    href: 'https://abhijeetbhale.github.io/Landing-Page-Project-Cheese-Oven/',
+    github: 'https://github.com/abhijeetBhale/Landing-Page-Project-Cheese-Oven',
+  },
+  {
+    title: 'Smart City Management Platform',
+    description:
+      'A comprehensive IoT-enabled city management platform with real-time monitoring and analytics. Features traffic management, environmental monitoring with AQI tracking, waste management with smart bins, energy grid monitoring, emergency response system, and predictive analytics powered by AI/ML.',
+    tags: ['React', 'Flask', 'MongoDB', 'WebSocket', 'IoT', 'AI/ML', 'Docker'],
+    image: { imageUrl: '/smarty.png', imageHint: 'Smart City Management Platform dashboard' },
+    href: '#',
+    github: 'https://github.com/raunak0400/Smart-city',
   },
 ];
 

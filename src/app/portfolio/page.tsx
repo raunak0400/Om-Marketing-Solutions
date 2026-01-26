@@ -60,12 +60,21 @@ export default function PortfolioPage() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter>
-                <Button asChild variant="link" className="px-0">
-                  <Link href={project.href}>
-                    View Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+              <CardFooter className="flex gap-2">
+                {project.href && project.href !== '#' && (
+                  <Button asChild variant="default" size="sm">
+                    <Link href={project.href} target="_blank" rel="noopener noreferrer">
+                      View Live Demo <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                )}
+                {project.github && (
+                  <Button asChild variant="outline" size="sm">
+                    <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                      View on GitHub
+                    </Link>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}
