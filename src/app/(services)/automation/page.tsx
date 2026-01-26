@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { ContactSection } from '@/components/contact-section';
 
 const benefits = [
   'Reduce manual data entry and human errors.',
@@ -18,50 +19,58 @@ const automationImage = PlaceHolderImages.find(
 
 export default function AutomationPage() {
   return (
-    <div className="space-y-16">
-      <section className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-        <div>
-          <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-            Business Automation Solutions
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            Stop wasting time on repetitive manual tasks. We build simple automation systems that handle your daily operations, so you can focus on growing your business.
-          </p>
-          <ul className="mt-8 space-y-3">
-            {benefits.map((benefit, index) => (
-              <li key={index} className="flex items-start">
-                <CheckCircle className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span>{benefit}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        {automationImage && (
-          <div className="flex items-center justify-center">
-            <Image
-              src={automationImage.imageUrl}
-              alt="Automation workflow"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-              data-ai-hint={automationImage.imageHint}
-            />
+    <>
+      <div className="container py-12 md:py-16 space-y-16">
+        <section className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div className="animate-fade-in">
+            <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
+              Business Automation Solutions
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+              Stop wasting time on repetitive manual tasks. We build simple automation systems that handle your daily operations, so you can focus on growing your business.
+            </p>
+            <ul className="mt-8 space-y-3">
+              {benefits.map((benefit, index) => (
+                <li key={index} className={`flex items-start animate-slide-in-left stagger-${index + 1}`}>
+                  <CheckCircle className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-        )}
-      </section>
+          {automationImage && (
+            <div className="flex items-center justify-center relative">
+              {/* Glow effect - Cyan/Blue */}
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 blur-3xl animate-image-glow" />
 
-      <section>
-        <Card className="mx-auto max-w-4xl">
-          <CardHeader>
-            <CardTitle className="text-center text-3xl">
-              Calculate Your Potential ROI
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <AutomationRoiCalculator />
-          </CardContent>
-        </Card>
-      </section>
-    </div>
+              <div className="relative animate-fade-in-up">
+                <Image
+                  src={automationImage.imageUrl}
+                  alt="Automation workflow"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                  data-ai-hint={automationImage.imageHint}
+                />
+              </div>
+            </div>
+          )}
+        </section>
+
+        <section className="animate-fade-in">
+          <Card className="mx-auto max-w-4xl">
+            <CardHeader>
+              <CardTitle className="text-center text-3xl">
+                Calculate Your Potential ROI
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <AutomationRoiCalculator />
+            </CardContent>
+          </Card>
+        </section>
+      </div>
+      <ContactSection />
+    </>
   );
 }
