@@ -7,20 +7,15 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Link
       href="/"
-      className={cn(
-        'flex items-center gap-2 text-foreground transition-colors hover:text-primary',
-        className
-      )}
-    >
-      <Image
-        src="/logomkc.jpeg"
-        alt="OM Marketing Solutions"
-        width={40}
+    <Link href="/" className="flex items-center space-x-2">
+      <Image 
+        src="/logomkc.jpeg" 
+        alt="OM Marketing Solutions Logo" 
+        width={40} 
         height={40}
-        className="rounded"
+        className="rounded-md"
       />
-
-      <span className="text-xl font-semibold tracking-tighter">
+      <span className="hidden font-bold sm:inline-block">
         OM Marketing Solutions
       </span>
     </Link>
