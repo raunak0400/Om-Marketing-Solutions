@@ -160,13 +160,13 @@ export const PORTFOLIO_PROJECTS = [
     github: 'https://github.com/raunak0400/Nullpoint-x-ITNU',
   },
   {
-    title: 'C2S - Commuter to School',
+    title: 'Het Patel - Portfolio Website',
     description:
-      'A comprehensive cab service management system designed for educational institutions. Features real-time tracking, journey logging (Door-to-Door), driver management, and WebSocket support for live updates.',
-    tags: ['Django', 'React', 'WebSocket', 'Real-time Tracking', 'CRM'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-marketsphere'),
-    href: '#',
-    github: 'https://github.com/raunak0400/Commuter-To-Service',
+      'A modern backend developer portfolio showcasing scalable REST APIs and microservices projects. Features SmartWork 360 productivity platform, NASA Space Apps weather forecasting, and Campus Life social platform. Built with Next.js and Tailwind CSS.',
+    tags: ['Next.js', 'Tailwind CSS', 'Portfolio', 'FastAPI', 'Python'],
+    image: { imageUrl: '/hetmkc.png', imageHint: 'Het Patel portfolio website' },
+    href: 'https://buildbyhet.vercel.app/',
+    github: 'https://github.com/Het161/buildbyhet',
   },
   {
     title: 'Hospital Medical Information System',
