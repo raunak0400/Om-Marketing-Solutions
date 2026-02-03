@@ -31,6 +31,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        {/* Zoho Marketing Automation Tracking */}
+        <script
+          src="https://cdn-in.pagesense.io/js/60064918007/79e002c3141843c78790f2ab9878a8ff.js"
+          async
+        ></script>
       </head>
       <body className={cn('font-body antialiased min-h-screen flex flex-col relative')}>
         {/* Constellation Background */}
