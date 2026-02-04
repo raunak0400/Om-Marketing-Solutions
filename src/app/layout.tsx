@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
@@ -32,10 +33,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
         {/* Zoho Marketing Automation Tracking */}
-        <script
+        <Script
+          id="zoho-ma"
+          strategy="afterInteractive"
           src="https://cdn-in.pagesense.io/js/60064918007/79e002c3141843c78790f2ab9878a8ff.js"
-          async
-        ></script>
+        />
       </head>
       <body className={cn('font-body antialiased min-h-screen flex flex-col relative')}>
         {/* Constellation Background */}
