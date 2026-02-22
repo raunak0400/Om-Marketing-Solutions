@@ -18,10 +18,6 @@ export const APP_NAME = 'OM Marketing Solutions';
 
 export const NAV_LINKS = [
   {
-    label: 'Home',
-    href: '/',
-  },
-  {
     label: 'Services',
     href: '/#services',
     children: [
@@ -71,7 +67,6 @@ export const NAV_LINKS = [
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'About Us', href: '/about-us' },
   { label: 'Contact Us', href: '/contact-us' },
-  { label: 'Hire Developers', href: '/contact-us' },
 ];
 
 export const SERVICES = [

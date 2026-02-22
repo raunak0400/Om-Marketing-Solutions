@@ -30,7 +30,7 @@ export function Header() {
           <Logo />
         </div>
 
-        <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center space-x-6 text-sm font-medium md:flex">
+        <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center space-x-4 text-sm font-medium md:flex">
           {NAV_LINKS.map((link) =>
             link.children ? (
               <DropdownMenu key={link.label}>
