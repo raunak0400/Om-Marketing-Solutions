@@ -22,6 +22,16 @@ import { Logo } from '../logo';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // Tracks which nav-group labels are expanded in the mobile drawer
+  const [mobileOpenSections, setMobileOpenSections] = useState<Set<string>>(new Set());
+
+  const toggleMobileSection = (label: string) => {
+    setMobileOpenSections((prev) => {
+      const next = new Set(prev);
+      next.has(label) ? next.delete(label) : next.add(label);
+      return next;
+    });
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -30,6 +40,7 @@ export function Header() {
           <Logo />
         </div>
 
+        {/* ── Desktop nav (unchanged) ───────────────────────── */}
         <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center space-x-4 text-sm font-medium md:flex">
           {NAV_LINKS.map((link) =>
             link.children ? (
@@ -67,6 +78,8 @@ export function Header() {
           <Button asChild className="hidden sm:inline-flex" variant="outline">
             <Link href="/contact-us">Get Started</Link>
           </Button>
+
+          {/* ── Mobile drawer ─────────────────────────────────── */}
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon">
@@ -78,37 +91,55 @@ export function Header() {
               <SheetHeader>
                 <Logo />
               </SheetHeader>
-              <div className="grid gap-4 py-4">
-                {NAV_LINKS.map((link) => (
-                  <div key={link.label}>
-                    <Link
-                      href={link.href}
-                      onClick={() => {
-                        if (!link.children) setIsMobileMenuOpen(false);
-                      }}
-                      className={cn(
-                        'text-lg font-medium text-foreground/80 transition-colors hover:text-foreground',
-                        link.children && 'pointer-events-none'
-                      )}
-                    >
-                      {link.label}
-                    </Link>
-                    {link.children && (
-                      <div className="grid gap-2 mt-2 pl-4">
-                        {link.children.map((child) => (
-                          <Link
-                            key={child.label}
-                            href={child.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
+              <div className="grid gap-2 py-4">
+                {NAV_LINKS.map((link) => {
+                  const isOpen = mobileOpenSections.has(link.label);
+                  return (
+                    <div key={link.label}>
+                      {link.children ? (
+                        /* ── Collapsible accordion row (mobile only) ── */
+                        <>
+                          <button
+                            onClick={() => toggleMobileSection(link.label)}
+                            className="flex w-full items-center justify-between py-1 text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
                           >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
+                            <span>{link.label}</span>
+                            <ChevronDown
+                              className={cn(
+                                'h-5 w-5 shrink-0 transition-transform duration-200 text-foreground/60',
+                                isOpen && 'rotate-180'
+                              )}
+                            />
+                          </button>
+                          {/* Sub-links — shown only when expanded */}
+                          {isOpen && (
+                            <div className="mt-1 grid gap-1 border-l-2 border-primary/30 pl-4">
+                              {link.children.map((child) => (
+                                <Link
+                                  key={child.label}
+                                  href={child.href}
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                  className="py-1 text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
+                                >
+                                  {child.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </>
+                      ) : (
+                        /* ── Regular link row ─────────────────────── */
+                        <Link
+                          href={link.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block py-1 text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </SheetContent>
           </Sheet>
