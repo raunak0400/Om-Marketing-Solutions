@@ -1,7 +1,13 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  serverExternalPackages: [
+    'genkit',
+    '@genkit-ai/google-genai',
+    'google-auth-library',
+    '@google-cloud/vertexai',
+  ],
   typescript: {
     ignoreBuildErrors: true,
   },

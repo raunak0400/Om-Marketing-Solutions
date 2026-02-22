@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { WhatsAppFAB } from '@/components/whatsapp-fab';
+import { AIChatbot } from '@/components/ai-chatbot';
 import { ConstellationBackground } from '@/components/constellation-background';
 
 export const metadata: Metadata = {
@@ -54,6 +55,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <WhatsAppFAB />
+        <AIChatbot />
         <Toaster />
       </body>
     </html>
