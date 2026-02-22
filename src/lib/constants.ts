@@ -68,6 +68,7 @@ export const NAV_LINKS = [
     ],
   },
   { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Testimonials', href: '/testimonials' },
   { label: 'About Us', href: '/about-us' },
   { label: 'Contact Us', href: '/contact-us' },
   { label: 'Hire Developers', href: '/contact-us' },
