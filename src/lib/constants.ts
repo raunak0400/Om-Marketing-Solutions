@@ -142,13 +142,13 @@ export const SERVICES = [
 
 export const PORTFOLIO_PROJECTS = [
   {
-    title: 'Raunak Kumar Jha - Portfolio Website',
+    title: 'TT Marketing Solutions',
     description:
-      'A modern and responsive personal portfolio website showcasing projects, skills, and contact information with smooth animations, particle effects, GitHub integration, and interactive design elements.',
-    tags: ['Portfolio', 'HTML', 'CSS', 'JavaScript', 'GSAP', 'Particles.js'],
-    image: { imageUrl: '/portfolio-ss.png', imageHint: 'Raunak Kumar Jha portfolio website' },
-    href: 'https://www.imraunak.dev/',
-    github: 'https://github.com/raunak0400/NEW_PORTFOLIO_AB',
+      'A professional digital marketing agency website built for TT Marketing Solutions. Features a modern, responsive design with service showcases, portfolio sections, and lead generation forms to help businesses grow their online presence.',
+    tags: ['Next.js', 'Tailwind CSS', 'Digital Marketing', 'Responsive', 'SEO'],
+    image: { imageUrl: '/ttmarketing.png', imageHint: 'TT Marketing Solutions website' },
+    href: 'https://www.ttmarketing.co.in/',
+    github: 'https://github.com/OM-Marketing-Solutions/TT-MARKETING',
   },
   {
     title: 'Aurora-Air (NULL POINT)',
