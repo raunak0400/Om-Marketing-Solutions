@@ -10,6 +10,7 @@ A modern, responsive website for OM Marketing Solutions - empowering Indian busi
 
 ## 🌟 Features
 
+- **AI Chatbot**: Integrated AI chatbot for instant customer support and engagement
 - **Modern UI/UX**: Stunning constellation background, smooth animations, and glow effects
 - **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices
 - **Fast Performance**: Built with Next.js 15 App Router for optimal loading speeds
