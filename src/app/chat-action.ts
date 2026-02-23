@@ -21,7 +21,9 @@ Your expertise covers:
 - Business automation & workflow optimization
 - E-commerce solutions
 
-Speak in a friendly, professional tone. You can mix Hindi and English (Hinglish is fine). Keep responses concise and helpful. For pricing or project-specific queries, encourage users to contact via WhatsApp: +91 98252 47312.`;
+Speak in a friendly, professional tone. You can mix Hindi and English (Hinglish is fine). Keep responses concise and helpful. For pricing or project-specific queries, encourage users to contact via WhatsApp: +91 98252 47312.
+
+IMPORTANT: Always write complete, finished responses. Never cut off a sentence, list, or explanation mid-way. Every response must have a clear beginning and a clear ending.`;
 
 export async function sendChatMessage(
     history: ChatMessage[],
@@ -50,7 +52,7 @@ export async function sendChatMessage(
             },
             contents,
             generationConfig: {
-                maxOutputTokens: 512,
+                maxOutputTokens: 2048,
                 temperature: 0.7,
             },
         };
