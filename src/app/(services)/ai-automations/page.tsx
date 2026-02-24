@@ -8,12 +8,12 @@ import { Badge } from '@/components/ui/badge';
 import { useState } from 'react';
 
 const features = [
-    '24/7 AI-powered customer support chatbots.',
-    'WhatsApp, email, and SMS automation.',
-    'Intelligent lead qualification and routing.',
-    'Automated data entry and processing.',
-    'Natural language processing for better engagement.',
-    'Integration with CRM and business tools.',
+    '24/7 AI chatbots that respond instantly and capture leads automatically.',
+    'WhatsApp, Email & SMS automation to nurture and follow up with prospects.',
+    'AI-powered lead qualification to filter serious buyers from time-wasters.',
+    'Automation of repetitive tasks to reduce workload and operational costs.',
+    'Smart integrations with CRM, inventory, and internal systems.',
+    'Real-time dashboards to track conversations, leads, and performance.',
 ];
 
 const aiImage = PlaceHolderImages.find(
@@ -96,7 +96,8 @@ export default function AIAutomationsPage() {
                             AI Automation Solutions
                         </h1>
                         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                            Transform your business with intelligent automation powered by AI. Streamline operations, enhance customer engagement, and boost productivity with our cutting-edge automation solutions.
+                           Still replying to every message manually?
+                           We build AI-powered automation systems that handle customer support, qualify leads, and automate repetitive tasks — 24/7 without increasing staff.
                         </p>
                         <ul className="mt-8 space-y-3">
                             {features.map((feature, index) => (

@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/contact-section';
 
 const features = [
-  'Real-time stock tracking across multiple locations.',
-  'Automated low-stock alerts and reorder suggestions.',
-  'Barcode scanning for quick and accurate data entry.',
-  'Integration with e-commerce and accounting software.',
-  'Detailed reports on stock movement and valuation.',
-  'Reduce manual errors and save administrative time.',
+  'Real-time stock tracking across multiple warehouses or locations.',
+  'Automated low-stock alerts to prevent lost sales.',
+  'Barcode & QR-based tracking for faster and accurate inventory updates.',
+  'Integration with billing, accounting, and e-commerce platforms.',
+  'Live dashboards with detailed reports for smarter purchasing decisions.',
+  'Reduced manual errors, shrinkage, and operational inefficiencies.',
 ];
 
 export default function InventoryManagementPage() {
@@ -22,7 +22,8 @@ export default function InventoryManagementPage() {
               Inventory Management Systems (IMS)
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              Take control of your stock with a powerful, custom-built Inventory Management System. Stop relying on spreadsheets and manual counts. Our IMS solutions help you automate tracking, reduce errors, and make smarter purchasing decisions.
+              Still managing stock on Excel or manual registers?
+              We build custom inventory systems that eliminate stock errors, prevent losses, and give you real-time control over your business.
             </p>
             <ul className="mt-8 space-y-3">
               {features.map((feature, index) => (

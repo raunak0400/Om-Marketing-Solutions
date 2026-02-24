@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/contact-section';
 
 const features = [
-  'Custom website design that reflects your brand.',
-  'Mobile-friendly design for all screen sizes.',
-  'E-commerce stores with secure payment integration.',
-  'Simple content management so you can make updates easily.',
-  'Basic SEO to help customers find you on Google.',
-  'Fast-loading and reliable performance.',
+  'Conversion-focused design built to turn visitors into inquiries and sales.',
+  'Mobile-first design optimized for buyer behavior.',
+  'Secure payment & checkout systems built for seamless transactions.',
+  'High-speed performance to reduce bounce rate and increase trust.',
+  'SEO-structured architecture built to rank on Google.',
+  'Clear call-to-action strategy to maximize leads and revenue.',
 ];
 
 export default function WebDevelopmentPage() {
@@ -22,7 +22,8 @@ export default function WebDevelopmentPage() {
               Website & E-commerce Development
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              Get a professional, modern website that works on all devices. We build affordable websites and online stores that help you attract customers and sell your products online.
+              Stop losing customers to competitors with better websites.
+              We build conversion-focused websites and online stores designed to generate leads, increase sales, and grow your revenue.
             </p>
             <ul className="mt-8 space-y-3">
               {features.map((feature, index) => (
@@ -53,3 +54,16 @@ export default function WebDevelopmentPage() {
     </>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

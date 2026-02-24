@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/contact-section';
 
 const features = [
-    'ROI-focused campaigns with measurable results.',
-    'Google Ads, Facebook Ads, and LinkedIn advertising.',
-    'Conversion rate optimization (CRO).',
-    'A/B testing and continuous improvement.',
-    'Advanced analytics and performance tracking.',
-    'Custom dashboards for real-time insights.',
+    'ROI-focused ad campaigns designed to generate profitable leads and sales.',
+    'Strategic Google, Meta & LinkedIn advertising for high-intent audiences.',
+    'Conversion optimization to turn traffic into paying customers.',
+    'Continuous A/B testing to lower cost-per-lead and improve results.',
+    'Advanced tracking setup (Pixel, GA4, CRM integration).',
+    'Custom performance dashboards with full transparency.',
 ];
 
 export default function PerformanceMarketingPage() {
@@ -22,7 +22,8 @@ export default function PerformanceMarketingPage() {
                             Performance Marketing
                         </h1>
                         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                            Drive measurable growth with data-driven performance marketing campaigns. We focus on maximizing your ROI through targeted advertising, continuous optimization, and detailed analytics.
+                            Spending on ads but not seeing real profit?
+                            We run data-driven performance campaigns focused on one thing — measurable ROI and consistent revenue growth.
                         </p>
                         <ul className="mt-8 space-y-3">
                             {features.map((feature, index) => (

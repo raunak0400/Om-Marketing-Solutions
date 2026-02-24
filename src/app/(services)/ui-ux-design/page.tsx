@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/contact-section';
 
 const features = [
-    'User research and persona development.',
-    'Wireframing and interactive prototyping.',
-    'Visual design with modern aesthetics.',
-    'Responsive design for all devices.',
-    'Accessibility standards compliance (WCAG).',
-    'Usability testing and iterative improvements.',
+    'User behavior research to understand what drives clicks and conversions.',
+    'Conversion-focused wireframes built around business goals.',
+    'Intuitive interface design that improves engagement and reduces drop-offs.',
+    'Mobile-first and responsive design for seamless cross-device experience.',
+    'Data-driven usability testing to optimize performance before launch.',
+    'Accessibility-compliant design to ensure wider reach and trust.',
 ];
 
 export default function UIUXDesignPage() {
@@ -22,7 +22,8 @@ export default function UIUXDesignPage() {
                             UI/UX Design Services
                         </h1>
                         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                            Create exceptional user experiences that delight your customers and drive conversions. Our UI/UX design services combine aesthetics with functionality to build interfaces that are both beautiful and intuitive.
+                            If users don’t understand your product in seconds, they leave.
+                            We design user experiences that increase engagement, reduce drop-offs, and drive more conversions.
                         </p>
                         <ul className="mt-8 space-y-3">
                             {features.map((feature, index) => (

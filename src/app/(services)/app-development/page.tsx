@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/contact-section';
 
 const features = [
-    'Custom web applications tailored to your business needs.',
-    'Scalable architecture that grows with your business.',
-    'Modern tech stack with React, Node.js, and cloud infrastructure.',
-    'API development and third-party integrations.',
-    'User authentication and authorization systems.',
-    'Real-time features and data synchronization.',
+    'Fully customized business systems built around your exact workflow.',
+    'Scalable architecture designed to grow with your business.',
+    'Automation of repetitive tasks to save time and reduce human errors.',
+    'Secure login, role-based access, and data protection systems.',
+    'Seamless API integrations with payment gateways, CRMs, and third-party tools.',
+    'Real-time dashboards and reporting for smarter business decisions.',
 ];
 
 const appDevImage = PlaceHolderImages.find(
@@ -26,7 +26,8 @@ export default function AppDevelopmentPage() {
                             Custom Application Development
                         </h1>
                         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                            Build powerful web applications that streamline your business operations and provide exceptional user experiences. We create custom solutions designed specifically for your unique requirements.
+                            Still managing your business on Excel, WhatsApp, or outdated software?
+                            We build custom Applications that automate operations, reduce manual errors, and save you hours every week.
                         </p>
                         <ul className="mt-8 space-y-3">
                             {features.map((feature, index) => (

@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { ContactSection } from '@/components/contact-section';
 
 const features = [
-  'Search Engine Optimization (SEO) to rank higher on Google.',
-  'Pay-Per-Click (PPC) advertising on Google and social media.',
-  'Social Media Management to build your brand and engage your audience.',
-  'Content marketing to attract and convert customers.',
-  'Email marketing campaigns to nurture leads.',
-  'Detailed analytics and performance reporting.',
+  'SEO strategies designed to rank your business higher on Google and drive organic leads.',
+  'Content marketing that builds authority and attracts high-intent customers.',
+  'Social media growth strategies to increase brand visibility and engagement.',
+  'Email marketing funnels that nurture leads and increase repeat business.',
+  'Strategic PPC campaigns to accelerate growth when needed.',
+  'Comprehensive analytics and reporting to track real business impact.',
 ];
 
 export default function DigitalMarketingPage() {
@@ -22,7 +22,8 @@ export default function DigitalMarketingPage() {
               Digital Marketing
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              Grow your business with data-driven digital marketing strategies. We help you reach your target audience, generate qualified leads, and increase your online sales through a mix of SEO, PPC, and social media marketing.
+             Struggling to generate consistent leads online?
+             We build long-term digital growth strategies that increase visibility, attract qualified traffic, and turn your brand into a revenue-generating asset.
             </p>
             <ul className="mt-8 space-y-3">
               {features.map((feature, index) => (
