@@ -13,11 +13,11 @@ export function Logo({ className }: { className?: string }) {
       )}
     >
       <Image
-        src="/logomkc.jpeg"
+        src="/lodu_om.png"
         alt="OM Marketing Solutions Logo"
         width={40}
         height={40}
-        className="rounded-md"
+        className="h-10 w-auto object-contain"
       />
 
       <span className="text-xl font-semibold tracking-tighter">
