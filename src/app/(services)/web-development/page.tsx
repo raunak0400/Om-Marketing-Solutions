@@ -1,69 +1,107 @@
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle } from 'lucide-react';
-import Image from 'next/image';
-import { ContactSection } from '@/components/contact-section';
+import { ServicePageLayout } from '@/components/service-page-layout';
 
 const features = [
-  'Conversion-focused design built to turn visitors into inquiries and sales.',
-  'Mobile-first design optimized for buyer behavior.',
-  'Secure payment & checkout systems built for seamless transactions.',
-  'High-speed performance to reduce bounce rate and increase trust.',
-  'SEO-structured architecture built to rank on Google.',
-  'Clear call-to-action strategy to maximize leads and revenue.',
+  {
+    icon: '🖥️',
+    title: 'Custom Website Design',
+    description:
+      'Unique design tailored to your brand, not a generic template.',
+  },
+  {
+    icon: '🛒',
+    title: 'E-commerce & Payments',
+    description:
+      'Sell online with Razorpay/UPI payment integration built right in.',
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-First Responsive',
+    description:
+      'Looks perfect on phones, tablets, and desktops — every screen size.',
+  },
+  {
+    icon: '⚡',
+    title: 'Fast Load Speed',
+    description:
+      'Optimised for Google Core Web Vitals and low-bandwidth users.',
+  },
+  {
+    icon: '🔍',
+    title: 'SEO-Ready Structure',
+    description: 'Built to rank on Google from day one — no retrofitting needed.',
+  },
+  {
+    icon: '🔒',
+    title: 'Secure & Maintained',
+    description:
+      'SSL, daily backups, and ongoing support included after launch.',
+  },
+];
+
+const stats = [
+  { value: '50+ Websites', label: 'Built & Delivered' },
+  { value: '7–14 Days', label: 'Average Delivery Time' },
+  { value: '100%', label: 'Mobile Responsive' },
+];
+
+const whyPoints = [
+  {
+    title: 'Fast Delivery, No Delays',
+    description:
+      'Most websites are delivered in 7–14 days. E-commerce stores in 14–21 days — with clear milestones throughout.',
+  },
+  {
+    title: 'SEO-First Approach',
+    description:
+      'Every site is structured so Google can crawl, index, and rank it from day one. No SEO retrofitting later.',
+  },
+  {
+    title: 'Ongoing Support Included',
+    description:
+      'We don\'t disappear after launch. Monthly maintenance packages cover updates, security patches, and content changes.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'How long does it take to build a website?',
+    answer:
+      'Most websites are delivered in 7–14 days. E-commerce stores typically take 14–21 days depending on the number of products and integrations required.',
+  },
+  {
+    question: 'Will my website work on mobile phones?',
+    answer:
+      'Yes, every website we build is fully responsive and tested on Android and iOS devices across multiple screen sizes before delivery.',
+  },
+  {
+    question: 'Can you migrate my existing website?',
+    answer:
+      'Yes, we can migrate content, SEO settings, and design from your old website to the new one without losing your Google rankings.',
+  },
+  {
+    question: 'Do you provide website maintenance after delivery?',
+    answer:
+      'Yes, we offer monthly maintenance packages that include updates, security patches, performance checks, and content changes.',
+  },
+  {
+    question: 'What information do I need to provide to get started?',
+    answer:
+      'We need your logo, brand colors, content (text and photos), and a list of pages you want. Don\'t worry — we guide you through everything step by step.',
+  },
 ];
 
 export default function WebDevelopmentPage() {
   return (
-    <>
-      <section className="container py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-          <div className="animate-fade-in">
-            <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-              Website & E-commerce Development
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              Stop losing customers to competitors with better websites.
-              We build conversion-focused websites and online stores designed to generate leads, increase sales, and grow your revenue.
-            </p>
-            <ul className="mt-8 space-y-3">
-              {features.map((feature, index) => (
-                <li key={index} className={`flex items-start animate-slide-in-left stagger-${index + 1}`}>
-                  <CheckCircle className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex items-center justify-center relative">
-            {/* Glow effect - Blue/Cyan */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-20 blur-3xl animate-image-glow" />
-
-            <div className="relative animate-fade-in-up">
-              <Image
-                src="/Web-Development.jpg"
-                alt="Web Development"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <ContactSection />
-    </>
+    <ServicePageLayout
+      title="Website & E-commerce Development"
+      subtitle="Stop losing customers to competitors with better websites. We build conversion-focused websites and online stores designed to generate leads, increase sales, and grow your revenue."
+      heroImage="/Web-Development.jpg"
+      heroImageAlt="Web Development"
+      glowGradient="from-blue-500 to-cyan-500"
+      features={features}
+      stats={stats}
+      whyPoints={whyPoints}
+      faqs={faqs}
+    />
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
