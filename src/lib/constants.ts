@@ -147,15 +147,6 @@ export const PORTFOLIO_PROJECTS = [
     github: 'https://github.com/OM-Marketing-Solutions/TT-MARKETING',
   },
   {
-    title: 'Aurora-Air (NULL POINT)',
-    description:
-      'A cutting-edge air quality intelligence system combining NASA\'s TEMPO satellite observations with ground sensor networks. Built for NASA Space Apps Challenge 2024, featuring multi-source data fusion and machine learning for unprecedented accuracy in air pollution monitoring.',
-    tags: ['NASA TEMPO', 'AI/ML', 'Data Fusion', 'Python', 'React', 'Docker'],
-    image: PlaceHolderImages.find((img) => img.id === 'project-quantumleap'),
-    href: 'https://nullpoint-x-itnu.vercel.app/',
-    github: 'https://github.com/raunak0400/Nullpoint-x-ITNU',
-  },
-  {
     title: 'Het Patel - Portfolio Website',
     description:
       'A modern backend developer portfolio showcasing scalable REST APIs and microservices projects. Features SmartWork 360 productivity platform, NASA Space Apps weather forecasting, and Campus Life social platform. Built with Next.js and Tailwind CSS.',
