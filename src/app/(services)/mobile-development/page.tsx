@@ -1,55 +1,108 @@
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle } from 'lucide-react';
-import Image from 'next/image';
-import { ContactSection } from '@/components/contact-section';
+import { ServicePageLayout } from '@/components/service-page-layout';
 
 const features = [
-    'Native iOS and Android app development.',
-    'Cross-platform solutions using React Native and Flutter.',
-    'Intuitive and responsive mobile UI/UX design.',
-    'Push notifications and real-time updates.',
-    'Offline functionality and data synchronization.',
-    'App Store and Google Play deployment support.',
+  {
+    icon: '📱',
+    title: 'iOS & Android Apps',
+    description:
+      'One codebase, two platforms — built with React Native for maximum efficiency.',
+  },
+  {
+    icon: '🎨',
+    title: 'Native-Feeling UI',
+    description:
+      'Smooth animations and platform-specific design patterns that feel at home.',
+  },
+  {
+    icon: '🔔',
+    title: 'Push Notifications',
+    description:
+      'Re-engage customers with targeted, personalised in-app notifications.',
+  },
+  {
+    icon: '🛍️',
+    title: 'In-App Purchases',
+    description:
+      'Sell products, subscriptions, or services directly inside the app.',
+  },
+  {
+    icon: '📍',
+    title: 'Location & Maps',
+    description:
+      'Delivery tracking, store locators, and geofencing support built in.',
+  },
+  {
+    icon: '🔄',
+    title: 'App Store Publishing',
+    description:
+      'We handle the full submission process for Google Play Store and Apple App Store.',
+  },
+];
+
+const stats = [
+  { value: '20+ Apps', label: 'Published on Both Stores' },
+  { value: 'iOS & Android', label: 'Single Codebase' },
+  { value: '6–12 Weeks', label: 'Typical Build Time' },
+];
+
+const whyPoints = [
+  {
+    title: 'One Codebase, Two Platforms',
+    description:
+      'React Native means faster development and lower cost — no need to build separate iOS and Android apps.',
+  },
+  {
+    title: 'Full App Store Handling',
+    description:
+      'We manage the entire submission process including screenshots, metadata, and compliance for both stores.',
+  },
+  {
+    title: 'Offline Capability',
+    description:
+      'Key features work without internet — critical for users on patchy connections across India.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Do you build for both Android and iOS?',
+    answer:
+      'Yes, we use React Native to build one app that works natively on both platforms — saving time and cost compared to building two separate apps.',
+  },
+  {
+    question: 'How long does a mobile app take to build?',
+    answer:
+      'Typically 6–12 weeks depending on complexity and the number of features. We provide a detailed timeline before starting.',
+  },
+  {
+    question: 'Will you publish the app to the stores?',
+    answer:
+      'Yes, we handle the full submission process for both Google Play Store and Apple App Store, including compliance requirements.',
+  },
+  {
+    question: 'Can the app work offline?',
+    answer:
+      'Yes, we can build offline functionality for key features so users can access the app without an internet connection.',
+  },
+  {
+    question: 'How much does a mobile app cost?',
+    answer:
+      'Pricing depends on features and complexity. Contact us for a free estimate — we work within your budget and give a clear breakdown upfront.',
+  },
 ];
 
 export default function MobileDevelopmentPage() {
-    return (
-        <>
-            <section className="container py-12 md:py-16">
-                <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-                    <div className="animate-fade-in">
-                        <h1 className="text-4xl font-bold tracking-tighter md:text-5xl">
-                            Mobile App Development
-                        </h1>
-                        <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                            Reach your customers on the go with beautifully designed mobile applications. We build native and cross-platform mobile apps for iOS and Android that engage users and drive business growth.
-                        </p>
-                        <ul className="mt-8 space-y-3">
-                            {features.map((feature, index) => (
-                                <li key={index} className={`flex items-start animate-slide-in-left stagger-${index + 1}`}>
-                                    <CheckCircle className="mr-3 mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                                    <span>{feature}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="flex items-center justify-center relative">
-                        {/* Glow effect - Pink/Purple */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-20 blur-3xl animate-image-glow" />
-
-                        <div className="relative animate-fade-in-up">
-                            <Image
-                                src="/mobiledev.jpg"
-                                alt="Mobile Development"
-                                width={600}
-                                height={400}
-                                className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <ContactSection />
-        </>
-    );
+  return (
+    <ServicePageLayout
+      title="Mobile App Development"
+      subtitle="Reach your customers on the go with beautifully designed mobile applications. We build cross-platform apps for iOS and Android that engage users and drive real business growth."
+      heroImage="/mobiledev.jpg"
+      heroImageAlt="Mobile App Development"
+      glowGradient="from-pink-500 to-purple-500"
+      features={features}
+      stats={stats}
+      whyPoints={whyPoints}
+      faqs={faqs}
+    />
+  );
 }
