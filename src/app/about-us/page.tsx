@@ -76,8 +76,7 @@ export default function AboutUsPage() {
                         </p>
                     </div>
 
-                    <div className="mx-auto max-w-6xl">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div className="mx-auto max-w-xl">
                             {/* Het Kumar Patel */}
                             <Card className="overflow-hidden btn-glow-hover">
                                 <div className="p-6">
@@ -99,9 +98,9 @@ export default function AboutUsPage() {
                                         <p className="text-muted-foreground mb-4 text-center">
                                             Het Kumar Patel is the business visionary behind OM Marketing Solutions.
                                             With a keen understanding of client needs and market dynamics, he specializes
-                                            in client onboarding, relationship management, and business development. As
-                                            co-founder with 50% equity, Het ensures our clients receive personalized
-                                            attention and solutions that align with their business goals.
+                                            in client onboarding, relationship management, and business development.
+                                            Het ensures our clients receive personalized attention and solutions that
+                                            align with their business goals.
                                         </p>
                                         <div className="flex flex-wrap justify-center gap-3">
                                             <Link
@@ -154,84 +153,6 @@ export default function AboutUsPage() {
                                     </CardContent>
                                 </div>
                             </Card>
-
-                            {/* Raunak Kumar Jha */}
-                            <Card className="overflow-hidden btn-glow-hover">
-                                <div className="p-6">
-                                    <div className="flex items-center justify-center mb-6">
-                                        <div className="relative h-48 w-48 rounded-full overflow-hidden">
-                                            <Image
-                                                src="/Raunak.png"
-                                                alt="Raunak Kumar Jha"
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        </div>
-                                    </div>
-                                    <CardHeader className="p-0 text-center">
-                                        <CardTitle className="text-2xl">Raunak Kumar Jha</CardTitle>
-                                        <p className="text-primary font-semibold">Co-Founder & Technical Director</p>
-                                    </CardHeader>
-                                    <CardContent className="p-0 mt-4">
-                                        <p className="text-muted-foreground mb-4 text-center">
-                                            Raunak Kumar Jha is the technical powerhouse of OM Marketing Solutions.
-                                            As the lead developer, he handles all aspects of website development,
-                                            automation systems, and technical implementations. With expertise in
-                                            modern web technologies and AI, Raunak transforms business requirements
-                                            into robust, scalable solutions that drive digital transformation.
-                                        </p>
-                                        <div className="flex flex-wrap justify-center gap-3">
-                                            <Link
-                                                href="https://www.linkedin.com/in/raunak0400"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Linkedin className="h-4 w-4" />
-                                                    LinkedIn
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                href="https://www.instagram.com/raunak.1812"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Instagram className="h-4 w-4" />
-                                                    Instagram
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                href="https://github.com/raunak0400"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Github className="h-4 w-4" />
-                                                    GitHub
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                href="tel:+917779072966"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Phone className="h-4 w-4" />
-                                                    Call
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                href="mailto:contact@imraunak.dev"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Mail className="h-4 w-4" />
-                                                    Email
-                                                </Button>
-                                            </Link>
-                                        </div>
-                                    </CardContent>
-                                </div>
-                            </Card>
-                        </div>
                     </div>
                 </div>
             </section>
