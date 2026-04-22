@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -12,6 +13,12 @@ import { PORTFOLIO_PROJECTS } from '@/lib/constants';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Portfolio — Our Work | OM Marketing Solutions',
+  description:
+    'Explore web apps, mobile apps, inventory systems, and marketing campaigns built by OM Marketing Solutions for businesses across Ahmedabad and Gujarat.',
+};
 
 export default function PortfolioPage() {
   return (

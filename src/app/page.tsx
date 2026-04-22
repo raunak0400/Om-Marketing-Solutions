@@ -13,7 +13,6 @@ import { OUR_PROCESS, PORTFOLIO_PROJECTS, SERVICES, TESTIMONIALS } from '@/lib/c
 import { ArrowRight, Check, MoveRight, PlayCircle, Zap, Mail, MapPin, Phone as PhoneIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ConstellationBackground } from '@/components/constellation-background';
 import { OurWork } from '@/components/our-work';
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative h-[80vh] md:h-[90vh]">
-        <ConstellationBackground />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
         <div className="container relative flex h-full items-center">
           <div className="mx-auto max-w-3xl text-center">
@@ -31,8 +29,11 @@ export default function Home() {
               Digital Solutions for Growing Businesses
             </Badge>
             <h1 className="mt-6 text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl">
-              Grow Your Vyavsay with <br /> <span className="text-primary">Digital Solutions</span>
+              Grow Your Business in <br /> <span className="text-primary">Ahmedabad</span> with Digital Solutions
             </h1>
+            <p className="mt-2 text-sm font-medium text-muted-foreground tracking-wide uppercase">
+              Digital Solutions for Your Vyavsay
+            </p>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
               Is your business ready for the digital age? We help traditional Indian businesses like yours—retailers, manufacturers, and service providers—modernize with practical technology. Get a professional website, automate your operations, and reach more customers with our simple, result-oriented solutions.
             </p>
@@ -134,8 +135,8 @@ export default function Home() {
           </div>
           <div className="relative h-[400px] md:h-[500px]">
             <Image
-              src="/randi.jpeg"
-              alt="Why Choose OM Marketing Solutions"
+              src="/founders-team.jpg"
+              alt="OM Marketing Solutions founding team, Ahmedabad"
               fill
               className="rounded-lg object-cover"
             />
@@ -317,10 +318,10 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:ommarketing.weighingscale1@gmail.com"
+                    href="mailto:contact@ommarketingsolutions.in"
                     className="text-muted-foreground hover:text-primary transition-colors break-all"
                   >
-                    ommarketing.weighingscale1@gmail.com
+                    contact@ommarketingsolutions.in
                   </a>
                 </CardContent>
               </Card>

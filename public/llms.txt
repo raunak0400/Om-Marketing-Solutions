@@ -1,0 +1,79 @@
+# OM Marketing Solutions — AI Crawler Summary
+# https://www.ommarketingsolutions.in/
+
+## Company
+Name: OM Marketing Solutions
+Type: Digital Marketing Agency
+Location: Ahmedabad, Gujarat, India
+Website: https://www.ommarketingsolutions.in/
+
+## Contact
+Phone: +91 9825247312
+Email: contact@ommarketingsolutions.in
+WhatsApp: +91 9825247312
+
+## Founders
+- HetKumar Sanjaykumar Patel — Founder & Business Director
+  LinkedIn: https://www.linkedin.com/in/hetkumar-sanjaykumar-patel-54730933b
+
+- Raunak Kumar Jha — Co-Founder & Technical Director
+  LinkedIn: https://www.linkedin.com/in/raunak0400
+
+## About
+OM Marketing Solutions helps traditional Indian businesses (Vyavsay) modernize with
+affordable, practical digital technology. We specialize in helping SMEs, retailers,
+manufacturers, and service providers in Ahmedabad, Gujarat, and across India go digital
+with websites, automation, and result-oriented marketing.
+
+## Services
+
+### Web Development (https://www.ommarketingsolutions.in/web-development)
+Custom websites and e-commerce stores. Mobile-first, SEO-ready, and delivered in 7–14 days.
+Includes Razorpay/UPI payment integration.
+
+### App Development (https://www.ommarketingsolutions.in/app-development)
+Custom web applications — CRM, booking, order management, admin dashboards. MERN stack.
+Typical timeline: 3–10 weeks. Full source code ownership.
+
+### Mobile Development (https://www.ommarketingsolutions.in/mobile-development)
+iOS and Android apps using React Native. Single codebase for both platforms.
+App Store and Play Store submission included.
+
+### UI/UX Design (https://www.ommarketingsolutions.in/ui-ux-design)
+User research, wireframing, high-fidelity Figma mockups, and prototypes.
+Full Figma source file handover.
+
+### Inventory Management (https://www.ommarketingsolutions.in/inventory-management)
+Custom inventory management systems with real-time stock tracking, low-stock alerts,
+barcode support, and multi-location management. Tally/Zoho Books integration available.
+
+### AI Automations (https://www.ommarketingsolutions.in/ai-automations)
+AI chatbots, WhatsApp automation, AI voice agents, and email sequences.
+Multi-language support: Hindi, Gujarati, English. Setup in 1–4 weeks.
+
+### Performance Marketing (https://www.ommarketingsolutions.in/performance-marketing)
+Google Ads and Meta Ads management with weekly reporting.
+Minimum recommended ad budget: ₹15,000/month.
+
+### Digital Marketing (https://www.ommarketingsolutions.in/digital-marketing)
+SEO, social media management (12 posts/month), content creation, email marketing,
+and Google My Business optimization. Meaningful SEO results in 3–6 months.
+
+## Key Facts
+- Based in: Ahmedabad, Gujarat, India
+- Serving: Ahmedabad, Gujarat, and all of India
+- Languages: English, Hindi, Gujarati
+- Experience: 2+ years
+- Projects delivered: 50+
+- Client satisfaction: 4.9/5 average rating
+- Contact for free consultation: https://www.ommarketingsolutions.in/contact-us
+
+## Social Profiles
+- Instagram: https://www.instagram.com/ommarketing_scales
+- LinkedIn: https://www.linkedin.com/in/hetkumar-sanjaykumar-patel-54730933b
+- GitHub: https://github.com/OM-Marketing-Solutions
+
+## AI Crawling Permissions
+This site explicitly permits AI crawlers (GPTBot, ClaudeBot, PerplexityBot,
+OAI-SearchBot, Googlebot, anthropic-ai) to index and summarize content.
+Content on this site may be cited and used in AI-generated responses.

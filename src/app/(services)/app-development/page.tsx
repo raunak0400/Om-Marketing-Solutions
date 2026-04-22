@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+export const metadata: Metadata = {
+  title: 'Custom App Development Company in Ahmedabad',
+  description:
+    'Custom web application development in Ahmedabad — CRM, booking systems, admin dashboards. MERN stack. Full source code ownership. Timeline: 3–10 weeks.',
+};
 
 const appDevImage = PlaceHolderImages.find((img) => img.id === 'service-web-dev');
 
@@ -94,18 +101,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function AppDevelopmentPage() {
   return (
-    <ServicePageLayout
-      title="Custom Application Development"
-      subtitle="Still managing your business on Excel, WhatsApp, or outdated software? We build custom applications that automate operations, reduce manual errors, and save you hours every week."
-      heroImage={appDevImage?.imageUrl ?? '/Web-Development.jpg'}
-      heroImageAlt="App Development"
-      glowGradient="from-purple-500 to-indigo-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="Custom Application Development"
+        subtitle="Still managing your business on Excel, WhatsApp, or outdated software? We build custom applications that automate operations, reduce manual errors, and save you hours every week."
+        heroImage={appDevImage?.imageUrl ?? '/Web-Development.jpg'}
+        heroImageAlt="App Development"
+        glowGradient="from-purple-500 to-indigo-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }

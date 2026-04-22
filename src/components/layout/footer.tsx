@@ -1,6 +1,6 @@
 'use client';
 import { APP_NAME, NAV_LINKS, SERVICES } from '@/lib/constants';
-import { Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Linkedin, Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from '../logo';
 
@@ -72,6 +72,25 @@ export function Footer() {
               </li>
             ))}
           </ul>
+        </div>
+      </div>
+      {/* NAP row */}
+      <div className="border-t border-border/60">
+        <div className="container py-6">
+          <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground sm:flex-row sm:justify-center sm:gap-8">
+            <a href="tel:+919825247312" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Phone className="h-4 w-4 flex-shrink-0" />
+              +91 9825247312
+            </a>
+            <a href="mailto:contact@ommarketingsolutions.in" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Mail className="h-4 w-4 flex-shrink-0" />
+              contact@ommarketingsolutions.in
+            </a>
+            <span className="flex items-center gap-2">
+              <MapPin className="h-4 w-4 flex-shrink-0" />
+              Ahmedabad, Gujarat, India
+            </span>
+          </div>
         </div>
       </div>
       <div className="border-t border-border/60">
