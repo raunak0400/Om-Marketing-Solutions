@@ -14,6 +14,7 @@ import { ArrowRight, Check, MoveRight, PlayCircle, Zap, Mail, MapPin, Phone as P
 import Image from 'next/image';
 import Link from 'next/link';
 import { ConstellationBackground } from '@/components/constellation-background';
+import { OurWork } from '@/components/our-work';
 
 export default function Home() {
   const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3);
@@ -230,6 +231,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Client Projects Section */}
+      <OurWork />
 
       {/* Testimonials Section */}
       <section className="py-16 md:py-24">
