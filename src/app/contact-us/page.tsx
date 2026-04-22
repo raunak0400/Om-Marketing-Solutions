@@ -1,11 +1,5 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
-
-export const metadata: Metadata = {
-  title: 'Contact Us | OM Marketing Solutions, Ahmedabad',
-  description:
-    'Get in touch with OM Marketing Solutions in Ahmedabad. Call, email, or fill out the form to discuss your web development, digital marketing, or automation project.',
-};
 import {
     Card,
     CardContent,
@@ -24,6 +18,12 @@ import {
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Phone } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Contact Us | OM Marketing Solutions, Ahmedabad',
+  description:
+    'Get in touch with OM Marketing Solutions in Ahmedabad. Call, email, or fill out the form to discuss your web development, digital marketing, or automation project.',
+};
 
 export default function ContactPage() {
 
@@ -69,10 +69,10 @@ export default function ContactPage() {
                             </CardHeader>
                             <CardContent>
                                 <a
-                                    href="mailto:contact@ommarketingsolutions.in"
+                                    href="mailto:support@ommarketingsolutions.in"
                                     className="text-muted-foreground hover:text-foreground transition-colors break-all"
                                 >
-                                    contact@ommarketingsolutions.in
+                                    support@ommarketingsolutions.in
                                 </a>
                             </CardContent>
                         </Card>

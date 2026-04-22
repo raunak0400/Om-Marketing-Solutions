@@ -6,15 +6,15 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card';
+import { Check, Target, Users, Zap, Code, Lightbulb, Rocket, Heart, Award, TrendingUp, Clock, Shield, Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Us — OM Marketing Solutions, Ahmedabad',
   description:
     'Meet the team behind OM Marketing Solutions — a digital agency in Ahmedabad helping Indian businesses grow with web development, mobile apps, and digital marketing.',
 };
-import { Check, Target, Users, Zap, Code, Lightbulb, Rocket, Heart, Award, TrendingUp, Clock, Shield, Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
 
 export default function AboutUsPage() {
     return (
@@ -150,7 +150,7 @@ export default function AboutUsPage() {
                                                 </Button>
                                             </Link>
                                             <Link
-                                                href="mailto:contact@ommarketingsolutions.in"
+                                                href="mailto:support@ommarketingsolutions.in"
                                             >
                                                 <Button variant="outline" size="sm" className="gap-2">
                                                     <Mail className="h-4 w-4" />

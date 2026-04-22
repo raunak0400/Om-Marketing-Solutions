@@ -82,9 +82,9 @@ export function Footer() {
               <Phone className="h-4 w-4 flex-shrink-0" />
               +91 9825247312
             </a>
-            <a href="mailto:contact@ommarketingsolutions.in" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="mailto:support@ommarketingsolutions.in" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="h-4 w-4 flex-shrink-0" />
-              contact@ommarketingsolutions.in
+              support@ommarketingsolutions.in
             </a>
             <span className="flex items-center gap-2">
               <MapPin className="h-4 w-4 flex-shrink-0" />

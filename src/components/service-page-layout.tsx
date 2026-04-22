@@ -363,10 +363,10 @@ export function ServicePageLayout({
                 📞 +91 9825247312
               </a>
               <a
-                href="mailto:contact@ommarketingsolutions.in"
+                href="mailto:support@ommarketingsolutions.in"
                 className="hover:text-primary transition-colors break-all"
               >
-                ✉️ contact@ommarketingsolutions.in
+                ✉️ support@ommarketingsolutions.in
               </a>
             </div>
           </div>

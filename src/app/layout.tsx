@@ -70,7 +70,7 @@ const localBusinessSchema = {
   description:
     'Digital marketing agency in Ahmedabad helping Indian SMEs with web development, app development, AI automation, and performance marketing.',
   telephone: '+919825247312',
-  email: 'contact@ommarketingsolutions.in',
+  email: 'support@ommarketingsolutions.in',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Ahmedabad',
@@ -165,7 +165,7 @@ const organizationSchema = {
     },
     {
       '@type': 'ContactPoint',
-      email: 'contact@ommarketingsolutions.in',
+      email: 'support@ommarketingsolutions.in',
       contactType: 'sales',
       areaServed: 'IN',
     },
