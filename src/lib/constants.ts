@@ -138,6 +138,33 @@ export const SERVICES = [
 
 export const PORTFOLIO_PROJECTS = [
   {
+    title: 'SilverLeaf Preschool',
+    description:
+      'A vibrant, parent-friendly preschool website with animated sections, real photo integration, WhatsApp-connected contact form, and mobile-first responsive design. Built to increase admissions enquiries.',
+    tags: ['React', 'Tailwind CSS', 'WhatsApp Integration', 'Animations'],
+    image: undefined,
+    href: 'https://silver-leaf-preschool.vercel.app/',
+    github: undefined,
+  },
+  {
+    title: "Priya's Training Hub",
+    description:
+      'A professional training and coaching platform with course showcase, trainer profile, testimonials, and lead generation forms. Designed to convert visitors into enrolled students.',
+    tags: ['React', 'Tailwind CSS', 'Lead Generation', 'Responsive'],
+    image: undefined,
+    href: 'https://priyas-training-hub.vercel.app/',
+    github: undefined,
+  },
+  {
+    title: '3M Enterprises',
+    description:
+      'A premium luxury black-and-gold business consultancy and wealth advisory website. Features cinematic hero design, 6 case study showcases, live investment opportunities section, and full multi-page architecture.',
+    tags: ['React', 'Vite', 'Framer Motion', 'Multi-Page', 'Premium Design'],
+    image: undefined,
+    href: 'https://3-m-enterprises.vercel.app',
+    github: undefined,
+  },
+  {
     title: 'TT Marketing Solutions',
     description:
       'A professional digital marketing agency website built for TT Marketing Solutions. Features a modern, responsive design with service showcases, portfolio sections, and lead generation forms to help businesses grow their online presence.',
