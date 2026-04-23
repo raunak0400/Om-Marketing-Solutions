@@ -192,6 +192,15 @@ export const PORTFOLIO_PROJECTS = [
     github: 'https://github.com/Het161/buildbyhet',
   },
   {
+    title: 'Raunak Jha - Portfolio Website',
+    description:
+      'A sleek, high-performance developer portfolio built to showcase technical proficiency across frontend and backend technologies. Features elegant Framer Motion animations, structured project case studies, and perfect Lighthouse performance scores.',
+    tags: ['Next.js', 'Tailwind CSS', 'Portfolio', 'TypeScript'],
+    image: { imageUrl: '/imraunak.png', imageHint: 'Raunak portfolio website' },
+    href: 'https://imraunak.dev/',
+    github: 'https://github.com/raunak0400',
+  },
+  {
     title: 'Hospital Medical Information System',
     description:
       'Healthcare patient management system with JWT authentication, role-based access control, advanced patient records management, search with pagination, and admin analytics dashboard. Built with React and Node.js.',

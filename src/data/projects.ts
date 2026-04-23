@@ -167,8 +167,78 @@ export const projects: Project[] = [
       },
     ],
     screenshots: ['/hetmkc.png'],
-    nextProject: 'silverleaf-preschool',
+    nextProject: 'raunak-portfolio',
     prevProject: 'tt-marketing',
+  },
+  {
+    slug: 'raunak-portfolio',
+    title: 'Raunak Jha — Developer Portfolio',
+    tagline: 'A modern, interactive personal portfolio website showcasing full-stack engineering expertise.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/imraunak.png',
+    heroImage: '/imraunak.png',
+    liveUrl: 'https://imraunak.dev/',
+    githubUrl: 'https://github.com/raunak0400',
+    client: 'Raunak Kumar Jha',
+    duration: '2 weeks',
+    year: '2024',
+    techStack: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion', 'Vercel'],
+    services: ['Web Development', 'UI/UX Design', 'Personal Branding'],
+    overview:
+      'A sleek, high-performance developer portfolio built to showcase technical proficiency across frontend and backend technologies. Designed to serve as a digital resume and project showcase for Raunak Kumar Jha, featuring smooth animations, structured case studies, and seamless navigation.',
+    problem:
+      'To stand out as a technical director and full-stack engineer, Raunak needed a digital presence that went beyond a simple resume. The goal was to build a site that not only listed projects but demonstrated engineering capabilities through its own performance, architecture, and design.',
+    solution:
+      'We developed a minimalist, highly responsive Next.js application leveraging Framer Motion for subtle, professional animations. The architecture ensures perfect SEO scores, sub-second load times, and a frictionless user experience across all devices.',
+    results: [
+      'Sub-second load times globally via Vercel Edge Network',
+      'Perfect 100/100 Lighthouse scores for Performance, Accessibility, and SEO',
+      'Increased professional inquiries and brand authority',
+      'Dynamic project loading with zero layout shift',
+    ],
+    features: [
+      {
+        title: 'Performance-First Architecture',
+        description:
+          'Built with Next.js App Router and optimized for maximum speed, ensuring instant page transitions and asset delivery.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Interactive Project Showcase',
+        description:
+          'A filterable, dynamic grid of high-impact engineering projects complete with source code links and live demos.',
+        icon: 'Code2',
+      },
+      {
+        title: 'Fluid Animations',
+        description:
+          'Subtle enter and exit animations powered by Framer Motion that add polish without compromising performance.',
+        icon: 'Palette',
+      },
+      {
+        title: 'Responsive & Accessible',
+        description:
+          'Meticulously tested across devices to ensure perfect typography scaling and full keyboard/screen-reader accessibility.',
+        icon: 'Smartphone',
+      },
+      {
+        title: 'Technical Blogging Integration',
+        description:
+          'Structured space for technical writing to demonstrate thought leadership and share engineering insights.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Direct Communication Channels',
+        description:
+          'Streamlined contact methods integrated directly into the layout for easy professional outreach.',
+        icon: 'MessageCircle',
+      },
+    ],
+    testimonial: undefined,
+    screenshots: ['/imraunak.png'],
+    nextProject: 'silverleaf-preschool',
+    prevProject: 'het-portfolio',
   },
   {
     slug: 'silverleaf-preschool',
@@ -242,7 +312,7 @@ export const projects: Project[] = [
     },
     screenshots: ['/pre-school.png'],
     nextProject: 'priyas-training-hub',
-    prevProject: 'het-portfolio',
+    prevProject: 'raunak-portfolio',
   },
   {
     slug: 'priyas-training-hub',
