@@ -50,8 +50,7 @@ export function PortfolioClient() {
         <div className="container text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold tracking-tighter md:text-5xl"
           >
@@ -59,8 +58,7 @@ export function PortfolioClient() {
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mx-auto mt-4 max-w-2xl text-muted-foreground"
           >
@@ -70,8 +68,7 @@ export function PortfolioClient() {
           {/* Stats row */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto mt-10 flex max-w-sm justify-between divide-x divide-border/60 rounded-2xl border border-border/60 bg-card px-6 py-4"
           >
@@ -91,8 +88,7 @@ export function PortfolioClient() {
           {/* Filter buttons */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.25 }}
             className="mb-10 flex flex-wrap justify-center gap-2"
           >
@@ -112,15 +108,13 @@ export function PortfolioClient() {
           </motion.div>
 
           {/* Cards grid */}
-          <motion.div layout className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <AnimatePresence mode="popLayout">
+          <motion.div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <AnimatePresence>
               {filtered.map((project) => (
                 <motion.div
                   key={project.slug}
-                  layout
                   initial={{ opacity: 0, scale: 0.94 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: "50px" }}
+                  animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.94 }}
                   transition={{ duration: 0.35 }}
                   className="group flex flex-col overflow-hidden rounded-xl border border-border/60 bg-card"
