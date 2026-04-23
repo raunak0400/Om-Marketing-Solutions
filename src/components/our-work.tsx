@@ -31,7 +31,7 @@ const CLIENT_PROJECTS = [
   },
   {
     id: 3,
-    name: '3M Enterprises',
+    name: 'Alpha Ventures',
     category: 'Business Consultancy Website',
     description:
       'A premium luxury black-and-gold business consultancy and wealth advisory website. Features cinematic hero design, 6 case study showcases, live investment opportunities section, and full multi-page architecture.',

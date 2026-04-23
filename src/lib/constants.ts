@@ -156,7 +156,7 @@ export const PORTFOLIO_PROJECTS = [
     github: undefined,
   },
   {
-    title: '3M Enterprises',
+    title: 'Alpha Ventures',
     description:
       'A premium luxury black-and-gold business consultancy and wealth advisory website. Features cinematic hero design, 6 case study showcases, live investment opportunities section, and full multi-page architecture.',
     tags: ['React', 'Vite', 'Framer Motion', 'Multi-Page', 'Premium Design'],
