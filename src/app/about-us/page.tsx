@@ -83,10 +83,11 @@ export default function AboutUsPage() {
                         </p>
                     </div>
 
-                    <div className="mx-auto max-w-xl">
+                    <div className="mx-auto max-w-5xl">
+                        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                             {/* Het Kumar Patel */}
-                            <Card className="overflow-hidden btn-glow-hover">
-                                <div className="p-6">
+                            <Card className="overflow-hidden btn-glow-hover flex flex-col">
+                                <div className="p-6 flex-grow flex flex-col">
                                     <div className="flex items-center justify-center mb-6">
                                         <div className="relative h-48 w-48 rounded-full overflow-hidden">
                                             <Image
@@ -101,15 +102,15 @@ export default function AboutUsPage() {
                                         <CardTitle className="text-2xl">HetKumar Sanjaykumar Patel</CardTitle>
                                         <p className="text-primary font-semibold">Founder & Business Director</p>
                                     </CardHeader>
-                                    <CardContent className="p-0 mt-4">
-                                        <p className="text-muted-foreground mb-4 text-center">
+                                    <CardContent className="p-0 mt-4 flex-grow flex flex-col">
+                                        <p className="text-muted-foreground mb-4 text-center flex-grow">
                                             Het Kumar Patel is the business visionary behind OM Marketing Solutions.
                                             With a keen understanding of client needs and market dynamics, he specializes
                                             in client onboarding, relationship management, and business development.
                                             Het ensures our clients receive personalized attention and solutions that
                                             align with their business goals.
                                         </p>
-                                        <div className="flex flex-wrap justify-center gap-3">
+                                        <div className="flex flex-wrap justify-center gap-3 mt-auto">
                                             <Link
                                                 href="https://www.linkedin.com/in/hetkumar-sanjaykumar-patel-54730933b"
                                                 target="_blank"
@@ -160,6 +161,67 @@ export default function AboutUsPage() {
                                     </CardContent>
                                 </div>
                             </Card>
+
+                            {/* Raunak Kumar Jha */}
+                            <Card className="overflow-hidden btn-glow-hover flex flex-col">
+                                <div className="p-6 flex-grow flex flex-col">
+                                    <div className="flex items-center justify-center mb-6">
+                                        <div className="relative h-48 w-48 rounded-full overflow-hidden">
+                                            <Image
+                                                src="/Raunak.png"
+                                                alt="Raunak Kumar Jha"
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
+                                    </div>
+                                    <CardHeader className="p-0 text-center">
+                                        <CardTitle className="text-2xl">Raunak Kumar Jha</CardTitle>
+                                        <p className="text-primary font-semibold">Co-Founder & Technical Director</p>
+                                    </CardHeader>
+                                    <CardContent className="p-0 mt-4 flex-grow flex flex-col">
+                                        <p className="text-muted-foreground mb-4 text-center flex-grow">
+                                            Raunak Kumar Jha is the engineering mastermind behind OM Marketing Solutions.
+                                            With extensive expertise in advanced full-stack web development and cloud architecture,
+                                            he ensures that all our software solutions are performant, scalable, and built using
+                                            industry best practices. Raunak turns complex business requirements into elegant digital tools.
+                                        </p>
+                                        <div className="flex flex-wrap justify-center gap-3 mt-auto">
+                                            <Link
+                                                href="https://www.linkedin.com/in/raunak0400"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <Button variant="outline" size="sm" className="gap-2">
+                                                    <Linkedin className="h-4 w-4" />
+                                                    LinkedIn
+                                                </Button>
+                                            </Link>
+                                            <Link
+                                                href="https://github.com/raunak0400"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <Button variant="outline" size="sm" className="gap-2">
+                                                    <Github className="h-4 w-4" />
+                                                    GitHub
+                                                </Button>
+                                            </Link>
+                                            <Link
+                                                href="https://imraunak.dev/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <Button variant="outline" size="sm" className="gap-2">
+                                                    <Code className="h-4 w-4" />
+                                                    Portfolio
+                                                </Button>
+                                            </Link>
+                                        </div>
+                                    </CardContent>
+                                </div>
+                            </Card>
+                        </div>
                     </div>
                 </div>
             </section>
