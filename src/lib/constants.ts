@@ -187,7 +187,7 @@ export const PORTFOLIO_PROJECTS = [
     description:
       'A modern backend developer portfolio showcasing scalable REST APIs and microservices projects. Features SmartWork 360 productivity platform, NASA Space Apps weather forecasting, and Campus Life social platform. Built with Next.js and Tailwind CSS.',
     tags: ['Next.js', 'Tailwind CSS', 'Portfolio', 'FastAPI', 'Python'],
-    image: { imageUrl: '/hetmkc.png', imageHint: 'Het Patel portfolio website' },
+    image: { imageUrl: '/het-portfolio.png', imageHint: 'Het Patel portfolio website' },
     href: 'https://buildbyhet.vercel.app/',
     github: 'https://github.com/Het161/buildbyhet',
   },
