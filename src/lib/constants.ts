@@ -1,16 +1,16 @@
 import {
-  Code,
-  Warehouse,
-  Phone,
-  TrendingUp,
-  Bot,
-  BrainCircuit,
-  Zap,
+  Globe,
+  AppWindow,
   Smartphone,
   Palette,
-  Target,
-  Search,
-  Share2,
+  Package,
+  Bot,
+  TrendingUp,
+  Megaphone,
+  Zap,
+  CalendarCheck,
+  BarChart3,
+  MessageCircle,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -74,7 +74,7 @@ export const SERVICES = [
     title: 'Web Development',
     description:
       'We build professional, affordable websites and online stores to bring your traditional business into the digital world.',
-    icon: Code,
+    icon: Globe,
     href: '/web-development',
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
   },
@@ -82,7 +82,7 @@ export const SERVICES = [
     title: 'App Development',
     description:
       'Custom web applications tailored to your business needs with powerful features and seamless user experience.',
-    icon: Code,
+    icon: AppWindow,
     href: '/app-development',
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
   },
@@ -106,7 +106,7 @@ export const SERVICES = [
     title: 'Inventory Management',
     description:
       'Automate your stock control with a custom Inventory Management System (IMS) to reduce costs and prevent stockouts.',
-    icon: Warehouse,
+    icon: Package,
     href: '/inventory-management',
     image: PlaceHolderImages.find((img) => img.id === 'service-automation'),
   },
@@ -122,7 +122,7 @@ export const SERVICES = [
     title: 'Performance Marketing',
     description:
       'Data-driven marketing campaigns optimized for maximum ROI with measurable results and continuous improvement.',
-    icon: Target,
+    icon: TrendingUp,
     href: '/performance-marketing',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
@@ -130,7 +130,7 @@ export const SERVICES = [
     title: 'Digital Marketing',
     description:
       'Reach more customers online with result-oriented digital marketing strategies including SEO, SEM, and social media management.',
-    icon: TrendingUp,
+    icon: Megaphone,
     href: '/digital-marketing',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
@@ -353,9 +353,9 @@ export const DIGITAL_TRANSFORMATION_ROADMAP = [
 
 export const CUSTOMER_TOOLS = [
   { name: 'AI Chatbots', icon: Bot, description: '24/7 automated customer support' },
-  { name: 'CRM Systems', icon: BrainCircuit, description: 'Manage customer relationships' },
+  { name: 'CRM Systems', icon: MessageCircle, description: 'Manage customer relationships' },
   { name: 'Email Marketing', icon: TrendingUp, description: 'Nurture leads and drive sales' },
-  { name: 'Analytics Dashboards', icon: Zap, description: 'Track performance and KPIs' },
-  { name: 'Booking Systems', icon: Code, description: 'Automate appointments and scheduling' },
-  { name: 'Feedback Forms', icon: Code, description: 'Gather customer insights' },
+  { name: 'Analytics Dashboards', icon: BarChart3, description: 'Track performance and KPIs' },
+  { name: 'Booking Systems', icon: CalendarCheck, description: 'Automate appointments and scheduling' },
+  { name: 'Feedback Forms', icon: Zap, description: 'Gather customer insights' },
 ];

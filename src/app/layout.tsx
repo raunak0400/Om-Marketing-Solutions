@@ -6,8 +6,11 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { ScrollProgress } from '@/components/layout/scroll-progress';
+import { PageTransition } from '@/components/layout/page-transition';
 import { ConstellationBackground } from '@/components/constellation-background';
 import { ClientWidgets } from '@/components/client-widgets';
+import { WelcomeModalWrapper } from '@/components/welcome/WelcomeModalWrapper';
 
 // Self-hosted fonts via next/font — eliminates render-blocking Google Fonts CDN request
 const inter = Inter({
@@ -240,11 +243,15 @@ export default function RootLayout({
         <div className="glow-bg-corner glow-bottom-left" aria-hidden="true" />
         <div className="glow-bg-corner glow-bottom-right" aria-hidden="true" />
 
+        <ScrollProgress />
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
         <ClientWidgets />
         <Toaster />
+        <WelcomeModalWrapper />
       </body>
     </html>
   );

@@ -1,12 +1,23 @@
 'use client';
+
+import { motion, useReducedMotion } from 'framer-motion';
 import { APP_NAME, NAV_LINKS, SERVICES } from '@/lib/constants';
-import { Linkedin, Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import { Linkedin, Facebook, Instagram, Github, Phone, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from '../logo';
 
 export function Footer() {
+  const shouldReduce = useReducedMotion();
+
   return (
-    <footer className="border-t border-border/60 bg-card" id="footer">
+    <motion.footer
+      initial={shouldReduce ? {} : { opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="border-t border-border/60 bg-card"
+      id="footer"
+    >
       <div className="container grid grid-cols-1 gap-12 py-12 md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
           <Logo />
@@ -38,6 +49,14 @@ export function Footer() {
             >
               <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
+            <Link
+              href="https://github.com/OM-Marketing-Solutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Github className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            </Link>
           </div>
         </div>
 
@@ -56,6 +75,7 @@ export function Footer() {
             ))}
           </ul>
         </div>
+
         <div className="space-y-2">
           <h4 className="font-semibold">Company</h4>
           <ul className="space-y-2">
@@ -71,9 +91,18 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/privacy-policy"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
+
       {/* NAP row */}
       <div className="border-t border-border/60">
         <div className="container py-6">
@@ -93,11 +122,12 @@ export function Footer() {
           </div>
         </div>
       </div>
+
       <div className="border-t border-border/60">
         <div className="container py-4 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} {APP_NAME}. All rights reserved.
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
