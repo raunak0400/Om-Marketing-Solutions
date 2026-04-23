@@ -142,7 +142,7 @@ export const PORTFOLIO_PROJECTS = [
     description:
       'A vibrant, parent-friendly preschool website with animated sections, real photo integration, WhatsApp-connected contact form, and mobile-first responsive design. Built to increase admissions enquiries.',
     tags: ['React', 'Tailwind CSS', 'WhatsApp Integration', 'Animations'],
-    image: undefined,
+    image: { imageUrl: '/pre-school.png', imageHint: 'SilverLeaf Preschool website' },
     href: 'https://silver-leaf-preschool.vercel.app/',
     github: undefined,
   },
@@ -151,7 +151,7 @@ export const PORTFOLIO_PROJECTS = [
     description:
       'A professional training and coaching platform with course showcase, trainer profile, testimonials, and lead generation forms. Designed to convert visitors into enrolled students.',
     tags: ['React', 'Tailwind CSS', 'Lead Generation', 'Responsive'],
-    image: undefined,
+    image: { imageUrl: '/priyas-training-hub.png', imageHint: "Priya's Training Hub website" },
     href: 'https://priyas-training-hub.vercel.app/',
     github: undefined,
   },
@@ -160,7 +160,7 @@ export const PORTFOLIO_PROJECTS = [
     description:
       'A premium luxury black-and-gold business consultancy and wealth advisory website. Features cinematic hero design, 6 case study showcases, live investment opportunities section, and full multi-page architecture.',
     tags: ['React', 'Vite', 'Framer Motion', 'Multi-Page', 'Premium Design'],
-    image: undefined,
+    image: { imageUrl: '/alpha-ventures.png', imageHint: 'Alpha Ventures business consultancy website' },
     href: 'https://3-m-enterprises.vercel.app',
     github: undefined,
   },
