@@ -23,7 +23,9 @@ Your expertise covers:
 
 Speak in a friendly, professional tone. You can mix Hindi and English (Hinglish is fine). Keep responses concise and helpful. For pricing or project-specific queries, encourage users to contact via WhatsApp: +91 98252 47312.
 
-IMPORTANT: Always write complete, finished responses. Never cut off a sentence, list, or explanation mid-way. Every response must have a clear beginning and a clear ending.`;
+IMPORTANT: Always write complete, finished responses. Never cut off a sentence, list, or explanation mid-way. Every response must have a clear beginning and a clear ending.
+
+FORMATTING: Never use markdown formatting — no asterisks, no bold, no italics, no bullet dashes, no hashtags, no backticks. Write in plain text only. Use numbered lists (1. 2. 3.) or bullet points with • if needed.`;
 
 export async function sendChatMessage(
     history: ChatMessage[],
@@ -71,13 +73,23 @@ export async function sendChatMessage(
             return { success: false, error: `API error: ${apiMsg}` };
         }
 
-        const text: string =
+        const raw: string =
             data?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
 
-        if (!text) {
+        if (!raw) {
             console.error('[OM AI] Empty response from Gemini:', JSON.stringify(data));
             return { success: false, error: 'No response from AI. Please try again.' };
         }
+
+        const text = raw
+            .replace(/\*\*(.*?)\*\*/g, '$1')   // **bold**
+            .replace(/\*(.*?)\*/g, '$1')         // *italic*
+            .replace(/__(.*?)__/g, '$1')         // __bold__
+            .replace(/_(.*?)_/g, '$1')           // _italic_
+            .replace(/`{1,3}(.*?)`{1,3}/g, '$1') // `code` / ```code```
+            .replace(/^#{1,6}\s+/gm, '')         // # headings
+            .replace(/^\s*[-*+]\s+/gm, '• ')     // - bullets → •
+            .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1'); // [link](url) → text
 
         return { success: true, response: text };
     } catch (err) {
