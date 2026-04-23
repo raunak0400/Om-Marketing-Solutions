@@ -3,7 +3,7 @@
 const API_KEY = process.env.GOOGLE_GENAI_API_KEY;
 
 // gemini-2.5-flash — confirmed available with this API key
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-1.5-flash';
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
 export interface ChatMessage {
