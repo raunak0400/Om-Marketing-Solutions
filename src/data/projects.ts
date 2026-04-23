@@ -99,7 +99,7 @@ export const projects: Project[] = [
     },
     screenshots: ['/ttmarketing.png'],
     nextProject: 'het-portfolio',
-    prevProject: 'om-marketing-solutions',
+    prevProject: 'alpha-ventures',
   },
   {
     slug: 'het-portfolio',
@@ -385,8 +385,76 @@ export const projects: Project[] = [
       },
     ],
     screenshots: ['/logomkc.jpeg'],
-    nextProject: 'tt-marketing',
+    nextProject: 'alpha-ventures',
     prevProject: 'priyas-training-hub',
+  },
+  {
+    slug: 'alpha-ventures',
+    title: 'Alpha Ventures',
+    tagline: 'A premium luxury black-and-gold business consultancy website with cinematic hero design and 6 case study showcases.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/alpha-ventures.png',
+    heroImage: '/alpha-ventures.png',
+    liveUrl: 'https://3-m-enterprises.vercel.app/',
+    client: 'Alpha Ventures',
+    duration: '4 weeks',
+    year: '2024',
+    techStack: ['React', 'Vite', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
+    services: ['Web Development', 'UI/UX Design', 'Premium Branding'],
+    overview:
+      'Alpha Ventures is a business consultancy and wealth advisory firm that needed a digital presence that matched their premium, high-trust brand. We built a luxury website with a cinematic hero, investment opportunities section, and 6 detailed case study showcases — designed to attract high-net-worth clientele.',
+    problem:
+      'The firm was operating with no website, losing potential high-value clients to competitors who had polished digital presences. Their brand positioning — premium, exclusive, results-driven — was impossible to communicate without a website that matched that identity.',
+    solution:
+      'We designed a dark, gold-accented luxury website using React and Framer Motion. Every section — from the full-screen hero to the case study cards — is built to signal prestige and competence. The multi-page architecture allows deep exploration of their services and track record.',
+    results: [
+      'Premium brand identity established online',
+      'Cinematic hero creates a strong first impression',
+      '6 case studies demonstrate depth of expertise',
+      'High-trust design tailored for wealth advisory clientele',
+    ],
+    features: [
+      {
+        title: 'Cinematic Hero Design',
+        description:
+          'Full-screen hero with dramatic dark-gold color palette and animated entrance transitions that immediately signal premium positioning.',
+        icon: 'Star',
+      },
+      {
+        title: '6 Case Study Showcases',
+        description:
+          'Detailed case study cards highlight past client wins and outcomes — the key trust signal for a consultancy audience.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Investment Opportunities Section',
+        description:
+          'Live opportunities section allows the firm to surface current deals and attract accredited investors directly through the website.',
+        icon: 'TrendingUp',
+      },
+      {
+        title: 'Framer Motion Animations',
+        description:
+          'Smooth, physics-based animations throughout reinforce the premium brand feel without feeling flashy or distracting.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Multi-Page Architecture',
+        description:
+          'Dedicated pages for services, team, case studies, and contact — giving visitors a complete picture of the firm.',
+        icon: 'Layers',
+      },
+      {
+        title: 'Mobile Responsive',
+        description:
+          'The luxury design translates perfectly to mobile, ensuring the premium experience is consistent across all devices.',
+        icon: 'Smartphone',
+      },
+    ],
+    screenshots: ['/alpha-ventures.png'],
+    nextProject: 'tt-marketing',
+    prevProject: 'om-marketing-solutions',
   },
 ];
 
