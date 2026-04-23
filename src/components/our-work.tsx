@@ -41,6 +41,18 @@ const CLIENT_PROJECTS = [
     icon: '💼',
     result: 'Premium Brand Positioning',
   },
+  {
+    id: 4,
+    name: 'FindUrTrip',
+    category: 'Travel Platform',
+    description:
+      'A full-featured travel discovery platform connecting adventurers with curated trips, treks, and experiences across India. Features cinematic hero, WhatsApp trip planning, Customise Trip flow, and dedicated Events & Stories sections — serving 10K+ happy travellers.',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion', 'WhatsApp API', 'Vercel'],
+    liveUrl: 'https://findurtrip.org/',
+    color: '#E8910C',
+    icon: '✈️',
+    result: '10K+ Happy Travellers',
+  },
 ];
 
 export function OurWork() {
@@ -60,7 +72,7 @@ export function OurWork() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {CLIENT_PROJECTS.map((project) => (
             <Card
               key={project.id}

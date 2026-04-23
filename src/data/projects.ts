@@ -99,7 +99,7 @@ export const projects: Project[] = [
     },
     screenshots: ['/ttmarketing.png'],
     nextProject: 'het-portfolio',
-    prevProject: 'alpha-ventures',
+    prevProject: 'findurtrip',
   },
   {
     slug: 'het-portfolio',
@@ -453,8 +453,76 @@ export const projects: Project[] = [
       },
     ],
     screenshots: ['/alpha-ventures.png'],
-    nextProject: 'tt-marketing',
+    nextProject: 'findurtrip',
     prevProject: 'om-marketing-solutions',
+  },
+  {
+    slug: 'findurtrip',
+    title: 'FindUrTrip',
+    tagline: 'A full-featured travel platform connecting adventurers with curated trips, treks, and experiences across India.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/finurtrip.png',
+    heroImage: '/finurtrip.png',
+    liveUrl: 'https://findurtrip.org/',
+    client: 'FindUrTrip',
+    duration: '5 weeks',
+    year: '2025',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'WhatsApp API', 'Vercel'],
+    services: ['Web Development', 'UI/UX Design', 'WhatsApp Integration'],
+    overview:
+      'FindUrTrip is a travel discovery platform helping adventure seekers find and book curated trips, treks, and experiences across India. With 10K+ happy travellers and 500+ trips organised, the platform needed a modern, conversion-focused website to match its growing reputation.',
+    problem:
+      'The existing online presence did not reflect the scale and quality of experiences FindUrTrip offered. Potential travellers were dropping off before enquiring because the site lacked trust signals, a smooth browsing experience, and a simple way to get in touch and plan their trip.',
+    solution:
+      'We built a visually immersive travel website with a cinematic hero, smooth page animations, a Customise Trip feature, WhatsApp-based trip planning flow, and dedicated sections for Events, Stories, and Destinations — all designed to inspire visitors and move them to book.',
+    results: [
+      '10K+ happy travellers served through the platform',
+      '500+ trips organised and showcased on the site',
+      '25+ destinations featured with rich content',
+      'WhatsApp trip planning drives direct conversions daily',
+    ],
+    features: [
+      {
+        title: 'Cinematic Hero Section',
+        description:
+          'Full-screen mountain backdrop with bold typography and dual CTAs — "Explore Now" and "Plan on WhatsApp" — designed to inspire immediate action.',
+        icon: 'Globe',
+      },
+      {
+        title: 'Customise Trip Flow',
+        description:
+          'Interactive trip customisation feature lets travellers define their preferences and get a tailored itinerary suggestion.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'WhatsApp Trip Planning',
+        description:
+          'Direct WhatsApp integration routes trip enquiries instantly to the team, reducing friction and boosting conversion.',
+        icon: 'MessageCircle',
+      },
+      {
+        title: 'Events & Stories Sections',
+        description:
+          'Dedicated pages for upcoming events and traveller stories build community and provide ongoing content for returning visitors.',
+        icon: 'Star',
+      },
+      {
+        title: 'Framer Motion Animations',
+        description:
+          'Smooth entrance animations, scroll reveals, and hover effects make the browsing experience feel premium and engaging.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Mobile-First Responsive',
+        description:
+          'Fully optimised for mobile — the primary device for travel inspiration — with fast load times and thumb-friendly navigation.',
+        icon: 'Smartphone',
+      },
+    ],
+    screenshots: ['/finurtrip.png'],
+    nextProject: 'tt-marketing',
+    prevProject: 'alpha-ventures',
   },
 ];
 

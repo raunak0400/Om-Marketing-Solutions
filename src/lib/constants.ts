@@ -165,6 +165,15 @@ export const PORTFOLIO_PROJECTS = [
     github: undefined,
   },
   {
+    title: 'FindUrTrip',
+    description:
+      'A full-featured travel discovery platform connecting adventurers with curated trips, treks, and experiences across India. Cinematic hero design, WhatsApp trip planning, Customise Trip flow, and dedicated Events & Stories sections — serving 10K+ happy travellers and 500+ trips organised.',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion', 'WhatsApp API', 'Vercel'],
+    image: { imageUrl: '/finurtrip.png', imageHint: 'FindUrTrip travel platform website' },
+    href: 'https://findurtrip.org/',
+    github: undefined,
+  },
+  {
     title: 'TT Marketing Solutions',
     description:
       'A professional digital marketing agency website built for TT Marketing Solutions. Features a modern, responsive design with service showcases, portfolio sections, and lead generation forms to help businesses grow their online presence.',
