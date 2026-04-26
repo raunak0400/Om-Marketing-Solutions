@@ -10,7 +10,7 @@ import { projects } from '@/data/projects';
 const FILTERS = ['All', 'Web Development', 'Digital Marketing', 'AI & Automation'];
 
 const STATS = [
-  { value: '20+', label: 'Projects Delivered' },
+  { value: '23+', label: 'Projects Delivered' },
   { value: '3+',  label: 'Years in Ahmedabad' },
   { value: '8',   label: 'Services Offered' },
 ];

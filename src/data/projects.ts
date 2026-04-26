@@ -99,7 +99,7 @@ export const projects: Project[] = [
     },
     screenshots: ['/ttmarketing.png'],
     nextProject: 'het-portfolio',
-    prevProject: 'findurtrip',
+    prevProject: 'stockpilot-ims',
   },
   {
     slug: 'het-portfolio',
@@ -591,8 +591,212 @@ export const projects: Project[] = [
       },
     ],
     screenshots: ['/finurtrip.png'],
-    nextProject: 'tt-marketing',
+    nextProject: 'aavaas-realty',
     prevProject: 'alpha-ventures',
+  },
+  {
+    slug: 'aavaas-realty',
+    title: 'Aavaas Realty',
+    tagline: 'A modern real estate website built to generate property enquiries and build developer credibility online.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/aavaas-realty.jpeg',
+    heroImage: '/aavaas-realty.jpeg',
+    liveUrl: 'https://aavas-realty.vercel.app/',
+    client: 'Aavaas Realty',
+    duration: '3 weeks',
+    year: '2025',
+    techStack: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion', 'Vercel'],
+    services: ['Web Development', 'UI/UX Design', 'Lead Generation'],
+    overview:
+      'Aavaas Realty is a property development company that needed a premium digital presence to showcase their residential and commercial projects. We built a modern, high-converting real estate website designed to attract serious buyers and generate qualified property enquiries.',
+    problem:
+      'Without a professional website, Aavaas Realty struggled to reach buyers beyond their local network. Potential customers could not browse available properties, verify the developer\'s credentials, or find contact details easily — causing them to lose leads to competitors with better online presence.',
+    solution:
+      'We built a visually polished real estate website with project showcases, amenity highlights, location maps, and low-friction lead capture forms. The design language conveys trust and premium positioning — critical for buyers making high-value property decisions.',
+    results: [
+      'Property enquiry rate increased significantly post-launch',
+      'Premium brand identity established online',
+      'Mobile-first design reaches buyers on every device',
+      'Location and amenity sections reduce pre-sales queries',
+    ],
+    features: [
+      {
+        title: 'Property Showcase Section',
+        description:
+          'Rich visual project listings with floor plans, amenities, pricing tiers, and availability status to guide buyer decision-making.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Lead Capture Forms',
+        description:
+          'Strategically placed enquiry forms with minimal fields — name, phone, project interest — maximize conversion from interested visitors.',
+        icon: 'MessageCircle',
+      },
+      {
+        title: 'Location & Connectivity',
+        description:
+          'Embedded maps and surrounding infrastructure highlights help buyers evaluate location convenience before visiting the site.',
+        icon: 'Globe',
+      },
+      {
+        title: 'Amenities Grid',
+        description:
+          'Visual amenities showcase communicates lifestyle benefits and differentiates the project from competitors in the same market.',
+        icon: 'Star',
+      },
+      {
+        title: 'Mobile-First Design',
+        description:
+          'Designed for smartphones — the primary device used by property buyers on the go — with fast load times and intuitive navigation.',
+        icon: 'Smartphone',
+      },
+      {
+        title: 'Performance Optimized',
+        description:
+          'Next.js image optimization and lazy loading ensure fast load times even for image-heavy property listing pages.',
+        icon: 'Zap',
+      },
+    ],
+    screenshots: ['/aavaas-realty.jpeg'],
+    nextProject: 'triggered-email-saas',
+    prevProject: 'findurtrip',
+  },
+  {
+    slug: 'triggered-email-saas',
+    title: 'Triggered — Email Automation SaaS',
+    tagline: 'A B2B SaaS platform that automates transactional and behavioural email workflows for modern businesses.',
+    category: 'AI & Automation',
+    status: 'Live',
+    thumbnail: '/triggered-email-saas.png',
+    heroImage: '/triggered-email-saas.png',
+    liveUrl: 'https://triggered-ruddy.vercel.app/',
+    client: 'Triggered',
+    duration: '5 weeks',
+    year: '2025',
+    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel', 'Node.js'],
+    services: ['Web Development', 'AI Integration', 'SaaS Development', 'UI/UX Design'],
+    overview:
+      'Triggered is an email automation SaaS platform that enables businesses to set up event-driven email workflows without writing code. We built the full product interface — from onboarding flow to the workflow builder and campaign analytics dashboard — as a modern, intuitive SaaS application.',
+    problem:
+      'Businesses needed a way to send the right email at the right time based on user behaviour, but existing tools were either too expensive, too complex, or required developer involvement for every new workflow. Triggered needed a product that non-technical teams could own end-to-end.',
+    solution:
+      'We designed and built a clean SaaS dashboard with a drag-and-drop workflow builder, template library, audience segmentation, and real-time delivery analytics. The product is built around simplicity — any marketing team member can create and launch automations in minutes.',
+    results: [
+      'Full SaaS product shipped from zero to live in 5 weeks',
+      'No-code workflow builder reduces setup time to under 10 minutes',
+      'Real-time delivery analytics help users optimise campaigns immediately',
+      'Clean dashboard UI drives high user retention and ease of adoption',
+    ],
+    features: [
+      {
+        title: 'Event-Triggered Workflows',
+        description:
+          'Set up automations that fire on user events — signups, purchases, inactivity — so the right email reaches the right user at the right moment.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Visual Workflow Builder',
+        description:
+          'A drag-and-drop canvas lets marketing teams design multi-step email sequences without any technical knowledge required.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Audience Segmentation',
+        description:
+          'Dynamic audience segments based on user attributes and behaviour ensure every send is targeted and relevant.',
+        icon: 'Users',
+      },
+      {
+        title: 'Template Library',
+        description:
+          'Pre-built, customisable email templates for common use cases — onboarding, re-engagement, transactional — speed up campaign creation.',
+        icon: 'Palette',
+      },
+      {
+        title: 'Delivery Analytics',
+        description:
+          'Real-time open rates, click rates, and delivery status dashboards give teams instant visibility into campaign performance.',
+        icon: 'BarChart3',
+      },
+      {
+        title: 'AI-Assisted Copywriting',
+        description:
+          'Integrated AI suggestions help users write more effective subject lines and email body copy — improving open and conversion rates.',
+        icon: 'Bot',
+      },
+    ],
+    screenshots: ['/triggered-email-saas.png'],
+    nextProject: 'stockpilot-ims',
+    prevProject: 'aavaas-realty',
+  },
+  {
+    slug: 'stockpilot-ims',
+    title: 'StockPilot — Inventory Management System',
+    tagline: 'A smart, AI-powered inventory management platform built for SMEs to track stock, orders, and suppliers in real time.',
+    category: 'AI & Automation',
+    status: 'Live',
+    thumbnail: '/stockpilot-ims.png',
+    heroImage: '/stockpilot-ims.png',
+    liveUrl: 'https://stockpilot-lake.vercel.app/login',
+    client: 'StockPilot',
+    duration: '6 weeks',
+    year: '2025',
+    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'Vercel', 'AI Integration'],
+    services: ['Web Development', 'AI Integration', 'SaaS Development', 'UI/UX Design'],
+    overview:
+      'StockPilot is an intelligent inventory management system designed for small and medium-sized enterprises. We built a full-stack SaaS application that gives business owners real-time visibility into stock levels, purchase orders, supplier management, and AI-powered demand forecasting.',
+    problem:
+      'SMEs managing inventory through spreadsheets or outdated software consistently faced stockouts, overstocking, and poor supplier coordination. Without real-time data and intelligent insights, businesses were making expensive stock decisions based on guesswork.',
+    solution:
+      'We built a comprehensive IMS with real-time stock tracking, automated low-stock alerts, purchase order management, supplier directories, and an AI-powered demand forecasting module. The clean dashboard design makes it accessible to non-technical business owners while being powerful enough for warehouse managers.',
+    results: [
+      'Full-stack IMS product delivered from zero in 6 weeks',
+      'Real-time stock visibility eliminates manual spreadsheet tracking',
+      'AI demand forecasting reduces overstock and stockout incidents',
+      'Purchase order automation saves hours of manual supplier coordination weekly',
+    ],
+    features: [
+      {
+        title: 'Real-Time Stock Dashboard',
+        description:
+          'Live inventory levels across all locations with colour-coded alerts for low stock, overstock, and expiring items.',
+        icon: 'BarChart3',
+      },
+      {
+        title: 'AI Demand Forecasting',
+        description:
+          'Machine learning models analyse sales history and seasonal trends to predict future stock requirements and optimise reorder points.',
+        icon: 'Bot',
+      },
+      {
+        title: 'Purchase Order Management',
+        description:
+          'Create, track, and approve purchase orders end-to-end — from supplier request to goods receipt — all within the platform.',
+        icon: 'Package',
+      },
+      {
+        title: 'Supplier Directory',
+        description:
+          'Centralised supplier database with contact details, pricing history, lead times, and performance ratings for smarter procurement decisions.',
+        icon: 'Users',
+      },
+      {
+        title: 'Automated Low-Stock Alerts',
+        description:
+          'Configurable threshold alerts via email and in-app notifications ensure stockouts are caught before they impact sales.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Multi-Location Support',
+        description:
+          'Manage inventory across multiple warehouses or store locations from a single dashboard with location-level drill-down reporting.',
+        icon: 'Globe',
+      },
+    ],
+    screenshots: ['/stockpilot-ims.png'],
+    nextProject: 'tt-marketing',
+    prevProject: 'triggered-email-saas',
   },
 ];
 
