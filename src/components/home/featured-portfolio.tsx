@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/projects';
 
-const FEATURED = projects.slice(0, 3);
+const FEATURED = projects.slice(2, 5);
 
 export function FeaturedPortfolio() {
   const shouldReduce = useReducedMotion();

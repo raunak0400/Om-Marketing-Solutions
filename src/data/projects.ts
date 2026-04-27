@@ -27,6 +27,146 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'angan-restaurant',
+    title: 'Angan — Premium Fine Dining Restaurant Website',
+    tagline:
+      'A cinematic dark-luxury restaurant website for a premium fine dining brand in Ahmedabad. Features Cormorant Garamond editorial typography, full menu with tasting courses, reservation system, chef story, masonry gallery with lightbox, and Framer Motion cinematic scroll animations.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/angan.png',
+    heroImage: '/angan.png',
+    liveUrl: 'https://angan-restaurant.vercel.app/',
+    client: 'Angan Restaurant (Demo)',
+    duration: '3 weeks',
+    year: '2025',
+    techStack: ['React', 'Vite', 'Framer Motion', 'TypeScript', 'Lenis'],
+    services: ['Web Development', 'UI/UX Design', 'Premium Branding'],
+    overview:
+      'Angan (આંગણ — "The Courtyard") is a premium fine dining restaurant demo website built for Ahmedabad\'s upscale dining market. Designed to compete with the best restaurant websites in India — Indian Accent, Masque, Olive Bar — it features a dark moody cinematic aesthetic with warm gold accents, editorial typography, and deliberate slow animations that feel like a restaurant door opening.',
+    problem:
+      'Most restaurant websites in Ahmedabad are either Zomato listing clones or generic templates. Premium restaurants deserve a digital presence that matches their physical experience — where the website itself feels like the first course. The goal was to build a demo that shows restaurant clients exactly what ₹8–12L agency-quality work looks like.',
+    solution:
+      '6-page React website — Home (cinematic hero, featured dishes, animated stats, staggered testimonials), full Menu page (editorial layout with featured dish strips, tasting menu CTA, category filter tabs), Reservations page (split layout, floating label form, success confirmation), Our Story (chef bio, philosophy sections), Gallery (masonry grid with lightbox and category filter), and Contact (private dining enquiry form, dark-tinted map). Grain texture overlay, candlelight glow gradients, and Lenis smooth scroll throughout.',
+    results: [
+      'Used as a live sales demo for restaurant and hospitality clients',
+      'Candlelit aesthetic prompts "this looks like a real restaurant in Mumbai" reactions',
+      'Zero Three.js — all depth from typography and photography',
+      'Cinematic 0.8–1.2s ease animations separate fine dining from fast food in web design',
+    ],
+    features: [
+      {
+        title: 'Cinematic Dark-Luxury Aesthetic',
+        description:
+          'Dark moody palette with warm gold accents, 4% opacity SVG grain texture overlay, and candlelight glow gradients that remove the flat digital look.',
+        icon: 'Palette',
+      },
+      {
+        title: 'Editorial Menu Layout',
+        description:
+          'Full menu page with featured dish strips, tasting menu CTA, category filter tabs, and Cormorant Garamond typography at 80–120px.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Reservation System',
+        description:
+          'Split layout reservation page with floating label form, date/time picker, and animated success confirmation.',
+        icon: 'MessageCircle',
+      },
+      {
+        title: 'Masonry Gallery with Lightbox',
+        description:
+          'Category-filtered masonry grid gallery with smooth lightbox overlay for immersive food photography viewing.',
+        icon: 'Star',
+      },
+      {
+        title: 'Framer Motion Cinematic Animations',
+        description:
+          'Deliberate 0.8–1.2s ease animations (no bounce) throughout — pacing that separates fine dining from fast food in web design.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Lenis Smooth Scroll',
+        description:
+          'Buttery smooth scrolling experience powered by Lenis, with grain texture and candlelight gradients visible throughout the journey.',
+        icon: 'Globe',
+      },
+    ],
+    testimonial: undefined,
+    screenshots: ['/angan.png'],
+    nextProject: 'vidyasetu-academy',
+    prevProject: 'stockpilot-ims',
+  },
+  {
+    slug: 'vidyasetu-academy',
+    title: 'Vidyasetu Academy — Coaching & Tuition Institute Website',
+    tagline:
+      'A clean academic website for a mixed coaching institute serving Classes 6–12, JEE, and NEET students in Ahmedabad. Features Playfair Display editorial typography, results topper wall, course listings with filters, faculty section, contact form, and deliberately calm Framer Motion scroll animations.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/tution.png',
+    heroImage: '/tution.png',
+    liveUrl: 'https://vidyasetu-academy.vercel.app/',
+    client: 'Vidyasetu Academy (Demo)',
+    duration: '3 weeks',
+    year: '2025',
+    techStack: ['React', 'Vite', 'Framer Motion', 'TypeScript', 'Tailwind CSS'],
+    services: ['Web Development', 'UI/UX Design', 'Education Platform'],
+    overview:
+      'Vidyasetu Academy (विद्यासेतु — "Bridge of Knowledge") is a professional coaching institute demo website built for the Ahmedabad education market. Designed to look nothing like an AI-generated template, it uses editorial typography, warm paper-toned backgrounds, and real academic content to build parent trust from the first scroll.',
+    problem:
+      'Coaching institute websites in Gujarat range from outdated WordPress templates to basic landing pages. Parents making decisions about their child\'s education need to immediately feel trust and credibility. The goal was to demonstrate what a premium coaching institute website looks like — one where the design itself signals academic seriousness.',
+    solution:
+      '6-page React website — Home (hero with split layout, results marquee, course overview, process steps, parent testimonials, admission CTA), Courses page (sidebar filters by class and exam type, horizontal course cards with seat availability), Course Detail page (sticky enquiry card, EMI info, faculty for course, syllabus), Results page (year-filter topper wall, JEE/NEET section, scholarship wall), About page (founder story, faculty grid with credentials, infrastructure, 4 centre locations), and Contact page (smart 7-field form, map embed, quick enquiry buttons).',
+    results: [
+      'Used as a sales demo for coaching institutes, tuition centres, and schools',
+      'Warm academic aesthetic immediately relatable to local education clients',
+      'Real Ahmedabad dummy data — Navrangpura, Satellite, Bopal localities',
+      'Zero 3D, zero glassmorphism — sophistication from typography and layout',
+    ],
+    features: [
+      {
+        title: 'Editorial Academic Typography',
+        description:
+          'Playfair Display at large sizes paired with Plus Jakarta Sans body creates the editorial serif-vs-sans tension that human-designed academic sites use.',
+        icon: 'Palette',
+      },
+      {
+        title: 'Results Topper Wall',
+        description:
+          'Year-filtered topper wall showcasing JEE/NEET results and scholarship recipients to build immediate parent trust.',
+        icon: 'TrendingUp',
+      },
+      {
+        title: 'Course Listings with Filters',
+        description:
+          'Sidebar filters by class and exam type with horizontal course cards showing seat availability and EMI options.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Faculty Section',
+        description:
+          'Faculty grid with credentials, teaching experience, and subject expertise to demonstrate academic quality.',
+        icon: 'Users',
+      },
+      {
+        title: 'Calm Framer Motion Animations',
+        description:
+          'Deliberately calm ease-out animations with no spring overshoot — matching the serious academic tone of the institute.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Warm Paper-Toned Design',
+        description:
+          'Off-white #F7F5F0 background like textbook paper instead of cold white, removing the clinical feel and adding warmth.',
+        icon: 'Star',
+      },
+    ],
+    testimonial: undefined,
+    screenshots: ['/tution.png'],
+    nextProject: 'tt-marketing',
+    prevProject: 'angan-restaurant',
+  },
+  {
     slug: 'tt-marketing',
     title: 'TT Marketing Solutions',
     tagline: 'A conversion-focused digital marketing agency website built to generate B2B leads.',
@@ -99,7 +239,7 @@ export const projects: Project[] = [
     },
     screenshots: ['/ttmarketing.png'],
     nextProject: 'het-portfolio',
-    prevProject: 'stockpilot-ims',
+    prevProject: 'vidyasetu-academy',
   },
   {
     slug: 'het-portfolio',
@@ -795,7 +935,7 @@ export const projects: Project[] = [
       },
     ],
     screenshots: ['/stockpilot-ims.png'],
-    nextProject: 'tt-marketing',
+    nextProject: 'angan-restaurant',
     prevProject: 'triggered-email-saas',
   },
 ];
