@@ -94,7 +94,7 @@ export const projects: Project[] = [
     testimonial: undefined,
     screenshots: ['/angan.png'],
     nextProject: 'vidyasetu-academy',
-    prevProject: 'stockpilot-ims',
+    prevProject: 'sanjeevani-hospital',
   },
   {
     slug: 'vidyasetu-academy',
@@ -935,8 +935,77 @@ export const projects: Project[] = [
       },
     ],
     screenshots: ['/stockpilot-ims.png'],
-    nextProject: 'angan-restaurant',
+    nextProject: 'sanjeevani-hospital',
     prevProject: 'triggered-email-saas',
+  },
+  {
+    slug: 'sanjeevani-hospital',
+    title: 'Sanjeevani Hospital',
+    tagline: 'A professional multi-specialty hospital website built to build patient trust and drive appointment bookings online.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/sanjeevani-hospital.png',
+    heroImage: '/sanjeevani-hospital.png',
+    liveUrl: 'https://sanjeevani-hospital-blush.vercel.app/',
+    client: 'Sanjeevani Hospital (Demo)',
+    duration: '3 weeks',
+    year: '2025',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'TypeScript', 'Vercel'],
+    services: ['Web Development', 'UI/UX Design', 'Lead Generation'],
+    overview:
+      'Sanjeevani Hospital is a demo multi-specialty hospital website showcasing what a modern healthcare digital presence can look like. Designed to build immediate patient trust, highlight medical departments, feature doctor profiles, and make appointment booking effortless — this demo is built for hospitals and clinics looking to establish a credible online presence.',
+    problem:
+      'Most hospital websites in India are either outdated, cluttered, or fail to build the trust that patients need before booking an appointment. Patients researching healthcare providers online expect a clean, professional site that communicates competence and accessibility — most hospitals fail to deliver this.',
+    solution:
+      'We built a clean, trust-first hospital website with department listings, doctor profiles, appointment booking forms, and emergency contact sections. The calm blue-and-white palette, structured layouts, and clear navigation are all designed around reducing patient anxiety and driving appointment conversions.',
+    results: [
+      'Used as a live sales demo for hospitals, clinics, and healthcare providers',
+      'Trust-focused design reduces patient hesitation before booking',
+      'Department and doctor sections answer key pre-visit questions',
+      'Mobile-optimized for patients browsing on smartphones',
+    ],
+    features: [
+      {
+        title: 'Department Showcase',
+        description:
+          'Dedicated sections for each medical specialty with clear descriptions help patients quickly find the care they need.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Doctor Profiles',
+        description:
+          'Individual doctor cards with specialization, qualifications, and experience build patient confidence before the first appointment.',
+        icon: 'Users',
+      },
+      {
+        title: 'Appointment Booking',
+        description:
+          'Simple, low-friction appointment request forms reduce the barrier to booking and drive direct patient enquiries.',
+        icon: 'MessageCircle',
+      },
+      {
+        title: 'Emergency Contact Section',
+        description:
+          'Prominent emergency numbers and quick-dial CTAs ensure critical information is always one tap away.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Trust-First Design',
+        description:
+          'Calm blue-and-white palette, structured layouts, and professional typography are chosen to reduce patient anxiety and signal medical credibility.',
+        icon: 'Star',
+      },
+      {
+        title: 'Mobile-First Responsive',
+        description:
+          'Fully optimized for smartphones — the primary device patients use to research and book healthcare providers.',
+        icon: 'Smartphone',
+      },
+    ],
+    testimonial: undefined,
+    screenshots: ['/sanjeevani-hospital.png'],
+    nextProject: 'angan-restaurant',
+    prevProject: 'stockpilot-ims',
   },
 ];
 
