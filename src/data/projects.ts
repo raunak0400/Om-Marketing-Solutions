@@ -94,7 +94,7 @@ export const projects: Project[] = [
     testimonial: undefined,
     screenshots: ['/angan.png'],
     nextProject: 'vidyasetu-academy',
-    prevProject: 'sanjeevani-hospital',
+    prevProject: 'aakash-international-school',
   },
   {
     slug: 'vidyasetu-academy',
@@ -1004,8 +1004,77 @@ export const projects: Project[] = [
     ],
     testimonial: undefined,
     screenshots: ['/sanjeevani-hospital.png'],
-    nextProject: 'angan-restaurant',
+    nextProject: 'aakash-international-school',
     prevProject: 'stockpilot-ims',
+  },
+  {
+    slug: 'aakash-international-school',
+    title: 'Aakash International School',
+    tagline: 'A premium K-12 school website built to drive admissions, showcase academic excellence, and build parent confidence.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/aakash-school.png',
+    heroImage: '/aakash-school.png',
+    liveUrl: 'https://aakash-international-school.vercel.app/',
+    client: 'Aakash International School (Demo)',
+    duration: '3 weeks',
+    year: '2025',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'TypeScript', 'Vercel'],
+    services: ['Web Development', 'UI/UX Design', 'Lead Generation'],
+    overview:
+      'Aakash International School is a demo K-12 school website built to show educational institutions what a premium digital presence looks like. Designed to immediately earn parent trust, highlight academic programs, showcase faculty, and make admissions enquiries effortless — this demo targets schools and educational institutions looking to stand out online.',
+    problem:
+      'Most school websites in India are outdated, difficult to navigate, and fail to communicate the quality of education offered. Parents evaluating schools for their children need a site that feels credible, organized, and welcoming from the first visit — and most institutions simply do not deliver that experience.',
+    solution:
+      'We built a structured, parent-friendly school website with program listings, faculty profiles, campus highlights, an events section, and a clear admissions enquiry flow. The design language — clean, trustworthy, and modern — is crafted to convert first-time visitors into serious admissions prospects.',
+    results: [
+      'Used as a live sales demo for schools and educational institutions',
+      'Parent-first design reduces friction in the admissions enquiry process',
+      'Faculty and program sections answer key parent decision-making questions',
+      'Mobile-optimized for parents browsing on smartphones',
+    ],
+    features: [
+      {
+        title: 'Academic Programs Showcase',
+        description:
+          'Structured program listings for each grade level help parents quickly understand the curriculum and find the right fit for their child.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'Faculty Profiles',
+        description:
+          'Dedicated teacher cards with qualifications and experience build parent confidence in the quality of education offered.',
+        icon: 'Users',
+      },
+      {
+        title: 'Admissions Enquiry Flow',
+        description:
+          'Simple, low-friction enquiry forms reduce the barrier to getting in touch and drive direct admissions leads.',
+        icon: 'MessageCircle',
+      },
+      {
+        title: 'Campus Highlights',
+        description:
+          'Visual showcase of facilities, infrastructure, and campus life helps parents visualise the school environment before visiting.',
+        icon: 'Star',
+      },
+      {
+        title: 'Events Section',
+        description:
+          'Upcoming events and school activities keep prospective and current parents engaged and informed throughout the year.',
+        icon: 'Zap',
+      },
+      {
+        title: 'Mobile-First Responsive',
+        description:
+          'Fully optimized for smartphones — the primary device parents use when researching schools for their children.',
+        icon: 'Smartphone',
+      },
+    ],
+    testimonial: undefined,
+    screenshots: ['/aakash-school.png'],
+    nextProject: 'angan-restaurant',
+    prevProject: 'sanjeevani-hospital',
   },
 ];
 
