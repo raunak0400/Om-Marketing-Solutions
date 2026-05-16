@@ -1073,8 +1073,79 @@ export const projects: Project[] = [
     ],
     testimonial: undefined,
     screenshots: ['/aakash-school.png'],
-    nextProject: 'angan-restaurant',
+    nextProject: 'shree-har-packaging',
     prevProject: 'sanjeevani-hospital',
+  },
+  {
+    slug: 'shree-har-packaging',
+    title: 'Shri Har Packaging — Industrial Machinery Website',
+    tagline:
+      'From business card to Google-ready website in 1 day — a custom dark industrial site for an Ahmedabad bag closing machine dealer, with a filterable 11-SKU catalogue, product detail pages, and full SEO.',
+    category: 'Web Development',
+    status: 'Live',
+    thumbnail: '/shree-har-packaging.png',
+    heroImage: '/shree-har-packaging.png',
+    liveUrl: 'https://shreeharpackaging.in',
+    client: 'Shri Har Packaging',
+    duration: '1 day',
+    year: '2026',
+    techStack: ['HTML5', 'CSS3', 'JavaScript', 'SEO', 'Vercel'],
+    services: ['Web Development', 'SEO', 'UI/UX Design'],
+    overview:
+      'Shri Har Packaging is an Ahmedabad-based industrial machinery dealer selling LPI, REVO and Smart Stitch bag closing machines, industrial threads and spare parts. Owner Bhavesh Parekh ran a 30+ year old business with no digital presence — only a physical shop in Isanpur and a business card. We built a complete professional website from scratch that now represents the business online.',
+    problem:
+      'The business had zero online presence in a market where buyers — flour mills, cement factories and grain processors across Gujarat — increasingly search Google before calling any supplier. Competitors with even basic websites were getting discovered first. The site had to feel as credible and industrial as the machines being sold, while staying simple enough for a non-technical owner to trust — all on a tight ₹5,000 budget.',
+    solution:
+      'We studied the actual products — visiting the shop, photographing real machines and reading catalogues — then designed a custom dark industrial theme with safety orange accents matched to the LPI and REVO machine palette. The result is a 9-section site with a filterable 11-SKU product catalogue, individual product detail pages, brand showcases, a WhatsApp enquiry flow, and full SEO, built mobile-first in vanilla HTML, CSS and JS with no frameworks or monthly fees.',
+    results: [
+      'Took a 30+ year old business online for the first time — discoverable on Google',
+      '11 products across 4 categories listed, each with its own detail page',
+      'Every product card opens a pre-filled WhatsApp enquiry, turning visits into leads',
+      'Full SEO foundation: LocalBusiness, FAQPage and Product schema, sitemap and robots.txt',
+      'Delivered in 1 day on a ₹5,000 budget with zero ongoing hosting costs',
+    ],
+    features: [
+      {
+        title: 'Filterable Product Catalogue',
+        description:
+          'An 11-SKU catalogue across 4 categories — bag closing machines, threads and spares — with a filter system that lets industrial buyers find the right machine fast.',
+        icon: 'Package',
+      },
+      {
+        title: 'Product Detail Pages',
+        description:
+          'Dedicated pages for all 11 products with full specifications, image galleries and related products, so buyers can evaluate before enquiring.',
+        icon: 'LayoutDashboard',
+      },
+      {
+        title: 'WhatsApp Enquiry Flow',
+        description:
+          'Every product card has a direct WhatsApp button pre-filled with the product name, plus a contact form — the fastest path from interest to enquiry.',
+        icon: 'MessageCircle',
+      },
+      {
+        title: 'Custom Dark Industrial Theme',
+        description:
+          'A steel-dark design with safety orange accents and heavy Bebas Neue typography, matched directly to the LPI and REVO machine colour palette.',
+        icon: 'Palette',
+      },
+      {
+        title: 'Full SEO Implementation',
+        description:
+          'LocalBusiness, FAQPage and Product schema, sitemap.xml, robots.txt, geo targeting meta tags and Core Web Vitals optimization for Google visibility.',
+        icon: 'Search',
+      },
+      {
+        title: 'Mobile-First Build',
+        description:
+          'Built mobile-first in vanilla HTML, CSS and JS — fast and reliable on the Android phones most industrial buyers use, with no frameworks or monthly fees.',
+        icon: 'Smartphone',
+      },
+    ],
+    testimonial: undefined,
+    screenshots: ['/shree-har-packaging.png'],
+    nextProject: 'angan-restaurant',
+    prevProject: 'aakash-international-school',
   },
 ];
 
