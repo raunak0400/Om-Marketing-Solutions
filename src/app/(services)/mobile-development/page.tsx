@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+
+export const metadata: Metadata = {
+  title: 'Mobile App Development in Ahmedabad',
+  description:
+    'iOS and Android mobile app development in Ahmedabad using React Native. Single codebase, both platforms. App Store and Play Store submission included.',
+};
 
 const features = [
   {
@@ -91,18 +98,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function MobileDevelopmentPage() {
   return (
-    <ServicePageLayout
-      title="Mobile App Development"
-      subtitle="Reach your customers on the go with beautifully designed mobile applications. We build cross-platform apps for iOS and Android that engage users and drive real business growth."
-      heroImage="/mobiledev.jpg"
-      heroImageAlt="Mobile App Development"
-      glowGradient="from-pink-500 to-purple-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="Mobile App Development"
+        subtitle="Reach your customers on the go with beautifully designed mobile applications. We build cross-platform apps for iOS and Android that engage users and drive real business growth."
+        heroImage="/mobiledev.jpg"
+        heroImageAlt="Mobile App Development"
+        glowGradient="from-pink-500 to-purple-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }

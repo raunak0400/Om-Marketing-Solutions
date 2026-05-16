@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+
+export const metadata: Metadata = {
+  title: 'Digital Marketing Services in Ahmedabad',
+  description:
+    'SEO, social media management, and content creation in Ahmedabad. 12 posts/month, Google My Business optimisation, monthly performance reports. Long-term digital growth.',
+};
 
 const features = [
   {
@@ -91,18 +98,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function DigitalMarketingPage() {
   return (
-    <ServicePageLayout
-      title="Digital Marketing"
-      subtitle="Struggling to generate consistent leads online? We build long-term digital growth strategies that increase visibility, attract qualified traffic, and turn your brand into a revenue-generating asset."
-      heroImage="/digimarketing.jpg"
-      heroImageAlt="Digital Marketing"
-      glowGradient="from-orange-500 to-red-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="Digital Marketing"
+        subtitle="Struggling to generate consistent leads online? We build long-term digital growth strategies that increase visibility, attract qualified traffic, and turn your brand into a revenue-generating asset."
+        heroImage="/digimarketing.jpg"
+        heroImageAlt="Digital Marketing"
+        glowGradient="from-orange-500 to-red-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }

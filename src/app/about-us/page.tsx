@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -8,6 +9,12 @@ import {
 import { Check, Target, Users, Zap, Code, Lightbulb, Rocket, Heart, Award, TrendingUp, Clock, Shield, Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'About Us — OM Marketing Solutions, Ahmedabad',
+  description:
+    'Meet the team behind OM Marketing Solutions — a digital agency in Ahmedabad helping Indian businesses grow with web development, mobile apps, and digital marketing.',
+};
 
 export default function AboutUsPage() {
     return (
@@ -54,8 +61,8 @@ export default function AboutUsPage() {
                         </div>
                         <div className="relative h-[400px] md:h-[500px]">
                             <Image
-                                src="/randi.jpeg"
-                                alt="Our Story"
+                                src="/founders-team.jpg"
+                                alt="OM Marketing Solutions founding team, Ahmedabad"
                                 fill
                                 className="rounded-lg object-cover"
                             />
@@ -76,11 +83,11 @@ export default function AboutUsPage() {
                         </p>
                     </div>
 
-                    <div className="mx-auto max-w-6xl">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div className="mx-auto max-w-5xl">
+                        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                             {/* Het Kumar Patel */}
-                            <Card className="overflow-hidden btn-glow-hover">
-                                <div className="p-6">
+                            <Card className="overflow-hidden btn-glow-hover flex flex-col">
+                                <div className="p-6 flex-grow flex flex-col">
                                     <div className="flex items-center justify-center mb-6">
                                         <div className="relative h-48 w-48 rounded-full overflow-hidden">
                                             <Image
@@ -95,15 +102,15 @@ export default function AboutUsPage() {
                                         <CardTitle className="text-2xl">HetKumar Sanjaykumar Patel</CardTitle>
                                         <p className="text-primary font-semibold">Founder & Business Director</p>
                                     </CardHeader>
-                                    <CardContent className="p-0 mt-4">
-                                        <p className="text-muted-foreground mb-4 text-center">
+                                    <CardContent className="p-0 mt-4 flex-grow flex flex-col">
+                                        <p className="text-muted-foreground mb-4 text-center flex-grow">
                                             Het Kumar Patel is the business visionary behind OM Marketing Solutions.
                                             With a keen understanding of client needs and market dynamics, he specializes
-                                            in client onboarding, relationship management, and business development. As
-                                            co-founder with 50% equity, Het ensures our clients receive personalized
-                                            attention and solutions that align with their business goals.
+                                            in client onboarding, relationship management, and business development.
+                                            Het ensures our clients receive personalized attention and solutions that
+                                            align with their business goals.
                                         </p>
-                                        <div className="flex flex-wrap justify-center gap-3">
+                                        <div className="flex flex-wrap justify-center gap-3 mt-auto">
                                             <Link
                                                 href="https://www.linkedin.com/in/hetkumar-sanjaykumar-patel-54730933b"
                                                 target="_blank"
@@ -143,7 +150,7 @@ export default function AboutUsPage() {
                                                 </Button>
                                             </Link>
                                             <Link
-                                                href="mailto:ommarketing.weighingscale1@gmail.com"
+                                                href="mailto:support@ommarketingsolutions.in"
                                             >
                                                 <Button variant="outline" size="sm" className="gap-2">
                                                     <Mail className="h-4 w-4" />
@@ -156,8 +163,8 @@ export default function AboutUsPage() {
                             </Card>
 
                             {/* Raunak Kumar Jha */}
-                            <Card className="overflow-hidden btn-glow-hover">
-                                <div className="p-6">
+                            <Card className="overflow-hidden btn-glow-hover flex flex-col">
+                                <div className="p-6 flex-grow flex flex-col">
                                     <div className="flex items-center justify-center mb-6">
                                         <div className="relative h-48 w-48 rounded-full overflow-hidden">
                                             <Image
@@ -172,15 +179,14 @@ export default function AboutUsPage() {
                                         <CardTitle className="text-2xl">Raunak Kumar Jha</CardTitle>
                                         <p className="text-primary font-semibold">Co-Founder & Technical Director</p>
                                     </CardHeader>
-                                    <CardContent className="p-0 mt-4">
-                                        <p className="text-muted-foreground mb-4 text-center">
-                                            Raunak Kumar Jha is the technical powerhouse of OM Marketing Solutions.
-                                            As the lead developer, he handles all aspects of website development,
-                                            automation systems, and technical implementations. With expertise in
-                                            modern web technologies and AI, Raunak transforms business requirements
-                                            into robust, scalable solutions that drive digital transformation.
+                                    <CardContent className="p-0 mt-4 flex-grow flex flex-col">
+                                        <p className="text-muted-foreground mb-4 text-center flex-grow">
+                                            Raunak Kumar Jha is the engineering mastermind behind OM Marketing Solutions.
+                                            With extensive expertise in advanced full-stack web development and cloud architecture,
+                                            he ensures that all our software solutions are performant, scalable, and built using
+                                            industry best practices. Raunak turns complex business requirements into elegant digital tools.
                                         </p>
-                                        <div className="flex flex-wrap justify-center gap-3">
+                                        <div className="flex flex-wrap justify-center gap-3 mt-auto">
                                             <Link
                                                 href="https://www.linkedin.com/in/raunak0400"
                                                 target="_blank"
@@ -189,16 +195,6 @@ export default function AboutUsPage() {
                                                 <Button variant="outline" size="sm" className="gap-2">
                                                     <Linkedin className="h-4 w-4" />
                                                     LinkedIn
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                href="https://www.instagram.com/raunak.1812"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Instagram className="h-4 w-4" />
-                                                    Instagram
                                                 </Button>
                                             </Link>
                                             <Link
@@ -212,19 +208,13 @@ export default function AboutUsPage() {
                                                 </Button>
                                             </Link>
                                             <Link
-                                                href="tel:+917779072966"
+                                                href="https://imraunak.dev/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                             >
                                                 <Button variant="outline" size="sm" className="gap-2">
-                                                    <Phone className="h-4 w-4" />
-                                                    Call
-                                                </Button>
-                                            </Link>
-                                            <Link
-                                                href="mailto:contact@imraunak.dev"
-                                            >
-                                                <Button variant="outline" size="sm" className="gap-2">
-                                                    <Mail className="h-4 w-4" />
-                                                    Email
+                                                    <Code className="h-4 w-4" />
+                                                    Portfolio
                                                 </Button>
                                             </Link>
                                         </div>
@@ -628,8 +618,8 @@ export default function AboutUsPage() {
                     <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
                         <div className="relative h-[400px] md:h-[500px]">
                             <Image
-                                src="/randi.jpeg"
-                                alt="Why Choose OM Marketing Solutions"
+                                src="/founders-team.jpg"
+                                alt="OM Marketing Solutions team working together in Ahmedabad"
                                 fill
                                 className="rounded-lg object-cover"
                             />

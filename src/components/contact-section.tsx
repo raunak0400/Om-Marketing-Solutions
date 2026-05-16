@@ -43,10 +43,10 @@ export function ContactSection() {
                             </CardHeader>
                             <CardContent>
                                 <a
-                                    href="mailto:ommarketing.weighingscale1@gmail.com"
+                                    href="mailto:support@ommarketingsolutions.in"
                                     className="text-muted-foreground hover:text-primary transition-colors break-all"
                                 >
-                                    ommarketing.weighingscale1@gmail.com
+                                    support@ommarketingsolutions.in
                                 </a>
                             </CardContent>
                         </Card>

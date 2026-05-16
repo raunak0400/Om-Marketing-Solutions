@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+
+export const metadata: Metadata = {
+  title: 'Web Development Company in Ahmedabad',
+  description:
+    'Professional website and e-commerce development in Ahmedabad. Mobile-first, SEO-ready websites delivered in 7–14 days. Razorpay/UPI payment integration included.',
+};
 
 const features = [
   {
@@ -90,18 +97,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function WebDevelopmentPage() {
   return (
-    <ServicePageLayout
-      title="Website & E-commerce Development"
-      subtitle="Stop losing customers to competitors with better websites. We build conversion-focused websites and online stores designed to generate leads, increase sales, and grow your revenue."
-      heroImage="/Web-Development.jpg"
-      heroImageAlt="Web Development"
-      glowGradient="from-blue-500 to-cyan-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="Website & E-commerce Development"
+        subtitle="Stop losing customers to competitors with better websites. We build conversion-focused websites and online stores designed to generate leads, increase sales, and grow your revenue."
+        heroImage="/Web-Development.jpg"
+        heroImageAlt="Web Development"
+        glowGradient="from-blue-500 to-cyan-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }

@@ -1,16 +1,16 @@
 import {
-  Code,
-  Warehouse,
-  Phone,
-  TrendingUp,
-  Bot,
-  BrainCircuit,
-  Zap,
+  Globe,
+  AppWindow,
   Smartphone,
   Palette,
-  Target,
-  Search,
-  Share2,
+  Package,
+  Bot,
+  TrendingUp,
+  Megaphone,
+  Zap,
+  CalendarCheck,
+  BarChart3,
+  MessageCircle,
 } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -74,7 +74,7 @@ export const SERVICES = [
     title: 'Web Development',
     description:
       'We build professional, affordable websites and online stores to bring your traditional business into the digital world.',
-    icon: Code,
+    icon: Globe,
     href: '/web-development',
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
   },
@@ -82,7 +82,7 @@ export const SERVICES = [
     title: 'App Development',
     description:
       'Custom web applications tailored to your business needs with powerful features and seamless user experience.',
-    icon: Code,
+    icon: AppWindow,
     href: '/app-development',
     image: PlaceHolderImages.find((img) => img.id === 'service-web-dev'),
   },
@@ -106,7 +106,7 @@ export const SERVICES = [
     title: 'Inventory Management',
     description:
       'Automate your stock control with a custom Inventory Management System (IMS) to reduce costs and prevent stockouts.',
-    icon: Warehouse,
+    icon: Package,
     href: '/inventory-management',
     image: PlaceHolderImages.find((img) => img.id === 'service-automation'),
   },
@@ -122,7 +122,7 @@ export const SERVICES = [
     title: 'Performance Marketing',
     description:
       'Data-driven marketing campaigns optimized for maximum ROI with measurable results and continuous improvement.',
-    icon: Target,
+    icon: TrendingUp,
     href: '/performance-marketing',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
@@ -130,13 +130,49 @@ export const SERVICES = [
     title: 'Digital Marketing',
     description:
       'Reach more customers online with result-oriented digital marketing strategies including SEO, SEM, and social media management.',
-    icon: TrendingUp,
+    icon: Megaphone,
     href: '/digital-marketing',
     image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
 ];
 
 export const PORTFOLIO_PROJECTS = [
+  {
+    title: 'SilverLeaf Preschool',
+    description:
+      'A vibrant, parent-friendly preschool website with animated sections, real photo integration, WhatsApp-connected contact form, and mobile-first responsive design. Built to increase admissions enquiries.',
+    tags: ['React', 'Tailwind CSS', 'WhatsApp Integration', 'Animations'],
+    image: { imageUrl: '/pre-school.png', imageHint: 'SilverLeaf Preschool website' },
+    href: 'https://silver-leaf-preschool.vercel.app/',
+    github: undefined,
+  },
+  {
+    title: "Priya's Training Hub",
+    description:
+      'A professional training and coaching platform with course showcase, trainer profile, testimonials, and lead generation forms. Designed to convert visitors into enrolled students.',
+    tags: ['React', 'Tailwind CSS', 'Lead Generation', 'Responsive'],
+    image: { imageUrl: '/priyas-training-hub.png', imageHint: "Priya's Training Hub website" },
+    href: 'https://priyas-training-hub.vercel.app/',
+    github: undefined,
+  },
+  {
+    title: 'Alpha Ventures',
+    description:
+      'A premium luxury black-and-gold business consultancy and wealth advisory website. Features cinematic hero design, 6 case study showcases, live investment opportunities section, and full multi-page architecture.',
+    tags: ['React', 'Vite', 'Framer Motion', 'Multi-Page', 'Premium Design'],
+    image: { imageUrl: '/alpha-ventures.png', imageHint: 'Alpha Ventures business consultancy website' },
+    href: 'https://3-m-enterprises.vercel.app',
+    github: undefined,
+  },
+  {
+    title: 'FindUrTrip',
+    description:
+      'A full-featured travel discovery platform connecting adventurers with curated trips, treks, and experiences across India. Cinematic hero design, WhatsApp trip planning, Customise Trip flow, and dedicated Events & Stories sections — serving 10K+ happy travellers and 500+ trips organised.',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion', 'WhatsApp API', 'Vercel'],
+    image: { imageUrl: '/finurtrip.png', imageHint: 'FindUrTrip travel platform website' },
+    href: 'https://findurtrip.org/',
+    github: undefined,
+  },
   {
     title: 'TT Marketing Solutions',
     description:
@@ -155,9 +191,18 @@ export const PORTFOLIO_PROJECTS = [
     description:
       'A modern backend developer portfolio showcasing scalable REST APIs and microservices projects. Features SmartWork 360 productivity platform, NASA Space Apps weather forecasting, and Campus Life social platform. Built with Next.js and Tailwind CSS.',
     tags: ['Next.js', 'Tailwind CSS', 'Portfolio', 'FastAPI', 'Python'],
-    image: { imageUrl: '/hetmkc.png', imageHint: 'Het Patel portfolio website' },
+    image: { imageUrl: '/het-portfolio.png', imageHint: 'Het Patel portfolio website' },
     href: 'https://buildbyhet.vercel.app/',
     github: 'https://github.com/Het161/buildbyhet',
+  },
+  {
+    title: 'Raunak Jha - Portfolio Website',
+    description:
+      'A sleek, high-performance developer portfolio built to showcase technical proficiency across frontend and backend technologies. Features elegant Framer Motion animations, structured project case studies, and perfect Lighthouse performance scores.',
+    tags: ['Next.js', 'Tailwind CSS', 'Portfolio', 'TypeScript'],
+    image: { imageUrl: '/imraunak.png', imageHint: 'Raunak portfolio website' },
+    href: 'https://imraunak.dev/',
+    github: 'https://github.com/raunak0400',
   },
   {
     title: 'Hospital Medical Information System',
@@ -330,9 +375,9 @@ export const DIGITAL_TRANSFORMATION_ROADMAP = [
 
 export const CUSTOMER_TOOLS = [
   { name: 'AI Chatbots', icon: Bot, description: '24/7 automated customer support' },
-  { name: 'CRM Systems', icon: BrainCircuit, description: 'Manage customer relationships' },
+  { name: 'CRM Systems', icon: MessageCircle, description: 'Manage customer relationships' },
   { name: 'Email Marketing', icon: TrendingUp, description: 'Nurture leads and drive sales' },
-  { name: 'Analytics Dashboards', icon: Zap, description: 'Track performance and KPIs' },
-  { name: 'Booking Systems', icon: Code, description: 'Automate appointments and scheduling' },
-  { name: 'Feedback Forms', icon: Code, description: 'Gather customer insights' },
+  { name: 'Analytics Dashboards', icon: BarChart3, description: 'Track performance and KPIs' },
+  { name: 'Booking Systems', icon: CalendarCheck, description: 'Automate appointments and scheduling' },
+  { name: 'Feedback Forms', icon: Zap, description: 'Gather customer insights' },
 ];

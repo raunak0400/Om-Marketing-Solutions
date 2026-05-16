@@ -13,7 +13,7 @@ export function Logo({ className }: { className?: string }) {
       )}
     >
       <Image
-        src="/lodu_om.png"
+        src="/logo.jpeg"
         alt="OM Marketing Solutions Logo"
         width={40}
         height={40}

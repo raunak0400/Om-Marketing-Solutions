@@ -1,12 +1,23 @@
 'use client';
+
+import { motion, useReducedMotion } from 'framer-motion';
 import { APP_NAME, NAV_LINKS, SERVICES } from '@/lib/constants';
-import { Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Linkedin, Facebook, Instagram, Github, Phone, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from '../logo';
 
 export function Footer() {
+  const shouldReduce = useReducedMotion();
+
   return (
-    <footer className="border-t border-border/60 bg-card" id="footer">
+    <motion.footer
+      initial={shouldReduce ? {} : { opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="border-t border-border/60 bg-card"
+      id="footer"
+    >
       <div className="container grid grid-cols-1 gap-12 py-12 md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
           <Logo />
@@ -38,6 +49,14 @@ export function Footer() {
             >
               <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
             </Link>
+            <Link
+              href="https://github.com/OM-Marketing-Solutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Github className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+            </Link>
           </div>
         </div>
 
@@ -56,6 +75,7 @@ export function Footer() {
             ))}
           </ul>
         </div>
+
         <div className="space-y-2">
           <h4 className="font-semibold">Company</h4>
           <ul className="space-y-2">
@@ -71,14 +91,43 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/privacy-policy"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
+
+      {/* NAP row */}
+      <div className="border-t border-border/60">
+        <div className="container py-6">
+          <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground sm:flex-row sm:justify-center sm:gap-8">
+            <a href="tel:+919825247312" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Phone className="h-4 w-4 flex-shrink-0" />
+              +91 9825247312
+            </a>
+            <a href="mailto:support@ommarketingsolutions.in" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Mail className="h-4 w-4 flex-shrink-0" />
+              support@ommarketingsolutions.in
+            </a>
+            <span className="flex items-center gap-2">
+              <MapPin className="h-4 w-4 flex-shrink-0" />
+              Ahmedabad, Gujarat, India
+            </span>
+          </div>
+        </div>
+      </div>
+
       <div className="border-t border-border/60">
         <div className="container py-4 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} {APP_NAME}. All rights reserved.
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

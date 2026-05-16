@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+
+export const metadata: Metadata = {
+  title: 'Performance Marketing Agency in Ahmedabad',
+  description:
+    'Google Ads and Meta Ads management in Ahmedabad — data-driven performance campaigns with weekly reporting, A/B testing, and proven ROI. ₹15K+ monthly ad budget.',
+};
 
 const features = [
   {
@@ -91,18 +98,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function PerformanceMarketingPage() {
   return (
-    <ServicePageLayout
-      title="Performance Marketing"
-      subtitle="Spending on ads but not seeing real profit? We run data-driven performance campaigns focused on one thing — measurable ROI and consistent revenue growth for your business."
-      heroImage="/performance.jpg"
-      heroImageAlt="Performance Marketing"
-      glowGradient="from-red-500 to-orange-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="Performance Marketing"
+        subtitle="Spending on ads but not seeing real profit? We run data-driven performance campaigns focused on one thing — measurable ROI and consistent revenue growth for your business."
+        heroImage="/performance.jpg"
+        heroImageAlt="Performance Marketing"
+        glowGradient="from-red-500 to-orange-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }

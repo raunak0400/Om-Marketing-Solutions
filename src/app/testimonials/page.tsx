@@ -1,8 +1,15 @@
+import type { Metadata } from 'next';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star, Quote } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Client Testimonials | OM Marketing Solutions, Ahmedabad',
+  description:
+    'See what business owners across Ahmedabad and Gujarat say about OM Marketing Solutions — real results from web development, digital marketing, and automation projects.',
+};
 
 const TESTIMONIALS = [
     {
@@ -140,7 +147,7 @@ export default function TestimonialsPage() {
                     {[
                         { value: '100+', label: 'Happy Clients' },
                         { value: '4.9★', label: 'Average Rating' },
-                        { value: '5+', label: 'Years Experience' },
+                        { value: '2+', label: 'Years Experience' },
                         { value: '98%', label: 'Client Retention' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">

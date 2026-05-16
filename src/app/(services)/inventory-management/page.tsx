@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+
+export const metadata: Metadata = {
+  title: 'Inventory Management System in Ahmedabad',
+  description:
+    'Custom inventory management systems in Ahmedabad — real-time stock tracking, barcode support, multi-location warehouses, and purchase order management. Built for your workflow.',
+};
 
 const features = [
   {
@@ -91,18 +98,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function InventoryManagementPage() {
   return (
-    <ServicePageLayout
-      title="Inventory Management Systems"
-      subtitle="Still managing stock on Excel or manual registers? We build custom inventory systems that eliminate stock errors, prevent losses, and give you real-time control over your entire business."
-      heroImage="/inventorymgmt.jpg"
-      heroImageAlt="Inventory Management System"
-      glowGradient="from-green-500 to-teal-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="Inventory Management Systems"
+        subtitle="Still managing stock on Excel or manual registers? We build custom inventory systems that eliminate stock errors, prevent losses, and give you real-time control over your entire business."
+        heroImage="/inventorymgmt.jpg"
+        heroImageAlt="Inventory Management System"
+        glowGradient="from-green-500 to-teal-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }

@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+
+export const metadata: Metadata = {
+  title: 'UI/UX Design Services in Ahmedabad',
+  description:
+    'Professional UI/UX design in Ahmedabad — user research, Figma wireframes, high-fidelity mockups, and interactive prototypes. Full source file handover.',
+};
 
 const features = [
   {
@@ -91,18 +98,34 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+
 export default function UIUXDesignPage() {
   return (
-    <ServicePageLayout
-      title="UI/UX Design Services"
-      subtitle="If users don't understand your product in seconds, they leave. We design user experiences that increase engagement, reduce drop-offs, and drive measurably more conversions."
-      heroImage="/uiux.jpg"
-      heroImageAlt="UI/UX Design"
-      glowGradient="from-yellow-500 to-amber-500"
-      features={features}
-      stats={stats}
-      whyPoints={whyPoints}
-      faqs={faqs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <ServicePageLayout
+        title="UI/UX Design Services"
+        subtitle="If users don't understand your product in seconds, they leave. We design user experiences that increase engagement, reduce drop-offs, and drive measurably more conversions."
+        heroImage="/uiux.jpg"
+        heroImageAlt="UI/UX Design"
+        glowGradient="from-yellow-500 to-amber-500"
+        features={features}
+        stats={stats}
+        whyPoints={whyPoints}
+        faqs={faqs}
+      />
+    </>
   );
 }
