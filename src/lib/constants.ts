@@ -182,10 +182,6 @@ export const PORTFOLIO_PROJECTS = [
     href: 'https://www.ttmarketing.co.in/',
     github: 'https://github.com/OM-Marketing-Solutions/TT-MARKETING',
   },
-<<<<<<< HEAD
-
-=======
->>>>>>> b3cff96967cb2835ff027d00e60d2be4971ad30d
   {
     title: 'Het Patel - Portfolio Website',
     description:
