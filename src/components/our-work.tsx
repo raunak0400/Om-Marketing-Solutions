@@ -7,30 +7,6 @@ import Link from 'next/link';
 const CLIENT_PROJECTS = [
   {
     id: 1,
-    name: 'SilverLeaf Preschool',
-    category: 'Education Website',
-    description:
-      'A vibrant, parent-friendly preschool website with animated sections, real photo integration, WhatsApp-connected contact form, and mobile-first responsive design. Built to increase admissions enquiries.',
-    tags: ['React', 'Tailwind CSS', 'WhatsApp Integration', 'Animations'],
-    liveUrl: 'https://silver-leaf-preschool.vercel.app/',
-    color: '#4CAF50',
-    icon: '🏫',
-    result: 'Admission Enquiries ↑',
-  },
-  {
-    id: 2,
-    name: "Priya's Training Hub",
-    category: 'Training & Coaching Website',
-    description:
-      'A professional training and coaching platform with course showcase, trainer profile, testimonials, and lead generation forms. Designed to convert visitors into enrolled students.',
-    tags: ['React', 'Tailwind CSS', 'Lead Generation', 'Responsive'],
-    liveUrl: 'https://priyas-training-hub.vercel.app/',
-    color: '#9C27B0',
-    icon: '🎓',
-    result: 'Lead Conversion Focused',
-  },
-  {
-    id: 3,
     name: 'Alpha Ventures',
     category: 'Business Consultancy Website',
     description:
@@ -42,7 +18,7 @@ const CLIENT_PROJECTS = [
     result: 'Premium Brand Positioning',
   },
   {
-    id: 4,
+    id: 2,
     name: 'FindUrTrip',
     category: 'Travel Platform',
     description:
@@ -52,6 +28,30 @@ const CLIENT_PROJECTS = [
     color: '#E8910C',
     icon: '✈️',
     result: '10K+ Happy Travellers',
+  },
+  {
+    id: 3,
+    name: 'KBC Global',
+    category: 'Brand Setup & Manufacturing',
+    description:
+      'A premium dark-luxury website for an FSSAI & GMP certified cosmetics manufacturer offering complete business setup — machines, molds, packaging and branding under one roof. Features a launched-brands wall, animated trust stats, and a Get Started lead flow.',
+    tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Premium Design'],
+    liveUrl: 'https://kbcglobal.in/',
+    color: '#6366F1',
+    icon: '🏭',
+    result: '50+ Brands Launched',
+  },
+  {
+    id: 4,
+    name: 'Shree Chamunda Enterprise',
+    category: 'Industrial Valves & Instrumentation',
+    description:
+      'A professional B2B website for an industrial valves and process-instrumentation supplier, built to ISO/API-grade credibility. Features a full product portfolio, spec callouts, certification trust signals, and a Get-a-Quote enquiry flow.',
+    tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'B2B', 'Vercel'],
+    liveUrl: 'https://sceboilerspares.vercel.app/',
+    color: '#2563EB',
+    icon: '⚙️',
+    result: 'Get-a-Quote Lead Flow',
   },
 ];
 
@@ -67,7 +67,7 @@ export function OurWork() {
             Websites We&apos;ve Built for Real Businesses
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            From preschools to premium consultancy firms — every website we build is designed to
+            From travel platforms to industrial manufacturers — every website we build is designed to
             generate results, not just look good.
           </p>
         </div>
