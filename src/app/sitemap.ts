@@ -13,8 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/ui-ux-design',        priority: 0.9, freq: 'monthly' },
     { path: '/inventory-management',priority: 0.9, freq: 'monthly' },
     { path: '/ai-automations',      priority: 0.9, freq: 'monthly' },
-    { path: '/performance-marketing',priority: 0.9, freq: 'monthly'},
-    { path: '/digital-marketing',   priority: 0.9, freq: 'monthly' },
     { path: '/portfolio',           priority: 0.8, freq: 'monthly' },
     { path: '/testimonials',        priority: 0.7, freq: 'monthly' },
     { path: '/about-us',            priority: 0.8, freq: 'monthly' },

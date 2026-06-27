@@ -2,18 +2,67 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink, Bot, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
+import { VideoDemos } from '@/components/video-demos';
 
 const FILTERS = ['All', 'Web Development', 'Digital Marketing', 'AI & Automation'];
 
 const STATS = [
   { value: '25+', label: 'Projects Delivered' },
   { value: '3+',  label: 'Years in Ahmedabad' },
-  { value: '8',   label: 'Services Offered' },
+  { value: '6',   label: 'Services Offered' },
 ];
+
+function openChat() {
+  if (typeof window !== 'undefined') window.dispatchEvent(new Event('om:open-chat'));
+}
+
+/** AI & Automation portfolio view: live AI demos + a button to open our own AI assistant. */
+function AIAutomationShowcase() {
+  return (
+    <div>
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="mx-auto max-w-2xl rounded-2xl border border-indigo-500/20 bg-indigo-500/5 p-6 text-center sm:p-8"
+      >
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/15">
+          <Bot className="h-6 w-6 text-indigo-400" />
+        </div>
+        <h2 className="text-xl font-semibold md:text-2xl">AI Agents, Chatbots &amp; Automations</h2>
+        <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground">
+          Real AI solutions we&apos;ve built and deployed — voice calling agents, smart chatbots, and
+          WhatsApp automation. Watch the live demos below, or talk to our own AI assistant right now.
+        </p>
+        <button
+          onClick={openChat}
+          className="mt-6 inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-6 py-3 text-[14px] font-medium text-white transition-colors hover:bg-indigo-700"
+        >
+          <Sparkles className="h-4 w-4" />
+          Chat with our AI Assistant
+        </button>
+      </motion.div>
+
+      {/* Live AI demos (shared with the AI Automations service page) */}
+      <VideoDemos />
+
+      <div className="text-center">
+        <button
+          onClick={openChat}
+          className="inline-flex items-center gap-2 rounded-xl border border-indigo-500/30 px-6 py-3 text-[14px] font-medium text-indigo-300 transition-colors hover:bg-indigo-500/10"
+        >
+          <Bot className="h-4 w-4" />
+          Try our AI Assistant
+          <ArrowRight className="h-4 w-4" />
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function StatusBadge({ status }: { status: string }) {
   const color =
@@ -107,6 +156,10 @@ export function PortfolioClient() {
             ))}
           </motion.div>
 
+          {activeFilter === 'AI & Automation' ? (
+            <AIAutomationShowcase />
+          ) : (
+          <>
           {/* Cards grid */}
           <motion.div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <AnimatePresence>
@@ -184,6 +237,8 @@ export function PortfolioClient() {
             <div className="py-20 text-center text-muted-foreground">
               No projects match this filter yet.
             </div>
+          )}
+          </>
           )}
         </div>
       </section>

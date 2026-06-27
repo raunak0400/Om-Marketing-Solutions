@@ -4,7 +4,7 @@ import { useEffect, useRef, useMemo } from 'react';
 import { motion, AnimatePresence, useMotionValue, animate } from 'framer-motion';
 import {
   X, MapPin,
-  Globe, AppWindow, Smartphone, Palette, Package, Bot, TrendingUp, Megaphone,
+  Globe, AppWindow, Smartphone, Palette, Package, Bot,
 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,14 +16,12 @@ const SERVICES = [
   { title: 'UI/UX Design',          icon: Palette,     featured: false },
   { title: 'Inventory Management',  icon: Package,     featured: false },
   { title: 'AI Automations',        icon: Bot,         featured: true  },
-  { title: 'Performance Marketing', icon: TrendingUp,  featured: false },
-  { title: 'Digital Marketing',     icon: Megaphone,   featured: true  },
 ];
 
 const STATS = [
   { value: 20, suffix: '+', label: 'Projects Delivered'  },
   { value: 3,  suffix: '+', label: 'Years in Ahmedabad'  },
-  { value: 8,  suffix: '',  label: 'Services Offered'    },
+  { value: 6,  suffix: '',  label: 'Services Offered'    },
 ];
 
 function CountUp({ target, suffix, delay }: { target: number; suffix: string; delay: number }) {
@@ -191,7 +189,7 @@ export function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
                   transition={{ duration: 0.4, delay: 0.35 }}
                   className="relative mt-2 text-[13px] text-gray-400"
                 >
-                  Websites · Apps · AI Automations · Digital Marketing
+                  Websites · Apps · AI Automations · UI/UX Design
                 </motion.p>
 
                 {/* Accepting clients badge */}

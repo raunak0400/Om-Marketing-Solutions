@@ -6,7 +6,6 @@ import {
   Package,
   Bot,
   TrendingUp,
-  Megaphone,
   Zap,
   CalendarCheck,
   BarChart3,
@@ -50,16 +49,6 @@ export const NAV_LINKS = [
         label: 'AI Automations',
         href: '/ai-automations',
         description: 'Intelligent automation solutions.',
-      },
-      {
-        label: 'Performance Marketing',
-        href: '/performance-marketing',
-        description: 'Data-driven ROI-focused campaigns.',
-      },
-      {
-        label: 'Digital Marketing',
-        href: '/digital-marketing',
-        description: 'Grow your online presence.',
       },
     ],
   },
@@ -117,22 +106,6 @@ export const SERVICES = [
     icon: Bot,
     href: '/ai-automations',
     image: PlaceHolderImages.find((img) => img.id === 'service-integrations'),
-  },
-  {
-    title: 'Performance Marketing',
-    description:
-      'Data-driven marketing campaigns optimized for maximum ROI with measurable results and continuous improvement.',
-    icon: TrendingUp,
-    href: '/performance-marketing',
-    image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
-  },
-  {
-    title: 'Digital Marketing',
-    description:
-      'Reach more customers online with result-oriented digital marketing strategies including SEO, SEM, and social media management.',
-    icon: Megaphone,
-    href: '/digital-marketing',
-    image: PlaceHolderImages.find((img) => img.id === 'service-digital'),
   },
 ];
 

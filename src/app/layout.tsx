@@ -119,8 +119,6 @@ const localBusinessSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'UI/UX Design',          url: `${BASE_URL}/ui-ux-design`         } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Inventory Management',  url: `${BASE_URL}/inventory-management` } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Automations',        url: `${BASE_URL}/ai-automations`       } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Performance Marketing', url: `${BASE_URL}/performance-marketing`} },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Digital Marketing',     url: `${BASE_URL}/digital-marketing`    } },
     ],
   },
   aggregateRating: {

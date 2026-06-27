@@ -154,9 +154,6 @@ export default function ContactPage() {
                                             <SelectItem value="whatsapp-automation">
                                                 WhatsApp Automation
                                             </SelectItem>
-                                            <SelectItem value="digital-marketing">
-                                                Digital Marketing
-                                            </SelectItem>
                                             <SelectItem value="hire-developers">
                                                 Hire Software Engineers
                                             </SelectItem>

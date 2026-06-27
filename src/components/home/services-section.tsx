@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { SERVICES } from '@/lib/constants';
 
-const FEATURED = new Set(['Web Development', 'AI Automations', 'Digital Marketing']);
+const FEATURED = new Set(['Web Development', 'AI Automations', 'Inventory Management']);
 
 const container = {
   hidden: {},

@@ -459,7 +459,7 @@ const SUGGESTIONS = [
     'What services do you offer?',
     'How much does a website cost?',
     'Can you automate my WhatsApp?',
-    'Tell me about digital marketing',
+    'Tell me about AI automations',
 ];
 
 // ─── Main Chatbot Component ────────────────────────────────────────────────────
@@ -484,6 +484,14 @@ export function AIChatbot() {
         if (isOpen && inputRef.current)
             setTimeout(() => inputRef.current?.focus(), 300);
     }, [isOpen]);
+
+    // Let other parts of the site (e.g. the portfolio AI & Automation section)
+    // open the assistant by dispatching a global `om:open-chat` event.
+    useEffect(() => {
+        const open = () => setIsOpen(true);
+        window.addEventListener('om:open-chat', open);
+        return () => window.removeEventListener('om:open-chat', open);
+    }, []);
 
     const handleSend = useCallback(async (text?: string) => {
         const messageText = (text ?? input).trim();
@@ -748,7 +756,7 @@ export function AIChatbot() {
                                 </div>
                                 <h3 className="text-white font-bold text-lg">Hello! I&apos;m OM AI</h3>
                                 <p className="text-gray-400 text-sm leading-relaxed">
-                                    I can help you explore our digital marketing, web development, and automation services!
+                                    I can help you explore our web development, AI automation, and app development services!
                                 </p>
                             </div>
                         )}

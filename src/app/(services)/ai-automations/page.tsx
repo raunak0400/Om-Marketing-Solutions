@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ServicePageLayout } from '@/components/service-page-layout';
-import { VideoDemos } from './video-demos';
+import { VideoDemos } from '@/components/video-demos';
 
 export const metadata: Metadata = {
   title: 'AI Automation Solutions in Ahmedabad',
