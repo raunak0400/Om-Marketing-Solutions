@@ -89,7 +89,7 @@ const TESTIMONIALS: Testimonial[] = [
         tag: 'Web Development',
         google: true,
         quote:
-            'Excellent service by OM Marketing — professional, prompt, and a real pleasure to work with throughout the entire project.',
+            "I'm truly impressed with the quality and professionalism of this website. The design is modern, visually appealing, and provides a seamless browsing experience from start to finish. Navigation is smooth, with all the important information clearly presented and easy to find. Highly recommended!",
     },
     {
         name: 'Anuj Bhadoriya',

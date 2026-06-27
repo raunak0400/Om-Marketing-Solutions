@@ -287,8 +287,8 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "They build the best and most stunning websites, and the service is excellent from start to finish. Couldn't have asked for a more reliable team.",
-    author: 'Patel Harsh',
+      "I'm truly impressed with the quality and professionalism of this website. The design is modern, visually appealing, and provides a seamless browsing experience from start to finish. Navigation is smooth, with all the important information easy to find. Highly recommended!",
+    author: 'Harsh Patel',
     title: 'Verified Google review',
   },
   {
