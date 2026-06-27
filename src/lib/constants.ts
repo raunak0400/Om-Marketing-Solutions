@@ -265,29 +265,43 @@ export const PORTFOLIO_PROJECTS = [
   },
 ];
 
+// Real 5-star Google reviews
 export const TESTIMONIALS = [
   {
     quote:
-      'The new website helped us reach customers outside our city, increasing sales by 30%. Their team made the process simple and delivered great value.',
-    author: 'Rajesh Mehta',
-    title: 'CEO, Mehta Textiles',
-    avatar: PlaceHolderImages.find((img) => img.id === 'avatar-david-chen'),
+      'Worked with Het for our company website (KBC). Honestly, the best part was the response — I message and he replies within minutes. Fast, professional, and the final website looks absolutely stunning.',
+    author: '48K Film',
+    title: 'Client — KBC Global',
   },
   {
     quote:
-      "Automating our inventory has saved us countless hours and reduced errors significantly. It's a must-have for any manufacturing business.",
-    author: 'Amit Patel',
-    title: 'Director, Patel Manufacturing',
-    avatar: PlaceHolderImages.find((img) => img.id === 'avatar-sarah-johnson'),
+      'OM Marketing Solutions provided a very professional and smooth experience. The team was responsive, understood exactly what we needed, and delivered a website that genuinely represents our brand.',
+    author: 'Eklavya Jha',
+    title: 'Local Guide · Google',
   },
   {
     quote:
-      'The WhatsApp automation is brilliant. Our customers get instant answers and we can focus on more important tasks. Highly recommended.',
-    author: 'Priya Sharma',
-    title: 'Founder, Sharma Handicrafts',
-    avatar: PlaceHolderImages.find(
-      (img) => img.id === 'avatar-maria-rodriguez'
-    ),
+      "Had a great experience with this team. They truly understand digital growth and deliver smart, data-driven results. You can tell they're genuinely invested in your success.",
+    author: 'Sahil Chaudhari',
+    title: 'Verified Google review',
+  },
+  {
+    quote:
+      "They build the best and most stunning websites, and the service is excellent from start to finish. Couldn't have asked for a more reliable team.",
+    author: 'Patel Harsh',
+    title: 'Verified Google review',
+  },
+  {
+    quote:
+      'Great support straight from the founders. They stayed hands-on through the entire project and made sure every detail was exactly right.',
+    author: 'Ayan Musani',
+    title: 'Verified Google review',
+  },
+  {
+    quote:
+      'Amazing work! They turned our idea into a beautiful, high-performing website. Absolutely thrilled with the result.',
+    author: 'Anuj Bhadoriya',
+    title: 'Verified Google review',
   },
 ];
 
