@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { sendChatMessage, type ChatMessage } from '@/app/chat-action';
+import { useHideOnScrollDown } from '@/hooks/use-hide-on-scroll';
 
 // ─── TRUE 3D ROBOT ────────────────────────────────────────────────────────────
 //
@@ -469,6 +470,7 @@ export function AIChatbot() {
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [showSuggestions, setShowSuggestions] = useState(true);
+    const hidden = useHideOnScrollDown();
     const messagesEndRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -612,14 +614,19 @@ export function AIChatbot() {
             <button
                 onClick={() => setIsOpen(v => !v)}
                 aria-label="Open AI Chat Assistant"
+                aria-hidden={hidden && !isOpen}
+                tabIndex={hidden && !isOpen ? -1 : undefined}
                 className="fixed bottom-6 left-6 z-50 flex items-center justify-center focus:outline-none"
                 style={{
                     width: 76, height: 76,
                     borderRadius: '50%',
                     background: 'radial-gradient(circle at 35% 30%, #1a3a6e, #0a0e1c)',
                     boxShadow: '0 0 28px rgba(34,211,238,0.4), 0 6px 24px rgba(0,0,0,0.6)',
-                    transition: 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s',
+                    transition: 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s, opacity 0.3s',
                     position: 'fixed',
+                    opacity: hidden && !isOpen ? 0 : 1,
+                    pointerEvents: hidden && !isOpen ? 'none' : 'auto',
+                    transform: hidden && !isOpen ? 'translateY(120px)' : undefined,
                 }}
                 onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.12)')}
                 onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}

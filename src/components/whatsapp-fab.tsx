@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useHideOnScrollDown } from '@/hooks/use-hide-on-scroll';
 
 // Replace with a valid phone number, including the country code, but no '+' or '00'.
 const WHATSAPP_NUMBER = '919825247312';
@@ -21,13 +22,18 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 export function WhatsAppFAB() {
+  const hidden = useHideOnScrollDown();
   return (
     <Link
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#128C7E] focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+      aria-hidden={hidden}
+      tabIndex={hidden ? -1 : undefined}
+      className={`fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#128C7E] focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 ${
+        hidden ? 'pointer-events-none translate-y-24 opacity-0' : 'translate-y-0 opacity-100'
+      }`}
     >
       <WhatsAppIcon className="h-8 w-8" />
     </Link>

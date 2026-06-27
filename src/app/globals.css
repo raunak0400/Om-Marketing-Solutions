@@ -61,7 +61,9 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    /* scroll-pt-20 offsets anchor jumps so section headings aren't hidden
+       behind the sticky 4rem (h-16) header on mobile and desktop. */
+    @apply scroll-smooth scroll-pt-20;
   }
   * {
     @apply border-border;
