@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -17,9 +16,6 @@ import {
   TrendingUp, Clock, Mail, Phone, Github, Linkedin, Instagram, ArrowRight, ChevronDown,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-// WebGL hero — client-only (no SSR for the canvas)
-const Hero3D = dynamic(() => import('@/components/about/hero-3d'), { ssr: false });
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -149,21 +145,38 @@ const cardBase =
   'h-full rounded-2xl border border-border/60 bg-card/70 p-6 backdrop-blur transition-colors hover:border-primary/40';
 
 export function AboutPageClient() {
+  const reduce = useReducedMotion();
   return (
     <div className="flex flex-col overflow-x-clip">
       {/* ══ HERO with WebGL 3D ═══════════════════════════════════════════════ */}
-      <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[88vh] items-center justify-center overflow-hidden">
         {/* dark gradient base */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#070711] via-background to-background" />
-        <GlowOrb className="left-[-10%] top-[10%] h-72 w-72 bg-indigo-600/25" />
-        <GlowOrb className="right-[-8%] bottom-[8%] h-80 w-80 bg-cyan-500/20" />
 
-        {/* 3D canvas */}
-        <div className="absolute inset-0">
-          <Hero3D />
-        </div>
-        {/* readability overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background" />
+        {/* One contained aurora glow — pooled low, behind the CTAs, never under the headline.
+            Subtle slow breathe; frozen under prefers-reduced-motion. */}
+        <motion.div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-[-20%] h-[78%]"
+          style={{
+            background:
+              'radial-gradient(55% 62% at 50% 100%, rgba(99,102,241,0.24), rgba(168,85,247,0.13) 44%, transparent 70%), radial-gradient(42% 48% at 74% 98%, rgba(34,211,238,0.12), transparent 72%)',
+            filter: 'blur(46px)',
+          }}
+          initial={false}
+          animate={reduce ? undefined : { opacity: [0.8, 1, 0.8], scale: [1, 1.05, 1] }}
+          transition={{ duration: 26, repeat: Infinity, ease: 'easeInOut' }}
+        />
+
+        {/* Fine film grain for premium depth (very subtle, no banding) */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.04] mix-blend-soft-light"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+          }}
+        />
 
         {/* content */}
         <div className="container relative z-10 text-center">
