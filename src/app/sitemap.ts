@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/testimonials',        priority: 0.7, freq: 'monthly' },
     { path: '/about-us',            priority: 0.8, freq: 'monthly' },
     { path: '/contact-us',          priority: 0.8, freq: 'monthly' },
+    { path: '/privacy-policy',      priority: 0.3, freq: 'yearly'  },
   ];
 
   return routes.map(({ path, priority, freq }) => ({
