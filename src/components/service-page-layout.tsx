@@ -40,6 +40,19 @@ export interface ServicePageLayoutProps {
 
   // Optional slot inserted between "Why Choose Us" and "FAQ" (e.g. Live Demos)
   extraSection?: React.ReactNode;
+
+  // Optional "Featured Work / Showcase" slot, rendered right after "What's Included"
+  relatedProjects?: React.ReactNode;
+
+  // Optional "Technologies We Use" chips
+  techStack?: string[];
+
+  // Optional "Explore Related Services" cards, shown just before the final CTA
+  similarServices?: { label: string; href: string; description: string; icon?: string }[];
+
+  // Hide the generic "How We Work" section (e.g. for design-only services that
+  // provide their own, more specific process in relatedProjects)
+  hideProcess?: boolean;
 }
 
 const PROCESS_STEPS = [
@@ -80,6 +93,10 @@ export function ServicePageLayout({
   whyPoints,
   faqs,
   extraSection,
+  relatedProjects,
+  techStack,
+  similarServices,
+  hideProcess,
 }: ServicePageLayoutProps) {
   return (
     <>
@@ -183,7 +200,38 @@ export function ServicePageLayout({
         </div>
       </section>
 
+      {/* ── FEATURED WORK / SHOWCASE (optional) ──────────────────────────── */}
+      {relatedProjects}
+
+      {/* ── TECHNOLOGIES (optional) ──────────────────────────────────────── */}
+      {techStack && techStack.length > 0 && (
+        <section className="py-16 md:py-24">
+          <div className="container">
+            <div className="mb-10 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Technologies We Use
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+                A modern, production-grade stack chosen for performance, scalability, and
+                long-term maintainability.
+              </p>
+            </div>
+            <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3">
+              {techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-primary/25 bg-primary/5 px-4 py-2 text-sm font-medium text-primary transition-colors hover:border-primary/50 hover:bg-primary/10"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* ── 3. HOW WE WORK ───────────────────────────────────────────────── */}
+      {!hideProcess && (
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
@@ -226,6 +274,7 @@ export function ServicePageLayout({
           </div>
         </div>
       </section>
+      )}
 
       {/* ── 4. WHY CHOOSE US ─────────────────────────────────────────────── */}
       <section className="py-16 md:py-24 bg-card">
@@ -304,6 +353,42 @@ export function ServicePageLayout({
           </div>
         </div>
       </section>
+
+      {/* ── SIMILAR SERVICES (optional) ──────────────────────────────────── */}
+      {similarServices && similarServices.length > 0 && (
+        <section className="py-16 md:py-24">
+          <div className="container">
+            <div className="mb-10 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                Explore Related Services
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+                Need more than one thing? We deliver end-to-end — here&apos;s what pairs well with
+                this service.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {similarServices.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="group rounded-xl border border-border bg-background p-6 transition-colors hover:border-primary/50"
+                >
+                  <div className="mb-3 text-3xl">{s.icon ?? '🔗'}</div>
+                  <h3 className="mb-1.5 font-semibold transition-colors group-hover:text-primary">
+                    {s.label}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                  <span className="mt-3 inline-flex items-center text-sm font-medium text-primary">
+                    Learn more
+                    <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── 6. CTA ───────────────────────────────────────────────────────── */}
       <section className="py-16 md:py-24 bg-card">

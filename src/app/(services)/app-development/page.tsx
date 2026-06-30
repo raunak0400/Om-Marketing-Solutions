@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+import { AppShowcase } from '@/components/app-showcase';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
@@ -128,6 +129,37 @@ export default function AppDevelopmentPage() {
         stats={stats}
         whyPoints={whyPoints}
         faqs={faqs}
+        relatedProjects={<AppShowcase />}
+        techStack={[
+          'React Native',
+          'Flutter',
+          'Node.js',
+          'FastAPI',
+          'Firebase',
+          'MongoDB',
+          'GraphQL',
+          'REST APIs',
+        ]}
+        similarServices={[
+          {
+            label: 'Mobile Development',
+            href: '/mobile-development',
+            description: 'Native iOS and Android development for performance-critical apps.',
+            icon: '📲',
+          },
+          {
+            label: 'UI/UX Design',
+            href: '/ui-ux-design',
+            description: 'Intuitive app interfaces designed and prototyped before a line of code.',
+            icon: '🎨',
+          },
+          {
+            label: 'Web Development',
+            href: '/web-development',
+            description: 'A matching web app or marketing site to complete your product.',
+            icon: '🖥️',
+          },
+        ]}
       />
     </>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+import { UIUXShowcase } from '@/components/uiux-showcase';
 
 export const metadata: Metadata = {
   title: 'UI/UX Design Services in Ahmedabad',
@@ -125,6 +126,37 @@ export default function UIUXDesignPage() {
         stats={stats}
         whyPoints={whyPoints}
         faqs={faqs}
+        hideProcess
+        relatedProjects={<UIUXShowcase />}
+        techStack={[
+          'Figma',
+          'FigJam',
+          'Prototyping',
+          'Design Systems',
+          'Auto Layout',
+          'Design Tokens',
+          'WCAG Accessibility',
+        ]}
+        similarServices={[
+          {
+            label: 'Web Development',
+            href: '/web-development',
+            description: 'Turn the designs into a fast, responsive, production-ready website.',
+            icon: '🖥️',
+          },
+          {
+            label: 'App Development',
+            href: '/app-development',
+            description: 'Ship the mobile app your prototype was designed for.',
+            icon: '📱',
+          },
+          {
+            label: 'AI Automations',
+            href: '/ai-automations',
+            description: 'Design intelligent, conversational interfaces powered by AI.',
+            icon: '🤖',
+          },
+        ]}
       />
     </>
   );

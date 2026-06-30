@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+import { ServiceProjects } from '@/components/service-projects';
 
 export const metadata: Metadata = {
   title: 'Web Development Company in Ahmedabad',
@@ -124,6 +125,51 @@ export default function WebDevelopmentPage() {
         stats={stats}
         whyPoints={whyPoints}
         faqs={faqs}
+        relatedProjects={
+          <ServiceProjects
+            heading="Websites We've Built"
+            subheading="Real, conversion-focused websites we've designed and shipped for businesses across Gujarat and beyond — every one a live, working site."
+            slugs={[
+              'kbc-global',
+              'sanjeevani-hospital',
+              'lumiere-salon',
+              'findurtrip',
+              'shree-har-packaging',
+              'aavaas-realty',
+            ]}
+          />
+        }
+        techStack={[
+          'Next.js',
+          'React',
+          'TypeScript',
+          'Tailwind CSS',
+          'Framer Motion',
+          'Node.js',
+          'Razorpay',
+          'Vercel',
+        ]}
+        similarServices={[
+          {
+            label: 'UI/UX Design',
+            href: '/ui-ux-design',
+            description:
+              'The design layer behind every great website — research, wireframes, and pixel-perfect mockups.',
+            icon: '🎨',
+          },
+          {
+            label: 'App Development',
+            href: '/app-development',
+            description: 'Take your product mobile with fast, native-feeling iOS and Android apps.',
+            icon: '📱',
+          },
+          {
+            label: 'AI Automations',
+            href: '/ai-automations',
+            description: 'Add AI chatbots, voice agents, and workflow automation to your website.',
+            icon: '🤖',
+          },
+        ]}
       />
     </>
   );

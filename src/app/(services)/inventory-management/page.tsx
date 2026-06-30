@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ServicePageLayout } from '@/components/service-page-layout';
+import { InventoryShowcase } from '@/components/inventory-showcase';
 
 export const metadata: Metadata = {
   title: 'Inventory Management System in Ahmedabad',
@@ -125,6 +126,36 @@ export default function InventoryManagementPage() {
         stats={stats}
         whyPoints={whyPoints}
         faqs={faqs}
+        relatedProjects={<InventoryShowcase />}
+        techStack={[
+          'Next.js',
+          'TypeScript',
+          'PostgreSQL',
+          'Prisma',
+          'AI Forecasting',
+          'Node.js',
+          'Vercel',
+        ]}
+        similarServices={[
+          {
+            label: 'AI Automations',
+            href: '/ai-automations',
+            description: 'Layer AI forecasting, alerts, and chat on top of your inventory data.',
+            icon: '🤖',
+          },
+          {
+            label: 'App Development',
+            href: '/app-development',
+            description: 'A companion mobile app for stock-taking and on-the-go management.',
+            icon: '📱',
+          },
+          {
+            label: 'Web Development',
+            href: '/web-development',
+            description: 'Connect your inventory to an online store or customer portal.',
+            icon: '🖥️',
+          },
+        ]}
       />
     </>
   );
